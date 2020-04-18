@@ -108,3 +108,11 @@ img {
 	line-height: 1.25;
 	margin: 0 0 2rem;
 }
+
+.showcase-content p strong {
+	font-size: 3rem;
+	font-family: 'Caveat', cursive;
+	/* background: #daa520; */
+	color: #800000;
+	/* padding: 0.5rem; */
+}
