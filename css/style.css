@@ -1,5 +1,6 @@
 :root {
-	--primary-color: #e0c340;
+	--primary-color: #daa520;
+	/* --primary-color: #d4af37; */
 	--dark-color: #141414;
 }
 
@@ -45,7 +46,8 @@ img {
 	height: 100%;
 	z-index: 1;
 	background: rgba(0, 0, 0, 0.6);
-	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+	box-shadow: inset 120px 100px 250px #000000;
+	/* box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; */
 }
 
 .showcase img {
@@ -62,6 +64,13 @@ img {
 	height: 90px;
 }
 
+.showcase-top a {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(-50%, -50%);
+}
+
 .showcase-content {
 	position: relative;
 	z-index: 2;
@@ -76,15 +85,24 @@ img {
 
 .showcase-content h1 {
 	font-weight: 700;
-	font-size: 5rem;
+	/* font-family: 'Caveat', cursive; */
+	font-size: 8rem;
 	line-height: 1.1;
 	margin: 0 0 1rem;
 	width: 50%;
+	color: #daa520;
+}
+
+.showcase-content .fa-film {
+	font-size: 6rem;
+	color: #daa520;
 }
 
 .showcase-content p {
 	/* text-transform: uppercase; */
-	color: #fff;
+	/* color: #fff; */
+	color: #c0b8b8;
+	/* color: #800000; */
 	font-weight: 400;
 	font-size: 1.5rem;
 	line-height: 1.25;
