@@ -88,10 +88,11 @@ img {
 .showcase-content h1 {
 	font-weight: 700;
 	/* font-family: 'Caveat', cursive; */
-	font-size: 8rem;
+	font-size: 4rem;
 	line-height: 1.1;
 	margin: 0 0 1rem;
-	width: 50%;
+	width: 100%;
+	color: #fff;
 	/* color: #daa520; */
 }
 
@@ -102,8 +103,8 @@ img {
 
 .showcase-content p {
 	/* text-transform: uppercase; */
-	/* color: #fff; */
-	color: #c0b8b8;
+	color: #fff;
+	/* color: #c0b8b8; */
 	/* color: #800000; */
 	font-weight: 400;
 	font-size: 1.5rem;
@@ -111,10 +112,8 @@ img {
 	margin: 0 0 2rem;
 }
 
-.showcase-content p strong {
+/* .showcase-content p strong {
 	font-size: 3rem;
 	font-family: 'Caveat', cursive;
-	/* background: #daa520; */
 	color: #800000;
-	/* padding: 0.5rem; */
-}
+} */
