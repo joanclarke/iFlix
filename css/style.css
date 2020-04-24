@@ -49,6 +49,7 @@ img {
 	background: rgba(0, 0, 0, 0.6);
 	/* box-shadow: inset 600px 100px 250px #000000; */
 	box-shadow: inset 570px 100px 250px #000000, inset 0px -20px 250px #000000;
+	/* box-shadow: inset 570px 100px 250px #282828, inset 0px -20px 250px #282828; */
 }
 
 .showcase img {
@@ -93,7 +94,7 @@ img {
 	margin: 0 0 1rem;
 	width: 100%;
 	color: #fff;
-	/* color: #daa520; */
+	/* color: #9400d3; */
 }
 
 .showcase-content .fa-film {
