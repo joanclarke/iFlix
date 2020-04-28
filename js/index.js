@@ -36,6 +36,7 @@ const onInput = async (event) => {
 	dropdown.classList.add('is-active');
 	for (let movie of movies) {
 		const option = document.createElement('a');
+		// Fix broken images
 		const imgSrc = movie.Poster === 'N/A' ? '' : movie.Poster;
 
 		option.classList.add('dropdown-item');
@@ -47,8 +48,6 @@ const onInput = async (event) => {
 		resultsWrapper.appendChild(option);
 	}
 };
-
-input.addEventListener('input', debounce(onInput, 500));
 
 input.addEventListener('input', debounce(onInput, 500));
 
