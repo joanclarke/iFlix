@@ -1,8 +1,7 @@
-:root {
-	--primary-color: #daa520;
-	/* --primary-color: #d4af37; */
+/* :root {
+	--primary-color: #fff;
 	--dark-color: #141414;
-}
+} */
 
 * {
 	background-origin: border-box;
@@ -13,7 +12,7 @@
 body {
 	font-family: 'Ariel', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background: #000;
+	/* background: #000; */
 	color: #999;
 }
 
@@ -26,9 +25,9 @@ p {
 	margin: 0.5rem 0;
 }
 
-img {
+/* img {
 	width: 100%;
-}
+} */
 
 .showcase {
 	width: 100%;
@@ -115,30 +114,40 @@ img {
 	margin: 0 0 2rem;
 }
 
-.iflix-fight-content {
+/* .iflix-fight-content {
 	background: var(--dark-color);
-	/* padding-top: 1rem; */
-	padding: 3rem;
-	/* border-bottom: 3px solid #3d3d3d; */
-}
+	padding: 3rem; */
+/* border-bottom: 3px solid #3d3d3d; */
+/* } */
 
-.iflix-fight-content .container {
+/* .iflix-fight-content .container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1rem;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+} */
+
+/* .dropdown-item {
+	display: flex;
+	align-items: center;
+	height: 60px;
 }
 
-/* .showcase-content p strong {
+.dropdown-item img {
+	height: 50px;
+	margin-right: 10px;
+} */
+
+.showcase-content p strong {
 	font-size: 3rem;
 	font-family: 'Caveat', cursive;
 	color: #800000;
-} */
+}
 
 /* Styles for flick-fight section */
-/* 
+
 .tutorial {
 	width: 600px;
 	text-align: center;
@@ -181,4 +190,4 @@ figure .image img {
 .dropdown-item img {
 	height: 50px;
 	margin-right: 10px;
-} */
+}
