@@ -51,8 +51,10 @@ const onInput = async (event) => {
 
 input.addEventListener('input', debounce(onInput, 500));
 
-// document.addEventListener('click', event => {
-//   if (!root.contains(event.target)) {
-//     dropdown.classList.remove('is-active');
-//   }
-// });
+// Close the dropdown if root does not contain the element that was clicked on
+document.addEventListener('click', (event) => {
+	if (!root.contains(event.target)) {
+		// To close dropdown, remove the is-active class
+		dropdown.classList.remove('is-active');
+	}
+});
