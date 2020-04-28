@@ -5,6 +5,13 @@ const fetchData = async (searchTerm) => {
 			s: searchTerm
 		}
 	});
+
+	if (response.data.Error) {
+		// return error message response
+		// console.log(response.data.Error);
+		return [];
+	}
+
 	return response.data.Search;
 };
 
