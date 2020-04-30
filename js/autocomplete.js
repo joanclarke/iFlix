@@ -1,4 +1,4 @@
-const createAutocomplete = ({ root }) => {
+const createAutoComplete = ({ root }) => {
 	root.innerHTML = `
     <label><b>Search For a Movie</b></label>
     <input class="input" />

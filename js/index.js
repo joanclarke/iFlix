@@ -15,6 +15,16 @@ const fetchData = async (searchTerm) => {
 	return response.data.Search;
 };
 
+createAutoComplete({
+	root: document.querySelector('.autocomplete')
+});
+createAutoComplete({
+	root: document.querySelector('.autocomplete-two')
+});
+createAutoComplete({
+	root: document.querySelector('.autocomplete-three')
+});
+
 const onMovieSelect = async (movie) => {
 	const response = await axios.get('http://www.omdbapi.com/', {
 		params: {
