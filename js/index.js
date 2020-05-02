@@ -30,6 +30,15 @@ const autoCompleteConfig = {
 
 createAutoComplete({
 	...autoCompleteConfig,
+	root: document.querySelector('#top-autocomplete'),
+	onOptionSelect(movie) {
+		// document.querySelector('.tutorial').classList.add('is-hidden');
+		onMovieSelect(movie, document.querySelector('#top-summary'));
+	}
+});
+
+createAutoComplete({
+	...autoCompleteConfig,
 	root: document.querySelector('#left-autocomplete'),
 	onOptionSelect(movie) {
 		document.querySelector('.tutorial').classList.add('is-hidden');
