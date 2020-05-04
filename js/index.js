@@ -196,9 +196,9 @@ const searchMovieTemplate = (movieDetail) => {
 			<div class="media-content">
 				<div class="content">
 					<p class="plot">${movieDetail.Plot}</p>
-					<p><strong>Stars:</strong> <span>${movieDetail.Actors}</span></p>
-					<p><strong>Director/s:</strong> ${movieDetail.Director}</p>
-					<p><strong>Writer/s:</strong> ${movieDetail.Writer}</p>
+					<p class="media-content-p"><strong>Stars:</strong> <span>${movieDetail.Actors}</span></p>
+					<p class="media-content-p"><strong>Directors:</strong> ${movieDetail.Director}</p>
+					<p class="media-content-p"><strong>Writers:</strong> ${movieDetail.Writer}</p>
 				</div>
 			</div>
 		</article>
