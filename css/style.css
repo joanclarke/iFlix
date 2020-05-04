@@ -197,3 +197,19 @@ figure .image img {
 	height: 50px;
 	margin-right: 10px;
 }
+
+ul.detail {
+	margin-left: 0;
+}
+
+ul.detail li {
+	display: inline;
+	background: rgb(180, 46, 136);
+	color: #fff;
+	padding: 0.5rem;
+	border-radius: 1.5rem;
+}
+
+p i.fa-star {
+	color: #f7be73;
+}
