@@ -185,21 +185,20 @@ const searchMovieTemplate = (movieDetail) => {
 				<div class="content">
 					<h4>${movieDetail.Genre}</h4>
 					<ul class="detail"><li>${movieDetail.Rated}</li> <li>${movieDetail.Year}</li> <li>${movieDetail.Runtime}</li> </ul> 
-					<p><i class="fas fa-star fa-2x"></i> ${movieDetail.imdbRating}</p>
-					<p>${movieDetail.Awards}</p> 
-					<p>Grossed  ${movieDetail.BoxOffice} at the Box Office</p> 
+					<p><i class="fas fa-star fa-2x"></i> <span class="ratings"><strong>${movieDetail.imdbRating}</strong></span> / ${movieDetail.imdbVotes} IMDb votes</p>
+					<p>Awards: ${movieDetail.Awards}</p> 
+					<p class="box-office">Box Office: <strong>${movieDetail.BoxOffice}</strong></p> 
 				</div>
 			</div>
 		</article>
 
-		<article>
+		<article class="results-summary">
 			<div class="media-content">
 				<div class="content">
-					<p>${movieDetail.Plot}</p>
-					<p><strong>Director/s: </strong>${movieDetail.Director}</p>
-					<p><strong>Writer/s: </strong>${movieDetail.Writer}</p>
-					<p><strong>Stars: </strong>${movieDetail.Actors}</p>
-					<p></p>
+					<p class="plot">${movieDetail.Plot}</p>
+					<p><strong>Stars:</strong> <span>${movieDetail.Actors}</span></p>
+					<p><strong>Director/s:</strong> ${movieDetail.Director}</p>
+					<p><strong>Writer/s:</strong> ${movieDetail.Writer}</p>
 				</div>
 			</div>
 		</article>
