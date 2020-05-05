@@ -25,6 +25,13 @@ p {
 	margin: 0.5rem 0;
 }
 
+hr {
+	height: 1px;
+	background-color: #ccc;
+	border: none;
+	margin: 0;
+}
+
 /* img {
 	width: 100%;
 } */
@@ -115,7 +122,8 @@ p {
 	margin-top: 10rem;
 }
 
-.showcase-content h1 {
+.showcase-content h1,
+.flix-fight-content h1 {
 	font-weight: 700;
 	/* font-family: 'Caveat', cursive; */
 	font-size: 4rem;
@@ -126,18 +134,30 @@ p {
 	/* color: #9400d3; */
 }
 
+.flix-fight-content h1 {
+	margin-top: 7rem;
+	position: relative;
+	z-index: 2;
+}
+
 .showcase-content .fa-film {
 	font-size: 6rem;
 	color: #daa520;
 }
 
-.showcase-content p {
+.showcase-content p,
+.flix-fight-content p {
 	/* text-transform: uppercase; */
 	color: #fff;
 	font-weight: 500;
 	font-size: 1.8rem;
 	line-height: 1.25;
 	margin: 0 0 2rem;
+}
+
+.flix-fight-content p {
+	position: relative;
+	z-index: 2;
 }
 
 /* .iflix-fight-content {
@@ -277,10 +297,7 @@ p.plot {
 }
 
 .media-content .content hr.line {
-	height: 1px;
-	background-color: #ccc;
 	background-color: #8c269c;
-	border: none;
 }
 
 .media-content .content p.media-content-p strong {
@@ -338,18 +355,16 @@ figure .image img {
 	margin-right: 10px;
 }
 
-.fight-icon {
-	background: url(../img/fight.png);
-	background-size: cover;
+.iflix-movie-fight .container {
+	margin-top: 4rem;
 }
 
-.fight-icon h1.title {
-	/* font-weight: 600; */
-	margin-top: 2rem;
-	line-height: 2.5;
-	background: rgba(0, 0, 0, 0.7);
-	border-radius: 2px;
-	/* background: #484a4d; */
+.fight-icon {
+	background: url(../img/fightingTV.png);
+	background-size: cover;
+	height: 30rem;
+	/* width: 100%; */
+	margin-top: -20rem;
 }
 
 .fight-icon p.reaction {
@@ -360,6 +375,9 @@ figure .image img {
 	color: green;
 }
 
+hr.thick-line {
+	height: 0.5rem;
+}
 /* .gold {
 	background: rgb(255, 215, 0);
 }
