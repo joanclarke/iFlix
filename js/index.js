@@ -94,11 +94,11 @@ const runComparison = () => {
 		const rightSideValue = parseInt(rightStat.dataset.value);
 
 		if (rightSideValue > leftSideValue) {
-			leftStat.classList.remove('is-primary');
-			leftStat.classList.add('is-warning');
+			leftStat.classList.remove('has-background-grey-light');
+			leftStat.classList.add('has-background-warning');
 		} else {
-			rightStat.classList.remove('is-primary');
-			rightStat.classList.add('is-warning');
+			rightStat.classList.remove('has-background-grey-light');
+			rightStat.classList.add('has-background-warning');
 		}
 	});
 	// let leftSideCount;
@@ -142,23 +142,23 @@ const movieTemplate = (movieDetail) => {
 			</div>
 		</article>
 
-		<article data-value=${awards} class="notification is-primary">
+		<article data-value=${awards} class="notification has-text-grey-dark has-background-grey-light">
 			<p class="title">${movieDetail.Awards}</p>
 			<p class="subtitle">Awards</p>
 		</article>
-		<article data-value=${dollars} class="notification is-primary">
+		<article data-value=${dollars} class="notification has-text-grey-dark has-background-grey-light">
 			<p class="title">${movieDetail.BoxOffice}</p>
 			<p class="subtitle">Box Office</p>
 		</article>
-		<article data-value=${metascore} class="notification is-primary">
+		<article data-value=${metascore} class="notification has-text-grey-dark has-background-grey-light">
 			<p class="title">${movieDetail.Metascore}</p>
 			<p class="subtitle">Metascore</p>
 		</article>
-		<article data-value=${imdbRating} class="notification is-primary">
+		<article data-value=${imdbRating} class="notification has-text-grey-dark has-background-grey-light">
 			<p class="title">${movieDetail.imdbRating}</p>
 			<p class="subtitle">IMDB Rating</p>
 		</article>
-		<article data-value=${imdbVotes} class="notification is-primary">
+		<article data-value=${imdbVotes} class="notification has-text-grey-dark has-background-grey-light">
 			<p class="title">${movieDetail.imdbVotes}</p>
 			<p class="subtitle">IMDB Votes</p>
 		</article>

@@ -171,6 +171,17 @@ p {
 	background-image: linear-gradient(to right, #5c21a5, #8c269c, #a708f1); /* Standard syntax (must be last) */
 }
 
+.grad2 {
+	background-color: #a708f1; /* For browsers that do not support gradients */
+	background-image: linear-gradient(
+		to right,
+		#000000,
+		#5c21a5,
+		#8c269c,
+		#000000
+	); /* Standard syntax (must be last) */
+}
+
 .showcase-content p strong {
 	font-size: 3rem;
 	font-family: 'Caveat', cursive;
@@ -283,9 +294,10 @@ p.plot {
 /* Styles for flick-fight section */
 
 .tutorial {
-	width: 600px;
+	/* width: 600px; */
 	text-align: center;
 	margin: auto;
+	background: transparent;
 }
 
 figure.image {
@@ -298,9 +310,9 @@ figure .image img {
 	width: 128px;
 }
 
-.notification {
+/* .notification {
 	margin-top: 20px !important;
-}
+} */
 
 .title .icon {
 	margin-left: 15px;
@@ -325,3 +337,33 @@ figure .image img {
 	height: 50px;
 	margin-right: 10px;
 }
+
+.fight-icon {
+	background: url(../img/fight.png);
+	background-size: cover;
+}
+
+.fight-icon h1.title {
+	/* font-weight: 600; */
+	margin-top: 2rem;
+	line-height: 2.5;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 2px;
+	/* background: #484a4d; */
+}
+
+.fight-icon p.reaction {
+	font-size: 1.5rem;
+}
+
+.fight-icon p span {
+	color: green;
+}
+
+/* .gold {
+	background: rgb(255, 215, 0);
+}
+
+.silver {
+	background: rgb(192, 192, 192);
+} */
