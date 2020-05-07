@@ -123,8 +123,7 @@ hr {
 }
 
 .showcase-content h1,
-.flix-fight-content h1,
-.movie-info h1 {
+.flix-fight-content h1 {
 	font-weight: 700;
 	/* font-family: 'Caveat', cursive; */
 	font-size: 4rem;
@@ -362,11 +361,11 @@ figure .image img {
 	height: 32rem;
 }
 
-.iflix-movie-fight .container,
+/* .iflix-movie-fight .container,
 .movie-info .container {
-	/* margin-top: 4rem; */
+	margin-top: 4rem;
 	padding-bottom: 4rem;
-}
+} */
 
 .fight-icon {
 	background: url(../img/fightingTV.png);
@@ -393,11 +392,10 @@ hr.thick-line {
 	height: 0.5rem;
 }
 
-.movie-info {
+/* .movie-info {
 	background: url(../img/movieBG3.png);
 	background-size: cover;
-	/* padding-bottom: 4rem; */
-}
+} */
 
 /* .movie-info::after {
 	content: '';
