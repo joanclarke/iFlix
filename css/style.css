@@ -25,6 +25,11 @@ p {
 	margin: 0.5rem 0;
 }
 
+li {
+	display: inline;
+	list-style-type: none;
+}
+
 hr {
 	height: 1px;
 	background-color: #ccc;
@@ -390,6 +395,27 @@ figure .image img {
 
 hr.thick-line {
 	height: 0.5rem;
+}
+
+/* .movie-info {
+	margin-bottom: 5rem;
+} */
+
+.movie-info-content ul {
+	/* height: 20rem; */
+}
+
+i.icon-style {
+	color: rgba(75, 71, 71, 0.6);
+	font-size: 15rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.movie-info-content ul li span {
+	color: #ffffff;
+	font-size: 2rem;
+	margin-left: -8rem;
 }
 
 /* .movie-info {
