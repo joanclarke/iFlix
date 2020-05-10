@@ -407,14 +407,20 @@ hr.thick-line {
 	padding: 3rem 0;
 }
 
+.movie-info-content ul li {
+	margin: 0.5rem;
+}
+
 i.icon-style {
-	color: rgba(75, 71, 71, 0.6);
-	font-size: 16rem;
+	/* color: rgba(75, 71, 71, 0.6); */
+	color: rgba(114, 108, 108, 0.7);
+	/* font-size: 14rem; */
+	font-size: 13rem;
 	/* background: #000000; */
 	/* margin-top: 3rem;
 	margin-bottom: 3rem; */
 	position: relative;
-	z-index: 4;
+	z-index: 3;
 }
 
 .movie-info-content ul li div {
@@ -425,11 +431,15 @@ i.icon-style {
 .movie-info-content ul li div img {
 	/* margin-top: 3rem; */
 	margin-top: 2rem;
+	margin-bottom: 3rem;
 	width: 10rem;
-	height: 12rem;
+	/* height: 12rem; */
+	height: 11rem;
 	margin-left: -10rem;
 	position: relative;
 	z-index: 2;
+	border-radius: 5%;
+	border: solid 20px #5c21a5;
 }
 
 .movie-info-content ul li div span {
