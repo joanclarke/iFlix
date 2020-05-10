@@ -402,20 +402,53 @@ hr.thick-line {
 } */
 
 .movie-info-content ul {
-	/* height: 20rem; */
+	/* height: 12rem; */
+	/* margin: 5rem; */
+	padding: 3rem 0;
 }
 
 i.icon-style {
 	color: rgba(75, 71, 71, 0.6);
-	font-size: 15rem;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+	font-size: 16rem;
+	/* background: #000000; */
+	/* margin-top: 3rem;
+	margin-bottom: 3rem; */
+	position: relative;
+	z-index: 4;
 }
 
-.movie-info-content ul li span {
+.movie-info-content ul li div {
+	display: inline;
+	margin-left: -13rem;
+}
+
+.movie-info-content ul li div img {
+	/* margin-top: 3rem; */
+	margin-top: 2rem;
+	width: 10rem;
+	height: 12rem;
+	margin-left: -10rem;
+	position: relative;
+	z-index: 2;
+}
+
+.movie-info-content ul li div span {
 	color: #ffffff;
 	font-size: 2rem;
-	margin-left: -8rem;
+	/* height: 120rem; */
+	margin-left: 10rem;
+
+	/* background-size: cover;
+	width: 15px;
+	height: 15px;
+	display: inline-block; */
+	/* position: relative;
+	z-index: 2; */
+}
+
+.movie-info-content ul li div span.icon-title {
+	position: relative;
+	z-index: 999;
 }
 
 /* .movie-info {
