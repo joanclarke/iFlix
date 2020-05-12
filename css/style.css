@@ -404,13 +404,15 @@ hr.thick-line {
 .movie-info-content ul {
 	/* height: 12rem; */
 	/* margin: 5rem; */
+	margin-left: 2rem;
 	padding: 3rem 0;
 }
 
 .movie-info-content ul li:hover {
 	margin: 0.5rem;
 	padding-bottom: 3rem;
-	border-bottom: solid 5px #5c21a5;
+	/* border-bottom: solid 5px #5c21a5; */
+	border: solid 5px #5c21a5;
 }
 
 i.icon-style {
