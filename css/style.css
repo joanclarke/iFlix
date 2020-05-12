@@ -47,6 +47,10 @@ li {
 	list-style-type: none;
 }
 
+/* img {
+	width: 100%;
+} */
+
 hr {
 	height: 1px;
 	background-color: #ccc;
@@ -426,6 +430,13 @@ hr.thick-line {
 	border-bottom: 3px solid #3d3d3d;
 }
 
+.info-tab-content .container {
+	max-width: 70%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 2rem;
+}
+
 .info-tabs .container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -466,7 +477,16 @@ hr.thick-line {
 	grid-gap: 2rem;
 	align-items: center;
 	justify-content: center;
+	/* padding: 3rem; */
 }
+
+/* #info-tab-1-content .info-tab-1-content-inner > div {
+
+} */
+/* 
+#info-tab-1-content .info-tab-1-content-inner img {
+	width: 80%;
+} */
 
 /* movie info  */
 
