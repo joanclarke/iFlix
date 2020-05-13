@@ -43,7 +43,7 @@ p {
 }
 
 li {
-	display: inline;
+	/* display: inline; */
 	list-style-type: none;
 }
 
@@ -480,6 +480,32 @@ hr.thick-line {
 	/* padding: 3rem; */
 }
 
+table {
+	width: 100%;
+	margin-top: 2rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table tbody tr td {
+	color: #999;
+	padding: 0.8rem 1.2rem;
+	text-align: center;
+}
+
+table tbody tr td:first-child {
+	text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+	background: #222;
+}
+
+ul.tab-2-info-list li i.las {
+	text-align: right;
+	margin-left: 25rem;
+}
+
 /* #info-tab-1-content .info-tab-1-content-inner > div {
 
 } */
@@ -495,6 +521,10 @@ hr.thick-line {
 	/* margin: 5rem; */
 	margin-left: 2rem;
 	padding: 3rem 0;
+}
+
+.movie-info-content ul li {
+	display: inline;
 }
 
 .movie-info-content ul li:hover {
