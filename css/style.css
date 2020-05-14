@@ -431,7 +431,7 @@ hr.thick-line {
 }
 
 .info-tab-content .container {
-	max-width: 70%;
+	/* max-width: 70%; */
 	margin: auto;
 	overflow: hidden;
 	padding: 0 2rem;
@@ -513,6 +513,15 @@ table tbody tr:nth-child(odd) {
 #info-tab-1-content .info-tab-1-content-inner img {
 	width: 80%;
 } */
+#info-tab-1-content,
+#info-tab-2-content {
+	max-width: 70% !important;
+	margin: auto;
+}
+#info-tab-3-content {
+	max-width: 96% !important;
+	margin: auto;
+}
 
 #info-tab-3-content .container {
 	display: grid;
@@ -521,19 +530,59 @@ table tbody tr:nth-child(odd) {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	/* background-color: #333; */
+	overflow: auto;
+	white-space: nowrap;
 }
 
 .numbers p {
 	font-size: 15rem;
 	font-weight: 700;
-	color: #999;
+	/* color: #999; */
+	color: rgba(153, 153, 153, 0.5);
+	border: solid 2px #503564;
+}
+
+.info-tab-3-content-inner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.info-tab-3-content-inner .numbers {
+	position: relative;
+	z-index: 1;
+}
+
+.info-tab-3-content-inner .tab-3-inner-tab {
+	position: relative;
+	z-index: 2;
+	margin-left: -4rem;
+	overflow: hidden;
+}
+
+.info-tab-3-content-inner .tab-3-inner-tab p {
+	font-size: 1.2rem;
+	font-weight: 100;
+	/* overflow: visible; */
+	white-space: normal;
+}
+
+/* .tab-3-inner-tab img {
+	border: solid 1px rgb(0, 0, 0);
+} */
+
+.tab-3-inner-tab img.celeb-2-img,
+.tab-3-inner-tab img.celeb-3-img {
+	padding-top: 1rem;
+	border: solid 1px rgb(0, 0, 0);
 }
 
 /* movie info  */
 
 .movie-info-content ul {
-	/* height: 12rem; */
-	/* margin: 5rem; */
 	margin-left: 2rem;
 	padding: 3rem 0;
 }
