@@ -501,10 +501,10 @@ table tbody tr:nth-child(odd) {
 	background: #222;
 }
 
-ul.tab-2-info-list li i.las {
+/* ul.tab-2-info-list li i.las {
 	text-align: right;
 	margin-left: 25rem;
-}
+} */
 
 /* #info-tab-1-content .info-tab-1-content-inner > div {
 
@@ -513,6 +513,21 @@ ul.tab-2-info-list li i.las {
 #info-tab-1-content .info-tab-1-content-inner img {
 	width: 80%;
 } */
+
+#info-tab-3-content .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.numbers p {
+	font-size: 15rem;
+	font-weight: 700;
+	color: #999;
+}
 
 /* movie info  */
 
