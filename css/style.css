@@ -514,14 +514,21 @@ table tbody tr:nth-child(odd) {
 	width: 80%;
 } */
 #info-tab-1-content,
-#info-tab-2-content {
+#info-tab-2-content,
+#info-tab-4-content {
 	max-width: 70% !important;
 	margin: auto;
 }
+
 #info-tab-3-content {
 	max-width: 96% !important;
 	margin: auto;
 }
+
+/* #info-tab-4-content {
+	max-width: 70% !important;
+	margin: auto;
+} */
 
 #info-tab-3-content .container {
 	display: grid;
@@ -535,6 +542,27 @@ table tbody tr:nth-child(odd) {
 	white-space: nowrap;
 }
 
+/* #info-tab-4-content .featured-movie {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 10rem;
+} */
+
+/* #info-tab-4-content .featured-movie .feature-movie-img {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: left; */
+/* align-items: left; */
+/* align-items: center;
+	text-align: center;
+	margin-top: 10rem;
+} */
+
 .numbers p {
 	font-size: 15rem;
 	font-weight: 700;
@@ -543,13 +571,34 @@ table tbody tr:nth-child(odd) {
 	border: solid 2px #503564;
 }
 
-.info-tab-3-content-inner {
+.info-tab-3-content-inner,
+#info-tab-4-content .featured-movie {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1rem;
 	align-items: center;
+	text-align: center;
 	justify-content: center;
 }
+
+/* #info-tab-4-content .featured-movie .feature-movie-img {
+	grid-gap: 0.2;
+} */
+
+/* .feature-movie-detail {
+	font-size: 4rem;
+	color: rgba(153, 153, 153, 0.5);
+	border: solid 2px red;
+} */
+/* #info-tab-4-content .featured-movie {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 10rem;
+} */
 
 .info-tab-3-content-inner .numbers {
 	position: relative;
@@ -579,6 +628,16 @@ table tbody tr:nth-child(odd) {
 	padding-top: 1rem;
 	border: solid 1px rgb(0, 0, 0);
 }
+
+.box-office-featured {
+	padding-top: 1rem;
+}
+
+.featured-movie {
+	overflow: hidden;
+}
+
+/* ----------------------------------------------------------------------------------- */
 
 /* movie info  */
 
