@@ -542,27 +542,6 @@ table tbody tr:nth-child(odd) {
 	white-space: nowrap;
 }
 
-/* #info-tab-4-content .featured-movie {
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin-top: 10rem;
-} */
-
-/* #info-tab-4-content .featured-movie .feature-movie-img {
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: left; */
-/* align-items: left; */
-/* align-items: center;
-	text-align: center;
-	margin-top: 10rem;
-} */
-
 .numbers p {
 	font-size: 15rem;
 	font-weight: 700;
@@ -580,25 +559,6 @@ table tbody tr:nth-child(odd) {
 	text-align: center;
 	justify-content: center;
 }
-
-/* #info-tab-4-content .featured-movie .feature-movie-img {
-	grid-gap: 0.2;
-} */
-
-/* .feature-movie-detail {
-	font-size: 4rem;
-	color: rgba(153, 153, 153, 0.5);
-	border: solid 2px red;
-} */
-/* #info-tab-4-content .featured-movie {
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin-top: 10rem;
-} */
 
 .info-tab-3-content-inner .numbers {
 	position: relative;
@@ -631,10 +591,17 @@ table tbody tr:nth-child(odd) {
 
 .box-office-featured {
 	padding-top: 1rem;
+	padding-right: 1rem;
+	/* background: #222; */
 }
 
 .featured-movie {
 	overflow: hidden;
+	/* background: rgba(153, 153, 153, 0.5); */
+}
+
+.featured-movie a:nth-child(2) {
+	display: block;
 }
 
 /* ----------------------------------------------------------------------------------- */
