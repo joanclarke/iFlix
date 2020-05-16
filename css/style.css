@@ -625,14 +625,16 @@ table tbody tr:nth-child(odd) {
 	top: 50%;
 	width: auto;
 	padding: 16px;
-	margin-top: -22px;
+	/* margin-top: -22px; */
+	margin-top: 620px;
+	margin-left: -17%;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
-	background-color: red;
+	background-color: #8c269c;
 }
 
 /* Position the "next button" to the right */
@@ -716,6 +718,14 @@ MEDIA QUERIES
 ========================= */
 
 /* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 768px) {
+	.prev,
+	.next,
+	.text {
+		margin-top: 820px;
+	}
+
 @media only screen and (max-width: 300px) {
 	.prev,
 	.next,
