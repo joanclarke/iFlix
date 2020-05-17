@@ -207,9 +207,47 @@ const searchMovieTemplate = (movieDetail) => {
 	`;
 };
 
+// info-tab-content
+
+const infoTabItems = document.querySelectorAll('.info-tab-item');
+const tabContentItems = document.querySelectorAll('.info-tab-content-item');
+
+// Select tab content item
+function selectItem(e) {
+	// Remove all show and border classes
+	removeBorder();
+	removeShow();
+	// Add border to current tab item
+	this.classList.add('tab-border');
+	// Grab content item from DOM
+	const infoTabContentItem = document.querySelector(`#${this.id}-content`);
+	console.log(`${this.id}`);
+	// Add show class
+	infoTabContentItem.classList.add('show');
+}
+
+// Remove bottom borders from all tab items
+function removeBorder() {
+	infoTabItems.forEach((item) => {
+		item.classList.remove('tab-border');
+	});
+}
+
+// Remove show class from all content items
+function removeShow() {
+	tabContentItems.forEach((item) => {
+		item.classList.remove('show');
+	});
+}
+
+// Listen for tab item click
+infoTabItems.forEach((item) => {
+	item.addEventListener('click', selectItem);
+});
+
 // slideshow
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -221,9 +259,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName('mySlides');
-	var dots = document.getElementsByClassName('dot');
+	let i;
+	let slides = document.getElementsByClassName('mySlides');
+	let dots = document.getElementsByClassName('dot');
 	if (n > slides.length) {
 		slideIndex = 1;
 	}
