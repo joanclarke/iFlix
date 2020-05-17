@@ -590,6 +590,7 @@ table tbody tr:nth-child(odd) {
 }
 
 .box-office-featured {
+	position: relative;
 	padding-top: 1rem;
 	padding-right: 1rem;
 	/* background: #222; */
@@ -625,9 +626,11 @@ table tbody tr:nth-child(odd) {
 	top: 50%;
 	width: auto;
 	padding: 16px;
-	/* margin-top: -22px; */
-	margin-top: 620px;
-	margin-left: -17%;
+	margin-top: -22px;
+	margin-left: -100px;
+	margin-right: -100px;
+	/* margin-top: 620px;
+	margin-left: -17%; */
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -647,26 +650,6 @@ table tbody tr:nth-child(odd) {
 .prev:hover,
 .next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-	color: #f2f2f2;
-	font-size: 15px;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
-	text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -719,17 +702,20 @@ MEDIA QUERIES
 
 /* On smaller screens, decrease text size */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
 	.prev,
-	.next,
-	.text {
-		margin-top: 820px;
+	.next {
+		/* margin-top: 820px; */
+		margin-left: -50px;
+		margin-right: -50px;
+		padding: 10px;
+		font-size: 14px;
 	}
+}
 
 @media only screen and (max-width: 300px) {
 	.prev,
-	.next,
-	.text {
+	.next {
 		font-size: 11px;
 	}
 }
