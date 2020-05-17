@@ -38,6 +38,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #fff;
+}
+
 p {
 	margin: 0.5rem 0;
 }
@@ -88,7 +92,8 @@ hr {
 	background: url('../img/15bzC.jpg') no-repeat center center/cover;
 }
 
-.showcase::after {
+.showcase::after,
+.celebrity-moves-1-content::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -355,10 +360,6 @@ figure .image img {
 	width: 128px;
 }
 
-/* .notification {
-	margin-top: 20px !important;
-} */
-
 .title .icon {
 	margin-left: 15px;
 }
@@ -417,10 +418,6 @@ figure .image img {
 hr.thick-line {
 	height: 0.5rem;
 }
-
-/* .movie-info {
-	margin-bottom: 5rem;
-} */
 
 /* info-tabs */
 
@@ -514,18 +511,6 @@ table tbody tr:nth-child(odd) {
 	background: #222;
 }
 
-/* ul.tab-2-info-list li i.las {
-	text-align: right;
-	margin-left: 25rem;
-} */
-
-/* #info-tab-1-content .info-tab-1-content-inner > div {
-
-} */
-/* 
-#info-tab-1-content .info-tab-1-content-inner img {
-	width: 80%;
-} */
 #info-tab-1-content,
 #info-tab-2-content,
 #info-tab-4-content {
@@ -602,6 +587,14 @@ table tbody tr:nth-child(odd) {
 	overflow: hidden;
 }
 
+.featured-movie > div a:nth-child(2) {
+	color: rgb(219, 219, 219);
+}
+
+.featured-movie > div a:nth-child(2):hover {
+	color: #fff;
+}
+
 .featured-movie a:nth-child(2) {
 	display: block;
 }
@@ -611,10 +604,6 @@ table tbody tr:nth-child(odd) {
 }
 
 /* slideshow */
-
-/* .mySlides {
-	display: none;
-} */
 
 /* Next & previous buttons */
 .prev,
@@ -695,29 +684,30 @@ table tbody tr:nth-child(odd) {
 	}
 }
 
-/* 
-=========================
-MEDIA QUERIES
-========================= */
-
-/* On smaller screens, decrease text size */
-
-@media only screen and (max-width: 600px) {
-	.prev,
-	.next {
-		/* margin-top: 820px; */
-		margin-left: -50px;
-		margin-right: -50px;
-		padding: 10px;
-		font-size: 14px;
-	}
+/* Celebrity moves */
+.titles p.title {
+	padding: 2rem 0;
+	color: var(--primary-color);
+	/* font-weight: 900; */
 }
 
-@media only screen and (max-width: 300px) {
-	.prev,
-	.next {
-		font-size: 11px;
-	}
+#celebrity-moves {
+	margin-top: -10px;
+}
+
+.celebs {
+	/* position: relative; */
+	height: 50vh;
+	background: url('../img/celebs.png') no-repeat center top/cover;
+}
+
+.celebrity-moves-1-content {
+	position: relative;
+}
+
+.celebrity-moves-1-content::after {
+	background: rgba(0, 0, 0, 0.1);
+	box-shadow: inset 50px 0px 120px #000000, inset -50px -80px 120px #000000;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -877,4 +867,35 @@ i.icon-style {
 	font-size: 1rem;
 	padding: 0.8rem 1.3rem;
 	text-transform: uppercase;
+}
+
+/* 
+=========================
+MEDIA QUERIES
+========================= */
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 768px) {
+	.celebs {
+		height: 30vh;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.prev,
+	.next {
+		/* margin-top: 820px; */
+		margin-left: -50px;
+		margin-right: -50px;
+		padding: 10px;
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.prev,
+	.next {
+		font-size: 11px;
+	}
 }
