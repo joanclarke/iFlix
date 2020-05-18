@@ -93,7 +93,7 @@ hr {
 }
 
 .showcase::after,
-.celebrity-moves-1-content::after {
+.celebrity-moves-content::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -701,15 +701,42 @@ table tbody tr:nth-child(odd) {
 	background: url('../img/celebs.png') no-repeat center top/cover;
 }
 
-.celebrity-moves-1-content {
+.celebrity-moves-content {
 	position: relative;
+	padding: 4rem;
 }
 
-.celebrity-moves-1-content::after {
+.celebrity-moves-content::after {
 	background: rgba(0, 0, 0, 0.1);
 	box-shadow: inset 50px 0px 120px #000000, inset -50px -80px 120px #000000;
 }
 
+.celeb-circle-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.celeb-circle-container img {
+	width: 80%;
+	height: 12rem;
+	border-radius: 50%;
+	/* position: absolute;
+	top: 110%;
+	left: 12%;
+	transform: translate(-50%, -50%); */
+}
+
+/* display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 2rem;
+align-items: center;
+justify-content: center;
+text-align: center;
+overflow: auto;
+white-space: nowrap; */
 /* ----------------------------------------------------------------------------------- */
 
 /* movie info  */
