@@ -28,9 +28,11 @@
 
 body {
 	font-family: 'Ariel', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	/* background: #000; */
 	color: #999;
+	/* font-weight: 300; */
 }
 
 a {
@@ -695,12 +697,6 @@ table tbody tr:nth-child(odd) {
 	margin-top: -10px;
 }
 
-.celebs {
-	/* position: relative; */
-	height: 50vh;
-	background: url('../img/celebs.png') no-repeat center top/cover;
-}
-
 .celebrity-moves-content {
 	position: relative;
 	padding: 4rem;
@@ -708,19 +704,40 @@ table tbody tr:nth-child(odd) {
 
 .celebrity-moves-content::after {
 	background: rgba(0, 0, 0, 0.1);
-	box-shadow: inset 50px 0px 120px #000000, inset -50px -80px 120px #000000;
+	box-shadow: inset 50px 0px 120px #000000, inset -50px -80px 120px #000000 !important;
 }
 
-.celeb-circle-container {
+.celebs {
+	/* position: relative; */
+	height: 50vh;
+	background: url('../img/celebs.png') no-repeat center top/cover;
+}
+
+.subtitles p:first-child {
+	color: #fff;
+}
+
+.celebrity-events {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 1rem;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	/* font-family: 'Roboto', sans-serif; */
+	overflow: auto;
+	white-space: nowrap;
 }
 
-.celeb-circle-container img {
-	width: 80%;
+.celebrity-events div {
+	/* padding: 1rem; */
+}
+
+.celebrity-events div img {
+	width: 100%;
 	height: 12rem;
 	border-radius: 50%;
 	/* position: absolute;
@@ -728,6 +745,26 @@ table tbody tr:nth-child(odd) {
 	left: 12%;
 	transform: translate(-50%, -50%); */
 }
+/* 
+
+<div class="image-cropper">
+  <img src="/avatar.jpg" alt="avatar" class="profile-pic">
+</div>
+
+.image-cropper {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.profile-pic {
+display: inline;
+margin: 0 auto;
+margin-left: -25%; //centers the image
+height: 100%;
+width: auto;
+} */
 
 /* display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -849,6 +886,12 @@ i.icon-style {
 .text-md {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+}
+
+.text-sm-thin {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	font-weight: 200;
 }
 
 .text-center {
