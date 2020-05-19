@@ -64,6 +64,11 @@ hr {
 	margin: 0;
 }
 
+.container2 {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
 /* img {
 	width: 100%;
 } */
@@ -687,9 +692,11 @@ table tbody tr:nth-child(odd) {
 }
 
 /* Celebrity moves */
+
 .titles p.title {
 	padding: 2rem 0;
-	color: var(--primary-color);
+	/* color: var(--primary-color); */
+	color: #fff;
 	/* font-weight: 900; */
 }
 
@@ -699,12 +706,14 @@ table tbody tr:nth-child(odd) {
 
 .celebrity-moves-content {
 	position: relative;
-	padding: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .celebrity-moves-content::after {
 	background: rgba(0, 0, 0, 0.1);
-	box-shadow: inset 50px 0px 120px #000000, inset -50px -80px 120px #000000 !important;
+	/* box-shadow: inset 60px 1000px 120px #000000, inset -50px -80px -50px #000000; */
+	box-shadow: inset 80px 50px 250px #000000, inset -80px -150px 250px #000000;
 }
 
 .celebs {
@@ -717,12 +726,26 @@ table tbody tr:nth-child(odd) {
 	color: #fff;
 }
 
+.subtitles p:nth-child(2) {
+	/* color: var(--primary-color); */
+	color: rgb(182, 180, 180);
+	/* font-weight: 500; */
+	margin-top: -1rem;
+	padding-bottom: 1rem;
+}
+
+i.fa-grip-lines-vertical {
+	font-size: 2rem;
+	color: var(--primary-color);
+}
+
 .celebrity-events {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 1rem;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 2rem;
 	text-align: center;
 	color: #fff;
 	font-weight: 500;
@@ -740,11 +763,35 @@ table tbody tr:nth-child(odd) {
 	width: 100%;
 	height: 12rem;
 	border-radius: 50%;
-	/* position: absolute;
-	top: 110%;
-	left: 12%;
-	transform: translate(-50%, -50%); */
 }
+
+.celebrity-news {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	align-items: left;
+	justify-content: left;
+	padding-bottom: 2rem;
+}
+
+.celebrity-news a {
+	display: inline-flex;
+}
+
+.celebrity-news a img {
+	width: 6rem;
+	height: auto;
+}
+
+.celebrity-news a div {
+	padding-left: 1rem;
+	word-wrap: normal;
+}
+
+.celebrity-news a div p:nth-child(2) {
+	font-size: 0.8rem;
+}
+
 /* 
 
 <div class="image-cropper">
