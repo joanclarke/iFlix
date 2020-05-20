@@ -188,8 +188,8 @@ hr {
 .flix-fight-content p {
 	/* text-transform: uppercase; */
 	color: #fff;
-	font-weight: 500;
-	font-size: 1.8rem;
+	/* font-weight: 300; */
+	/* font-size: 1.8rem; */
 	line-height: 1.25;
 	margin: 0 0 2rem;
 }
@@ -694,10 +694,21 @@ table tbody tr:nth-child(odd) {
 /* Celebrity moves */
 
 .titles p.title {
-	padding: 2rem 0;
+	/* padding: 2rem 0; */
+	padding-top: 2rem;
 	/* color: var(--primary-color); */
 	color: #fff;
 	/* font-weight: 900; */
+	/* text-decoration: underline;
+	text-decoration-style: double; */
+}
+
+.fa-grip-lines {
+	transform: scale(15.5, 1);
+	font-size: 1.8rem;
+	/* margin-top: -100rem; */
+	/* padding-left: 0.9rem; */
+	color: var(--primary-color);
 }
 
 #celebrity-moves {
@@ -992,10 +1003,53 @@ MEDIA QUERIES
 ========================= */
 
 /* On smaller screens, decrease text size */
+@media only screen and (max-width: 900px) {
+	/* .celebrity-news a {
+		display: inline-flex;
+	} */
+
+	.celebrity-news a div p:first-child {
+		font-size: 0.8rem;
+	}
+
+	.celebrity-news a div p:nth-child(2) {
+		font-size: 0.6rem;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	.celebs {
 		height: 30vh;
+	}
+
+	.celebrity-news a div p:first-child {
+		font-size: 0.6rem;
+	}
+
+	.celebrity-news a div p:nth-child(2) {
+		font-size: 0.4rem;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.celebrity-news {
+		/* display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1rem; */
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 2rem;
+	}
+
+	.celebrity-news a {
+		display: inline-block;
+	}
+
+	.celebrity-news a img {
+	}
+
+	.celebrity-news a div {
+		padding-left: 0;
 	}
 }
 
@@ -1008,6 +1062,10 @@ MEDIA QUERIES
 		padding: 10px;
 		font-size: 14px;
 	}
+
+	/* .celebrity-news a {
+		display: inline-block;
+	} */
 }
 
 @media only screen and (max-width: 300px) {
