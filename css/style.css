@@ -545,6 +545,9 @@ table tbody tr:nth-child(odd) {
 	font-size: 15rem;
 	font-weight: 700;
 	color: rgba(153, 153, 153, 0.5);
+}
+
+.info-tab-3-content-inner .numbers p {
 	border: solid 2px #503564;
 }
 
@@ -803,6 +806,50 @@ i.fa-grip-lines-vertical {
 	font-size: 0.8rem;
 }
 
+.top-rated-movies {
+	position: absolute;
+}
+
+.top-rated-movies-content div div {
+	position: relative;
+	display: inline-block;
+}
+
+.top-rated-movies-content div div.numbers {
+	position: relative;
+	z-index: 1;
+}
+
+.top-rated-movies-content div div.numbers p {
+	font-size: 17rem;
+}
+/* .top-rated-movies-content .top-movie div {
+	display: block;
+} */
+
+.top-movie {
+	position: relative;
+	z-index: 2;
+	/* margin-top: 2rem; */
+	margin-left: -4rem;
+	/* overflow: hidden; */
+}
+
+.top-movie-image {
+	width: 43%;
+	height: auto;
+}
+
+.top-movie-detail {
+	/* position: relative;
+	z-index: 3; */
+	margin-top: -7.5rem;
+}
+
+.top-movie-detail p {
+	font-size: 0.8rem;
+}
+
 /* 
 
 <div class="image-cropper">
@@ -1032,20 +1079,8 @@ MEDIA QUERIES
 }
 
 @media only screen and (max-width: 680px) {
-	.celebrity-news {
-		/* display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 1rem; */
-		align-items: center;
-		justify-content: center;
-		padding-bottom: 2rem;
-	}
-
 	.celebrity-news a {
 		display: inline-block;
-	}
-
-	.celebrity-news a img {
 	}
 
 	.celebrity-news a div {
