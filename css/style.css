@@ -812,7 +812,7 @@ i.fa-grip-lines-vertical {
 }
 
 .top-rated-movies-wrapper {
-	/* grid-template-columns: repeat(6, 1fr); */
+	grid-template-columns: repeat(10, 1fr);
 	align-items: left;
 	justify-content: left;
 }
@@ -853,7 +853,8 @@ a.top-rated-movies-content {
 
 .top-movie-image img {
 	width: 100%;
-	height: auto;
+	/* height: auto; */
+	height: 12.5rem;
 	margin-left: -7rem;
 }
 
@@ -876,6 +877,10 @@ a.top-rated-movies-content {
 
 .top-movie-detail p i.fa-star {
 	font-size: 2rem;
+}
+
+span.hide-letters {
+	color: transparent;
 }
 
 /* 
