@@ -275,10 +275,21 @@ hr {
 	padding-bottom: 2rem;
 }
 
+#top-search-content .column .close {
+	text-align: right;
+	cursor: pointer;
+	margin-bottom: -1.5rem;
+}
+
 /* .top-search-content #top-autocomplete input[type="text"] {
 	padding: 20px 10px;
 	line-height: 28px;
 } */
+
+#top-autocomplete label[for=search] {
+	display: block;
+	margin-bottom: 1rem;
+}
 
 #top-autocomplete .input {
 	/* background-color: white; */
@@ -286,7 +297,7 @@ hr {
 	border-color: none;
 	outline: none;
 	border: none;
-	/* border-radius: 0; */
+	border-radius: 0.1rem;
 	/* color: #e22323; */
 	height: 5rem;
 	font-size: 2rem;
