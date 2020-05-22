@@ -281,12 +281,21 @@ hr {
 	margin-bottom: -1.5rem;
 }
 
+#top-search-content .column .close:hover {
+	color: #ccc;
+}
+
 /* .top-search-content #top-autocomplete input[type="text"] {
 	padding: 20px 10px;
 	line-height: 28px;
 } */
 
-#top-autocomplete label[for=search] {
+/* #top-autocomplete label[for=search] {
+	display: block;
+	margin-bottom: 1rem;
+} */
+
+label[for=search] {
 	display: block;
 	margin-bottom: 1rem;
 }

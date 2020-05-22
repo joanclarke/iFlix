@@ -215,6 +215,10 @@ function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
 }
 
+function closeSearch() {
+	document.getElementById('top-search-content').style.display = 'none';
+}
+
 // info-tab-content
 
 const infoTabItems = document.querySelectorAll('.info-tab-item');
