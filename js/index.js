@@ -216,7 +216,16 @@ function showSearch() {
 }
 
 function closeSearch() {
-	document.getElementById('top-search-content').style.display = 'none';
+	let close = document.getElementById('top-search-content');
+	close.style.display = 'none';
+	resetInput();
+}
+
+function resetInput() {
+	let resetInput = document.getElementById('reset-input');
+	if (resetInput) {
+		resetInput.value = '';
+	}
 }
 
 // info-tab-content
