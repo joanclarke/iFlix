@@ -27,7 +27,7 @@
 }
 
 body {
-	font-family: 'Ariel', sans-serif;
+	/* font-family: 'Ariel', sans-serif; */
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	/* background: #000; */
@@ -36,7 +36,7 @@ body {
 }
 
 a {
-	color: #fff;
+	color: rgb(182, 182, 182);
 	text-decoration: none;
 }
 
@@ -162,9 +162,10 @@ hr {
 
 .showcase-content h1,
 .flix-fight-content h1 {
-	font-weight: 700;
+	font-weight: 600;
 	/* font-family: 'Caveat', cursive; */
-	font-size: 4rem;
+	font-family: 'Ariel', sans-serif;
+	font-size: 4.1rem;
 	line-height: 1.1;
 	margin: 0 0 1rem;
 	width: 100%;
@@ -179,17 +180,23 @@ hr {
 	z-index: 2;
 }
 
-.showcase-content .fa-film {
+.showcase-content a {
+	font-size: 1.9rem;
+	font-weight: 400;
+}
+
+/* .showcase-content .fa-film {
 	font-size: 6rem;
 	color: #daa520;
-}
+} */
 
 .showcase-content p,
 .flix-fight-content p {
 	/* text-transform: uppercase; */
 	color: #fff;
-	/* font-weight: 300; */
-	/* font-size: 1.8rem; */
+	font-weight: 400;
+	font-size: 1.7rem;
+	letter-spacing: 0.05rem;
 	line-height: 1.25;
 	margin: 0 0 2rem;
 }
@@ -198,21 +205,6 @@ hr {
 	position: relative;
 	z-index: 2;
 }
-
-/* .iflix-fight-content {
-	background: var(--dark-color);
-	padding: 3rem; */
-/* border-bottom: 3px solid #3d3d3d; */
-/* } */
-
-/* .iflix-fight-content .container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1rem;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-} */
 
 /* .dropdown-item {
 	display: flex;
@@ -270,13 +262,14 @@ hr {
 } */
 
 .showcase-content a {
-	color: #fff;
-	text-decoration: none;
+	/* color: #fff; */
+	/* text-decoration: none; */
+	letter-spacing: 0.05rem;
 }
 
 /* Styles for top search section */
 
-.top-search-content {
+#top-search-content {
 	background: #000000;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -295,7 +288,8 @@ hr {
 	border: none;
 	/* border-radius: 0; */
 	/* color: #e22323; */
-	/* height: 2rem; */
+	height: 5rem;
+	font-size: 2rem;
 }
 
 ul.detail {
@@ -476,6 +470,7 @@ hr.thick-line {
 }
 
 /* hide content initially */
+#top-search-content,
 #info-tab-1-content,
 #info-tab-2-content,
 #info-tab-3-content,
@@ -807,8 +802,14 @@ i.fa-grip-lines-vertical {
 	font-size: 0.8rem;
 }
 
-.top-rated-movies {
-	position: absolute;
+#top-rated-movies {
+	/* position: absolute; */
+	padding-top: 2rem;
+	background: var(--dark-color);
+}
+
+#top-rated-movies div.container2 .subtitles {
+	margin-top: -1rem;
 }
 
 .top-rated-movies-wrapper {
@@ -1067,7 +1068,7 @@ i.icon-style {
 
 .btn-xl {
 	font-size: 2rem;
-	padding: 1.5rem 2.1rem;
+	padding: 1rem 2.1rem;
 	text-transform: uppercase;
 }
 

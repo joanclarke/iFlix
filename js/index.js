@@ -207,6 +207,14 @@ const searchMovieTemplate = (movieDetail) => {
 	`;
 };
 
+// const showSearch = (item) => {
+// 	this.classList.add('show');
+// };
+
+function showSearch() {
+	document.getElementById('top-search-content').style.display = 'block';
+}
+
 // info-tab-content
 
 const infoTabItems = document.querySelectorAll('.info-tab-item');
