@@ -213,18 +213,28 @@ const searchMovieTemplate = (movieDetail) => {
 
 function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
+	// document.getElementById('top-summary').style.display = 'block';
 }
 
 function closeSearch() {
-	let close = document.getElementById('top-search-content');
-	close.style.display = 'none';
-	resetInput();
+	document.getElementById('top-search-content').style.display = 'none';
+	// document.getElementById('top-summary').style.display = 'none';
+	resetInputFunc();
+	clearSummary();
 }
 
-function resetInput() {
+function clearSummary() {
+	document.getElementById('top-summary').innerHTML = '';
+}
+
+function resetInputFunc() {
 	let resetInput = document.getElementById('reset-input');
+	// let resetSummary = document.getElementById('top-summary').style.display = 'none';
+	let emptyInput = (resetInput.value = '');
 	if (resetInput) {
-		resetInput.value = '';
+		emptyInput;
+		// resetSummary.style.display = 'none';
+		// resetSummary.style.display = 'block';
 	}
 }
 
