@@ -207,39 +207,33 @@ const searchMovieTemplate = (movieDetail) => {
 	`;
 };
 
-// const showSearch = (item) => {
-// 	this.classList.add('show');
-// };
-
+// Show input field
 function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
-	// document.getElementById('top-summary').style.display = 'block';
 }
 
+// Hide input field
 function closeSearch() {
 	document.getElementById('top-search-content').style.display = 'none';
-	// document.getElementById('top-summary').style.display = 'none';
 	resetInputFunc();
 	clearSummary();
 }
 
+// Empty out input field
+function resetInputFunc() {
+	let resetInput = document.getElementById('reset-input');
+	let emptyInput = (resetInput.value = '');
+	if (resetInput) {
+		emptyInput;
+	}
+}
+
+// Empty out div content without destroying it
 function clearSummary() {
 	document.getElementById('top-summary').innerHTML = '';
 }
 
-function resetInputFunc() {
-	let resetInput = document.getElementById('reset-input');
-	// let resetSummary = document.getElementById('top-summary').style.display = 'none';
-	let emptyInput = (resetInput.value = '');
-	if (resetInput) {
-		emptyInput;
-		// resetSummary.style.display = 'none';
-		// resetSummary.style.display = 'block';
-	}
-}
-
 // info-tab-content
-
 const infoTabItems = document.querySelectorAll('.info-tab-item');
 const tabContentItems = document.querySelectorAll('.info-tab-content-item');
 
