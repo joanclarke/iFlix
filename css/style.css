@@ -833,6 +833,21 @@ i.fa-grip-lines-vertical {
 	margin-top: -0.5rem;
 }
 
+.movie-premiere-wrapper {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.movie-premiere-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/* align-items: left; */
+	align-items: center;
+	text-align: center;
+	padding: 2rem;
+}
+
 #top-rated-movies {
 	/* position: absolute; */
 	padding-top: 2rem;
