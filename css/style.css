@@ -808,6 +808,11 @@ i.fa-grip-lines-vertical {
 	display: inline-flex;
 }
 
+.celebrity-news a:hover {
+	padding: 0.5rem;
+	background: rgba(39, 39, 39, 0.7);
+}
+
 .celebrity-news a img {
 	width: 6rem;
 	height: auto;
@@ -820,6 +825,12 @@ i.fa-grip-lines-vertical {
 
 .celebrity-news a div p:nth-child(2) {
 	font-size: 0.8rem;
+}
+
+/* MOVIE */
+
+#movie {
+	margin-top: -0.5rem;
 }
 
 #top-rated-movies {
