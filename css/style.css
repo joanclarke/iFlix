@@ -887,6 +887,25 @@ a#movie-bg-1 {
 		no-repeat center center/cover;
 }
 
+a#movie-bg-2 {
+	background: url('https://m.media-amazon.com/images/M/MV5BYzAyOGJkMzUtMmRjYS00NGJmLWExNGEtYzI2YjVmMmQzMzFiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg')
+		no-repeat center center/cover;
+}
+
+a#movie-bg-3 {
+	background: url('https://m.media-amazon.com/images/M/MV5BOTE3ZDcxODktMmMyNy00NmFjLThhMGQtZDgyNmQ4YmJmYjAwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg')
+		no-repeat center center/cover;
+}
+
+a#movie-bg-4 {
+	background: url('https://m.media-amazon.com/images/M/MV5BNzE5YzVjZmEtNGYwZi00YjljLWExMzYtZjlkYTk4NDc0MmI5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg')
+		no-repeat center center/cover;
+}
+a#movie-bg-5 {
+	background: url('https://m.media-amazon.com/images/M/MV5BYTA0YmFkMWYtMjMxYi00MzQ2LWEzNDUtYWZmZjRhNTgzNTEwXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_SX300.jpg')
+		no-repeat center center/cover;
+}
+
 /* NOTE */
 /* transition: .5s ease; */
 
