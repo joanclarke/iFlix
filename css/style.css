@@ -69,6 +69,11 @@ hr {
 	padding-left: 2rem;
 }
 
+/* .scroll-style {
+	max-height: 150px;
+	overflow-x: scroll;
+} */
+
 /* img {
 	width: 100%;
 } */
@@ -231,6 +236,11 @@ hr {
 		#8c269c,
 		#000000
 	); /* Standard syntax (must be last) */
+}
+
+.grad3 {
+	background-color: #a708f1; /* For browsers that do not support gradients */
+	background-image: linear-gradient(to bottom, #000000, #484a4d, #2a2b2c, #000000);
 }
 
 .showcase-content p strong {
@@ -833,20 +843,54 @@ i.fa-grip-lines-vertical {
 	margin-top: -0.5rem;
 }
 
-.movie-premiere-wrapper {
-	overflow: auto;
-	white-space: nowrap;
+#movie-premiere {
+	padding: 20px 0;
 }
 
 .movie-premiere-wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	/* align-items: left; */
 	align-items: center;
 	text-align: center;
-	padding: 2rem;
+	/* overflow: auto;
+	white-space: nowrap; */
 }
+
+a.movie-image-container {
+	position: relative;
+	/* padding: 0.3rem; */
+	width: 180px;
+	height: 300px;
+}
+
+a.movie-image-container .after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 70%;
+	width: 100%;
+	height: 100%;
+	display: none;
+	color: #fff;
+	/* margin: 0 auto; */
+}
+
+a.movie-image-container:hover .after {
+	display: block;
+	/* padding-top: 5px; */
+	background: rgba(0, 0, 0, .6);
+}
+
+a#movie-bg-1 {
+	background: url('https://m.media-amazon.com/images/M/MV5BNzc4YjM4ZTMtZDc3Ny00ODIxLWJkMzktMGIxOTBhZGY1YTYyXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg')
+		no-repeat center center/cover;
+}
+
+/* NOTE */
+/* transition: .5s ease; */
+
+/* background: linear-gradient(to bottom, transparent 0%, transparent 75%, rgba(0,0,0,0.25) 83.5%, rgba(0,0,0,0.5) 100%); */
 
 #top-rated-movies {
 	/* position: absolute; */
