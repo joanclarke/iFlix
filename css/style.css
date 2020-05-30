@@ -862,6 +862,8 @@ a.movie-image-container {
 	/* padding: 0.3rem; */
 	width: 180px;
 	height: 300px;
+	box-shadow: 50px 100px 200px rgba(0, 0, 0, 0.6) inset;
+	box-shadow: 5px 10px 8px #888888;
 }
 
 a.movie-image-container .after {
