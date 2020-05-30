@@ -241,6 +241,7 @@ hr {
 .grad3 {
 	background-color: #a708f1; /* For browsers that do not support gradients */
 	background-image: linear-gradient(to bottom, #000000, #484a4d, #2a2b2c, #000000);
+	background-image: linear-gradient(to bottom, #000000, #2a2b2c, #484a4d, #000000);
 }
 
 .showcase-content p strong {
@@ -844,7 +845,8 @@ i.fa-grip-lines-vertical {
 }
 
 #movie-premiere {
-	padding: 20px 0;
+	/* padding: 20px 0; */
+	padding: 40px 0 60px 0;
 }
 
 .movie-premiere-wrapper {
@@ -862,8 +864,8 @@ a.movie-image-container {
 	/* padding: 0.3rem; */
 	width: 180px;
 	height: 300px;
-	box-shadow: 50px 100px 200px rgba(0, 0, 0, 0.6) inset;
-	box-shadow: 5px 10px 8px #888888;
+	/* box-shadow: 5px 10px 8px #888888; */
+	box-shadow: 5px 10px 8px #131313;
 }
 
 a.movie-image-container .after {
@@ -876,6 +878,16 @@ a.movie-image-container .after {
 	display: none;
 	color: #fff;
 	/* margin: 0 auto; */
+}
+
+a.movie-image-container:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-moz-box-shadow: 0 0 3px 1px #fff;
+	-webkit-box-shadow: 0 0 3px 1px #fff;
+	box-shadow: 0 0 3px 1px #333;
+	transition: .5s ease;
+	/* transition: .5s ease-in-out; */
 }
 
 a.movie-image-container:hover .after {
