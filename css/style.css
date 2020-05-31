@@ -840,7 +840,7 @@ i.fa-grip-lines-vertical {
 
 /* MOVIE */
 
-#movie {
+#movie-section {
 	margin-top: -0.5rem;
 }
 
@@ -918,6 +918,11 @@ a#movie-bg-4 {
 a#movie-bg-5 {
 	background: url('https://m.media-amazon.com/images/M/MV5BYTA0YmFkMWYtMjMxYi00MzQ2LWEzNDUtYWZmZjRhNTgzNTEwXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_SX300.jpg')
 		no-repeat center center/cover;
+}
+
+.most-anticipated article figure.image img {
+	max-width: 200px;
+	height: 300px;
 }
 
 /* NOTE */
