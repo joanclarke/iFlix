@@ -246,8 +246,11 @@ hr {
 
 .grad4 {
 	background-color: #1c1c1d; /* For browsers that do not support gradients */
-	background-image: linear-gradient(to bottom, #2a2b2c, #1c1c1d);
-	/* background-image: linear-gradient(to bottom, #000000, #2a2b2c, #484a4d, #000000); */
+	background-image: linear-gradient(to bottom, #38393a, #1c1c1d);
+}
+
+.grad4:hover {
+	background-image: linear-gradient(to bottom, #3f4041, #2b2b2c);
 }
 
 .showcase-content p strong {
@@ -932,8 +935,16 @@ a#movie-bg-5 {
 }
 
 .movie-releases div {
-	background: #1c1c1d;
 	border-radius: 5px;
+}
+.movie-releases .most-anticipated,
+.movie-releases .trending-movies {
+	background: #1c1c1d;
+}
+
+.movie-releases .most-anticipated article.media {
+	background: #1c1c1d;
+	background-image: linear-gradient(to bottom, #1c1c1d, #2d2e30);
 }
 
 .movie-releases div .title-3 {
@@ -969,10 +980,55 @@ a#movie-bg-5 {
 	padding: 1.5rem 1.5rem 1.5rem 2.2rem;
 }
 
+.movie-releases div article.media {
+	border-top: none;
+}
 .most-anticipated article figure.image img {
 	max-width: 200px;
 	height: 300px;
 }
+
+/* .movie-releases .most-anticipated .media-content .content a span {
+	font-weight: bold;
+	font-size: 18px;
+} */
+/* 
+.movie-releases .most-anticipated .media-content .content a.btn.btn-lg.grad1 {
+	margin-right: -0.5rem !important;
+} */
+
+.movie-releases .most-anticipated .media-content .content a span {
+	cursor: pointer;
+	width: auto;
+	padding: 14px 16px 16px 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	user-select: none;
+	background: rgb(34, 34, 36);
+	margin-left: -0.5rem;
+}
+
+.movie-releases .most-anticipated .media-content .content a span:hover {
+	background: rgba(53, 53, 56, 0.5);
+}
+
+.trending div:nth-child(2) {
+	margin-top: 0.8rem;
+}
+
+.more-movies {
+	margin: 2rem;
+}
+/* #2d2e30, #1c1c1d */
+/* 
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+background-color:  */
 
 /* NOTE */
 /* transition: .5s ease; */
