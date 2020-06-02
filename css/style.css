@@ -847,7 +847,15 @@ i.fa-grip-lines-vertical {
 	font-size: 0.8rem;
 }
 
-/* MOVIE */
+/* MOVIE & TV */
+
+#premiere-container .subtitles {
+	padding-top: 2rem;
+}
+
+#premiere-container .subtitles p span {
+	color: var(--primary-color);
+}
 
 #movie-section {
 	margin-top: -0.5rem;
