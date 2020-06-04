@@ -1022,12 +1022,49 @@ a#movie-bg-5 {
 	background: rgba(53, 53, 56, 0.5);
 }
 
-.trending div:nth-child(2) {
+/* .trending div:nth-child(2) {
 	margin-top: 0.8rem;
-}
+} */
 
 .more-movies {
 	margin: 2rem;
+}
+
+.trending .columns {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding-top: 2rem;
+	padding-left: 1rem;
+}
+
+.trending-movies .card {
+	background-color: transparent;
+}
+
+.card-image figure.image {
+	height: 160px;
+	width: 118px;
+}
+
+.trending-movies .card .card-content {
+	padding: 0 0 0 0.2rem;
+	margin-top: -1rem;
+	margin-bottom: 1.3rem;
+}
+
+.trending-movies .card .card-content p {
+	color: #999;
+}
+
+.trending-movies .card .card-content p:hover {
+	color: #ffffff;
+}
+
+.trending .more-movies {
+	background: #1c1c1d;
+	margin: -2rem 0 1rem 0;
+	padding: 1.5rem;
 }
 /* #2d2e30, #1c1c1d */
 /* 
