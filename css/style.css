@@ -1049,12 +1049,16 @@ a#movie-bg-5 {
 
 .trending-movies .card .card-content {
 	padding: 0 0 0 0.2rem;
-	margin-top: -1rem;
-	margin-bottom: 1.3rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .trending-movies .card .card-content p {
 	color: #999;
+}
+
+.trending-movies .card .card-content p:first-child {
+	margin-bottom: 0;
 }
 
 .trending-movies .card .card-content p:hover {
@@ -1066,6 +1070,27 @@ a#movie-bg-5 {
 	margin: -2rem 0 1rem 0;
 	padding: 1.5rem;
 }
+
+.latest-news .card .card-content {
+	/* padding: 0 0 0 0.2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem; */
+	background: #1c1c1d;
+}
+
+.latest-news .card .card-content div {
+	/* margin-top: 1rem; */
+	margin-bottom: 1.5rem;
+}
+
+.latest-news .card .card-content div a {
+	margin-bottom: 0.5rem;
+}
+
+.latest-news .card .card-content div.more-movies a {
+	margin-left: -1.5rem;
+}
+
 /* #2d2e30, #1c1c1d */
 /* 
 font-weight: bold;
