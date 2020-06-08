@@ -991,7 +991,19 @@ a#movie-bg-5 {
 .movie-releases div article.media {
 	border-top: none;
 }
-.most-anticipated article figure.image img {
+
+.most-anticipated article figure.image {
+	background: none;
+	border: none;
+}
+
+.most-anticipated article figure.image a {
+	background: none;
+	border: none;
+	/* background-image: none; */
+}
+
+.most-anticipated article figure.image a img {
 	max-width: 200px;
 	height: 300px;
 }
@@ -1404,6 +1416,10 @@ MEDIA QUERIES
 @media only screen and (max-width: 768px) {
 	.celebs {
 		height: 30vh;
+	}
+
+	.movie-releases .most-anticipated article.media {
+		display: inherit;
 	}
 
 	.celebrity-news a div p:first-child {
