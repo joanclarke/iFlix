@@ -397,6 +397,10 @@ figure.image {
 	background-color: black;
 }
 
+figure.image:hover {
+	opacity: 0.9;
+}
+
 figure .image img {
 	width: 128px;
 }
@@ -735,19 +739,18 @@ table tbody tr:nth-child(odd) {
 	/* padding: 2rem 0; */
 	padding-top: 2rem;
 	/* color: var(--primary-color); */
-	color: #fff;
+	/* color: #fff; */
+	color: var(--primary-color);
 	/* font-weight: 900; */
 	/* text-decoration: underline;
 	text-decoration-style: double; */
 }
 
-.fa-grip-lines {
+/* .fa-grip-lines {
 	transform: scale(15.5, 1);
 	font-size: 1.8rem;
-	/* margin-top: -100rem; */
-	/* padding-left: 0.9rem; */
 	color: var(--primary-color);
-}
+} */
 
 #celebrity-moves {
 	margin-top: -10px;
@@ -850,7 +853,7 @@ i.fa-grip-lines-vertical {
 /* MOVIE & TV */
 
 #premiere-container .subtitles {
-	padding-top: 2rem;
+	padding-top: 0.7rem;
 }
 
 #premiere-container .subtitles p span {
@@ -1048,6 +1051,10 @@ a#movie-bg-5 {
 	margin-top: 0;
 	padding-top: 2rem;
 	padding-left: 1rem;
+}
+
+.card {
+	background-color: transparent;
 }
 
 .trending-movies .card {
@@ -1428,6 +1435,56 @@ MEDIA QUERIES
 
 	.celebrity-news a div p:nth-child(2) {
 		font-size: 0.4rem;
+	}
+
+	.most-anticipated div p,
+	.trending div p,
+	.latest-news div p {
+		margin: 0;
+	}
+
+	.most-anticipated article figure.image a img {
+		max-width: 150px;
+		height: 200px;
+	}
+
+	.card-image figure.image {
+		height: 100px;
+		width: 75px;
+	}
+	.more-movies a.btn-lg {
+		padding: 0.5rem;
+		font-size: 0.6rem;
+	}
+
+	.trending .columns {
+		margin-bottom: 1.1rem;
+	}
+
+	.trending-movies .card .card-content {
+		margin-top: 0.5rem;
+		margin-bottom: 0.8rem;
+	}
+
+	/* .latest-news .card {
+		margin-top: -1rem;
+	} */
+
+	.latest-news .card .card-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		/* margin-top: -1rem; */
+		padding: 0.5rem 0 0 0.5rem;
+	}
+
+	.latest-news .card .card-content div {
+		margin-bottom: 0;
+	}
+
+	.latest-news .card .card-content div a.btn {
+		padding: 0.2rem 0.3rem;
+		/* font-size: 0.5rem; */
 	}
 }
 
