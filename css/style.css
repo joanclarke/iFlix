@@ -752,7 +752,8 @@ table tbody tr:nth-child(odd) {
 	color: var(--primary-color);
 } */
 
-#celebrity-moves {
+#celebrity-moves,
+#awards-events {
 	margin-top: -10px;
 }
 
@@ -791,6 +792,7 @@ i.fa-grip-lines-vertical {
 	color: var(--primary-color);
 }
 
+.awards-n-events,
 .celebrity-events,
 .top-rated-movies-wrapper {
 	display: grid;
@@ -806,6 +808,45 @@ i.fa-grip-lines-vertical {
 	/* font-family: 'Roboto', sans-serif; */
 	overflow: auto;
 	white-space: nowrap;
+}
+
+.awards-n-events {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+/* .awards-n-events .awards a img:hover {
+
+} */
+
+.awards-n-events .award-3 a img {
+	max-width: 20rem;
+	height: auto;
+}
+
+.awards-n-events .award-3 a p {
+	font-size: 1.75rem;
+}
+
+.awards-n-events .award-2 a img,
+.awards-n-events .award-4 a img {
+	max-width: 14rem;
+	height: 14rem;
+}
+
+.awards-n-events .award-2 a p,
+.awards-n-events .award-4 a p {
+	font-size: 1.25rem;
+}
+
+.awards-n-events .award-1 a img,
+.awards-n-events .award-5 a img {
+	max-width: 12rem;
+	height: auto;
+}
+
+.awards-n-events .award-1 a p,
+.awards-n-events .award-5 a p {
+	font-size: 1rem;
 }
 
 .celebrity-events div {
