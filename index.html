@@ -24,25 +24,18 @@
     <header class="showcase">
       <div class="showcase-top">
         <img src="../img/iFlix.png" alt="logo" />
-        <!-- <img src="img/iFlixlofo.png" alt="logo" /> -->
         <a href="#" class="sign-in btn btn-rounded grad1">Sign In</a>
       </div>
       <div class="showcase-content">
         <h1>The best place to compare movies and TV Shows</h1>
-        <!-- <h1>All you need to know </h1> -->
-        <!-- <h1>Everything you need to know </h1> -->
-        <!-- <h1>Get your fave movie info</h1> -->
         <p>Search movies. Compare stats </p>
         <p id="small-txt">plus get the latest info on your favorite celebrities</p>
-        <!-- <p>about your favourite movies, TV Shows and celebrities - right here</p> -->
-        <!-- <p>Right here. Right now</p> -->
-        <!-- <a>Search Catalogue</a> -->
-        <a href="#top-autocomplete" class="btn btn-xl grad1" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i></a>
+        <a id="search-top" href="#top-autocomplete" class="btn btn-xl grad1 searching" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i></a>
       </div>
     </header>
 
     <!-- Search Content -->
-    <section id="top-search-content" >
+   <section id="top-search-content" >
       <div class="container">
         <div class="column">
           <div class="close" onclick="closeSearch()" > <i class="fas fa-times-circle fa-2x"></i></div>
@@ -286,30 +279,18 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        
-      </div>
-    </section>
 
     <!-- Flick Fight Content -->
-    <section class="iflix-movie-fight has-background-black">
+    <section class="iflix-movie-fight has-background-black searching">
       <hr class="thick-line has-background-black-ter">
       <div class="container2">
         <div class="titles">
           <p class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile">Flix Fight</p>
-          <!-- <i class="fas fa-grip-lines"></i> -->
         </div>
         <div class="flix-fight-content column is-half">
           <p class="text-md">Search for a movie on both sides. Compare awards, ratings, box office and much more. See which one wins on each score!</p>
         </div>
         <div class="column is-one-third notification tutorial fight-icon">
-          <!-- <h1 class="title is-1 has-text-white">iFlix Movie Fight</h1>
-          <h2 class="subtitle is-2 has-text-white-ter">Search for a movie on both sides to compare</h2> -->
-          <!-- <p class=" reaction has-text-grey-light"><strong>Win</strong>: Gold <span class="has-text-warning" ><i class="fas fa-smile"></i></span></p>
-          <p class=" reaction has-text-grey-light"><strong>Lose</strong>: Silver <span class="has-text-grey-dark"><i class="fas fa-frown"></i></span></p> -->
-          <!-- <div class="fight-gif"><img src="https://media.giphy.com/media/l2JJwQeZkZuLflfqg/giphy.gif"></div> -->
-
         </div>
         <div class="columns">
           <div class="column">
@@ -322,7 +303,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
 
     

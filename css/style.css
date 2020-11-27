@@ -560,12 +560,14 @@ hr.thick-line {
 }
 
 /* hide content initially */
+#search-top,
 #top-search-content,
 #info-tab-1-content,
 #info-tab-2-content,
 #info-tab-3-content,
 #info-tab-4-content,
-.mySlides {
+.mySlides,
+.searching {
 	display: none;
 }
 
