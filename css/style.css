@@ -96,7 +96,7 @@ hr {
 	box-shadow: inset 570px 100px 250px #000000, inset 0px -20px 250px #000000;
 } */
 
-.showcase {
+.showcase, .iflix-movie-fight  {
 	/* width: 100%; */
 	width: 100vw;
 	height: 100vh;
@@ -106,7 +106,12 @@ hr {
 	background: url('../img/iflix-bg.jpg') no-repeat center center/cover;
 }
 
-.showcase::after,
+
+.iflix-movie-fight  {
+	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
+}
+
+.showcase::after, .iflix-movie-fight::after,
 .celebrity-moves-content::after {
 	content: '';
 	position: absolute;
@@ -218,6 +223,20 @@ hr {
 	margin: 0 0  1.5rem 0;
 }
 .flix-fight-content p {
+	position: relative;
+	z-index: 2;
+}
+
+.flix-fight-search-title {
+	position: relative;
+	z-index: 2;
+	color: white !important;
+	text-align: center;
+	font-family: cursive, Monotype Corsiva;
+	font-size: 5rem !important;
+}
+
+.fight-search {
 	position: relative;
 	z-index: 2;
 }
