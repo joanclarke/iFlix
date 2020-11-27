@@ -138,7 +138,7 @@ hr {
 	height: 90px;
 }
 
-.showcase img {
+.showcase img , .showcase-flix-fight img{
 	/* width: 300px; */
 	width: 18.75rem;
 	/* height: 160px; */
@@ -155,11 +155,15 @@ hr {
 	transform: translate(-50%, -50%);
 }
 
+.showcase-flix-fight a.search {
+	right: 9%;
+}
+
 .showcase-content {
 	position: relative;
 	z-index: 2;
 	/* margin: auto; */
-		margin-top: 8rem;
+		/* margin-top: 8rem; */
 	/* margin: 5rem 0; */
 	display: flex;
 	flex-direction: column;
@@ -1460,8 +1464,15 @@ MEDIA QUERIES
 	/* .celebrity-news a {
 		display: inline-flex;
 	} */
+	/* .showcase-flix-fight a:nth-child(2) {
+		right: 12%;
+	} */
 
-	.showcase img {
+	.showcase-flix-fight a.search {
+		right: 12%;
+	}
+
+	.showcase img, .showcase-flix-fight img {
 		left: 16%;
 	}	
 
@@ -1489,6 +1500,13 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 768px) {
 
+	/* .showcase-flix-fight a:nth-child(2) {
+		right: 14%;
+	} */
+
+	.showcase-flix-fight a.search {
+		right: 14%;
+	}
 	.showcase a {
 		right: -2%;
 	}	
@@ -1580,7 +1598,15 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 600px) {
 
-	.showcase img {
+	/* .showcase-flix-fight a:nth-child(2) {
+		right: 18%;
+	} */
+
+	.showcase-flix-fight a.search {
+		right: 18%;
+	}
+
+	.showcase img, .showcase-flix-fight img {
     width: 14.75rem;
     top: 90%; 	
 		left: 18%;
@@ -1602,12 +1628,22 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 375px) {
 
-	.showcase img {
+	.showcase img, .showcase-flix-fight img {
 		left: 20%;
 	}	
+	/* .showcase-flix-fight a:nth-child(2) {
+		right: 22%;
+	} */
+div.buttons {
+	right: 20% !important;
+}
 
-	.showcase a {
-		right: -10%;
+	.showcase-flix-fight a.search {
+		right: 14%;
+	}
+
+	.showcase-top a  {
+		right: -10% ;
 	}	
 	
 	.showcase-content h1,

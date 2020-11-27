@@ -21,25 +21,21 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header class="showcase">
-      <div class="showcase-top">
+
+      <div class="showcase-top showcase-flix-fight has-background-black">
         <img src="../img/iFlix.png" alt="logo" />
-        <!-- <img src="img/iFlixlofo.png" alt="logo" /> -->
-        <a href="#" class="btn btn-rounded grad1">Sign In</a>
-      </div>
+        <div class="buttons">
+          <a href="#top-autocomplete" class="search btn btn-rounded grad1" onclick="showSearch()">Search </i><i class="fas fa-search"></i></a>
+          <!-- <a href="#top-autocomplete" class="sign-in btn btn-rounded grad1" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i><i class="fas fa-search"></i></a> -->
+          <a href="#" class="btn btn-rounded grad1">Sign In</a>
+       
+        </div>
+   </div>
       <div class="showcase-content">
-        <h1>The best place to compare movies and TV Shows</h1>
-        <!-- <h1>All you need to know </h1> -->
-        <!-- <h1>Everything you need to know </h1> -->
-        <!-- <h1>Get your fave movie info</h1> -->
-        <p>Search movies. Compare stats </p>
-        <p id="small-txt">plus get the latest info on your favorite celebrities</p>
-        <!-- <p>about your favourite movies, TV Shows and celebrities - right here</p> -->
-        <!-- <p>Right here. Right now</p> -->
-        <!-- <a>Search Catalogue</a> -->
-        <a href="#top-autocomplete" class="btn btn-xl grad1" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i></a>
+        <!-- <a href="#top-autocomplete" class="btn btn-xl grad1" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i></a> -->
       </div>
-    </header>
+
+    
 
     <!-- Search Content -->
     <section id="top-search-content" >
@@ -51,6 +47,40 @@
         </div>
       </div>
     </section>
+
+
+    <!-- Flick Fight Content -->
+    <section class="iflix-movie-fight has-background-black">
+      <hr class="thick-line has-background-black-ter">
+      <div class="container2">
+        <div class="titles">
+          <p class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile">Flix Fight</p>
+          <!-- <i class="fas fa-grip-lines"></i> -->
+        </div>
+        <div class="flix-fight-content column is-half">
+          <p class="text-md">Search for a movie on both sides. Compare awards, ratings, box office and much more. See which one wins on each score!</p>
+        </div>
+        <div class="column is-one-third notification tutorial fight-icon">
+          <!-- <h1 class="title is-1 has-text-white">iFlix Movie Fight</h1>
+          <h2 class="subtitle is-2 has-text-white-ter">Search for a movie on both sides to compare</h2> -->
+          <!-- <p class=" reaction has-text-grey-light"><strong>Win</strong>: Gold <span class="has-text-warning" ><i class="fas fa-smile"></i></span></p>
+          <p class=" reaction has-text-grey-light"><strong>Lose</strong>: Silver <span class="has-text-grey-dark"><i class="fas fa-frown"></i></span></p> -->
+          <!-- <div class="fight-gif"><img src="https://media.giphy.com/media/l2JJwQeZkZuLflfqg/giphy.gif"></div> -->
+
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div id="left-autocomplete"></div>
+            <div id="left-summary"></div>
+          </div>
+          <div class="column">
+            <div id="right-autocomplete"></div>
+            <div id="right-summary"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Info Content -->
     <section class="info-tabs">
@@ -740,39 +770,6 @@
         
 
      </div>
-    </section>
-
-
-    <!-- Flick Fight Content -->
-    <section class="iflix-movie-fight has-background-black">
-      <hr class="thick-line has-background-black-ter">
-      <div class="container2">
-        <div class="titles">
-          <p class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile">Flix Fight</p>
-          <!-- <i class="fas fa-grip-lines"></i> -->
-        </div>
-        <div class="flix-fight-content column is-half">
-          <p class="text-md">Search for a movie on both sides. Compare awards, ratings, box office and much more. See which one wins on each score!</p>
-        </div>
-        <div class="column is-one-third notification tutorial fight-icon">
-          <!-- <h1 class="title is-1 has-text-white">iFlix Movie Fight</h1>
-          <h2 class="subtitle is-2 has-text-white-ter">Search for a movie on both sides to compare</h2> -->
-          <!-- <p class=" reaction has-text-grey-light"><strong>Win</strong>: Gold <span class="has-text-warning" ><i class="fas fa-smile"></i></span></p>
-          <p class=" reaction has-text-grey-light"><strong>Lose</strong>: Silver <span class="has-text-grey-dark"><i class="fas fa-frown"></i></span></p> -->
-          <!-- <div class="fight-gif"><img src="https://media.giphy.com/media/l2JJwQeZkZuLflfqg/giphy.gif"></div> -->
-
-        </div>
-        <div class="columns">
-          <div class="column">
-            <div id="left-autocomplete"></div>
-            <div id="left-summary"></div>
-          </div>
-          <div class="column">
-            <div id="right-autocomplete"></div>
-            <div id="right-summary"></div>
-          </div>
-        </div>
-      </div>
     </section>
 
 
