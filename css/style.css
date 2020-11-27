@@ -132,19 +132,20 @@ hr {
 	transform: translate(-50%, -50%);
 } */
 
+.showcase-top {
+	position: relative;
+	z-index: 2;
+	height: 90px;
+}
+
 .showcase img {
-	width: 300px;
+	/* width: 300px; */
+	width: 18.75rem;
 	/* height: 160px; */
 	position: absolute;
 	top: 110%;
 	left: 12%;
 	transform: translate(-50%, -50%);
-}
-
-.showcase-top {
-	position: relative;
-	z-index: 2;
-	height: 90px;
 }
 
 .showcase-top a {
@@ -1460,6 +1461,10 @@ MEDIA QUERIES
 		display: inline-flex;
 	} */
 
+	.showcase img {
+		left: 16%;
+	}	
+
 	.showcase-content {
 			margin-top: 6rem;
 	}
@@ -1483,6 +1488,11 @@ MEDIA QUERIES
 }
 
 @media only screen and (max-width: 768px) {
+
+	.showcase a {
+		right: -3%;
+	}	
+
 	.showcase-content h1,
 	.flix-fight-content h1 {
 		/* font-weight: 600;*/
@@ -1570,6 +1580,12 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 600px) {
 
+	.showcase img {
+    width: 14.75rem;
+    top: 90%; 	
+		left: 18%;
+	}	
+
 	.prev,
 	.next {
 		/* margin-top: 820px; */
@@ -1585,6 +1601,14 @@ MEDIA QUERIES
 }
 
 @media only screen and (max-width: 375px) {
+
+	.showcase img {
+		left: 20%;
+	}	
+
+	.showcase a {
+		right: -10%;
+	}	
 	
 	.showcase-content h1,
 	.flix-fight-content h1 {
