@@ -1490,7 +1490,7 @@ MEDIA QUERIES
 @media only screen and (max-width: 768px) {
 
 	.showcase a {
-		right: -3%;
+		right: -2%;
 	}	
 
 	.showcase-content h1,
