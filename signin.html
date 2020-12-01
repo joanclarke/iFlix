@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>iFlix</title>
+    <title>iFlix - Sign In</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
@@ -21,31 +21,34 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header class="showcase">
+
+      
+
+    <header class="showcase sign-in-page">
       <div class="showcase-top">
         <img src="../img/iFlix.png" alt="logo" />
-        <a href="#" class="sign-in btn btn-rounded grad1">Sign In</a>
+        <a href="#" class="sign-in btn btn-rounded grad1">Sign Out</a>
       </div>
-      <div class="showcase-content">
+      <!-- <div class="showcase-content">
         <h1>The best place to compare movies and TV Shows</h1>
         <p>Search movies. Compare stats </p>
         <p id="small-txt">plus get the latest info on your favorite celebrities</p>
         <a id="search-top" href="#top-autocomplete" class="btn btn-xl grad1 searching" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i></a>
-      </div>
+      </div> -->
     </header>
-
-    <!-- Search Content -->
-   <section id="top-search-content" >
-      <div class="container">
-        <div class="column">
-          <div class="close" onclick="closeSearch()" > <i class="fas fa-times-circle fa-2x"></i></div>
-          <div id="top-autocomplete"></div>
-          <div id="top-summary"></div>
-        </div>
-      </div>
-    </section>
     
      <!-- Sign in popup -->
+
+     <section id="sign-in">
+       <div class="container">
+        <!-- 450 width 660 length -->
+        <div class="sign-in-info">
+          <div class="sign-in-title">
+            <p>Sign In</p>
+          </div>
+        </div>
+       </div>
+     </section>
 
     <!-- Info Content -->
     <section class="info-tabs">
@@ -280,33 +283,6 @@
         </div>
       </div>
     </section>
-
-
-    <!-- Flick Fight Content -->
-    <section class="iflix-movie-fight has-background-black searching">
-      <hr class="thick-line has-background-black-ter">
-      <div class="container2">
-        <div class="titles">
-          <p class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile">Flix Fight</p>
-        </div>
-        <div class="flix-fight-content column is-half">
-          <p class="text-md">Search for a movie on both sides. Compare awards, ratings, box office and much more. See which one wins on each score!</p>
-        </div>
-        <div class="column is-one-third notification tutorial fight-icon">
-        </div>
-        <div class="columns">
-          <div class="column">
-            <div id="left-autocomplete"></div>
-            <div id="left-summary"></div>
-          </div>
-          <div class="column">
-            <div id="right-autocomplete"></div>
-            <div id="right-summary"></div>
-          </div>
-        </div>
-      </div>
-    </section> 
-
 
     
     <script src="js/utils.js"></script>

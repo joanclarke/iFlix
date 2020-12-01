@@ -106,10 +106,14 @@ hr {
 	background: url('../img/iflix-bg.jpg') no-repeat center center/cover;
 }
 
+.sign-in-page {
+	background: url('../img/iflix-bg4.jpg') no-repeat center center/cover;
+}
 
 .iflix-movie-fight  {
 	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
 }
+
 
 .showcase::after, .iflix-movie-fight::after,
 .celebrity-moves-content::after {
@@ -1474,6 +1478,16 @@ i.icon-style {
 	padding: 0.8rem 1.3rem;
 	text-transform: uppercase;
 }
+
+/* 
+=========================
+SIGN IN PAGE
+========================= */
+#sign-in {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+}
+
 
 /* 
 =========================
