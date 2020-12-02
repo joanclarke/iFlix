@@ -148,7 +148,7 @@ hr {
 	height: 90px;
 }
 
-.showcase img, .showcase a.netflix-sign-in ,  .showcase-flix-fight img{
+.showcase img, .showcase a.iflix-sign-in ,  .showcase a.iflix-fight, .showcase-flix-fight img{
 	/* width: 300px; */
 	width: 18.75rem;
 	/* height: 160px; */
@@ -158,10 +158,16 @@ hr {
 	transform: translate(-50%, -50%);
 }
 
-.showcase a.netflix-sign-in img {
+.showcase a.iflix-sign-in img, .showcase a.iflix-fight img{
 	z-index: 10;
 	left: 50%;
 }
+
+.showcase a.iflix-fight img{
+	z-index: 10;
+	left: 500%;
+}
+
 
 .showcase-top a {
 	position: absolute;
@@ -1694,7 +1700,7 @@ MEDIA QUERIES
 		font-size: 0.6rem;
 	}
 
-	.showcase a.netflix-sign-in img {
+	.showcase a.iflix-sign-in img, 	.showcase a.iflix-fight img  {
 		left: 60%;
 	}
 	
