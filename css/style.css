@@ -1483,15 +1483,22 @@ i.icon-style {
 =========================
 SIGN IN PAGE
 ========================= */
+
 #sign-in {
 	position: relative;
 	z-index: 5;
 	top: -400px;
 	background-color: rgba(0, 0, 0, 0.7);
 	color: #ffffff;
+	font-weight: 600;
+	font-size: 1rem;
 	width: 450px;
 	height: 660px;
 	margin: auto;
+}
+
+#sign-in , input[type=text], input[type=password] {
+ border-radius: 4px;
 }
 
 .sign-in-info {
@@ -1501,6 +1508,111 @@ SIGN IN PAGE
 .sign-in-title p {
 	font-weight: 500;
 	font-size: 2rem;
+}
+
+/* Sign In Form  */
+
+/* Bordered form */
+form {
+  /* border: 3px solid #f1f1f1; */
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  display: inline-block;
+	/* border: 1px solid #ccc; */
+	border: none;
+	box-sizing: border-box;
+	font-size: 1rem;
+	background-color: #2d2e30;
+	color: #b9b7b7;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+	background-color: #292a33;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #a708f1;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 1rem;
+  padding: 16px 20px;
+  margin: 30px 0 9px 0;
+  border: none;
+  cursor: pointer;
+	width: 100%;
+	border-radius: 4px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+	opacity: 0.8;
+}
+
+input[type="checkbox"] {
+	/* filter: hue-rotate(132deg); */
+	/* filter: hue-rotate(140deg); */
+	/* -webkit-filter: brightness(50%) sepia(5);
+	filter: brightness(80%) sepia(1); */
+	margin-left: -3px;
+	width: 25px;
+	height: 18px;
+	-webkit-filter: grayscale(100%); filter: grayscale(100%);
+		} 
+
+.remember, .need-help {
+	font-weight: 400;
+	font-size: 0.8rem;
+	color: #ccc;
+}
+
+.need-help {
+	margin-left: 152px;
+}
+
+form .container.cancel {
+	background-color:rgba(45, 46, 48, 0.6);
+	margin-left: -60px;
+	margin-right: -60px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+		
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Add padding to containers */
+/* form .container {
+  padding: 16px;
+} */
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }
 
 
