@@ -1484,8 +1484,23 @@ i.icon-style {
 SIGN IN PAGE
 ========================= */
 #sign-in {
-	background-color: rgba(0, 0, 0, 0.6);
+	position: relative;
+	z-index: 5;
+	top: -400px;
+	background-color: rgba(0, 0, 0, 0.7);
 	color: #ffffff;
+	width: 450px;
+	height: 660px;
+	margin: auto;
+}
+
+.sign-in-info {
+	padding: 50px 60px;
+}
+
+.sign-in-title p {
+	font-weight: 500;
+	font-size: 2rem;
 }
 
 
