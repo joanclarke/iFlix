@@ -96,7 +96,7 @@ hr {
 	box-shadow: inset 570px 100px 250px #000000, inset 0px -20px 250px #000000;
 } */
 
-.showcase, .iflix-movie-fight  {
+.showcase, .sign-in-page, .iflix-movie-fight  {
 	/* width: 100%; */
 	width: 100vw;
 	height: 100vh;
@@ -148,7 +148,7 @@ hr {
 	height: 90px;
 }
 
-.showcase img , .showcase-flix-fight img{
+.showcase img, .showcase a.netflix-sign-in ,  .showcase-flix-fight img{
 	/* width: 300px; */
 	width: 18.75rem;
 	/* height: 160px; */
@@ -156,6 +156,11 @@ hr {
 	top: 110%;
 	left: 12%;
 	transform: translate(-50%, -50%);
+}
+
+.showcase a.netflix-sign-in img {
+	z-index: 10;
+	left: 50%;
 }
 
 .showcase-top a {
@@ -1646,18 +1651,6 @@ span.psw {
 
 
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
-}
-
-
 /* 
 =========================
 MEDIA QUERIES
@@ -1700,6 +1693,11 @@ MEDIA QUERIES
 	.celebrity-news a div p:nth-child(2) {
 		font-size: 0.6rem;
 	}
+
+	.showcase a.netflix-sign-in img {
+		left: 60%;
+	}
+	
 }
 
 @media only screen and (max-width: 768px) {
@@ -1870,6 +1868,12 @@ div.buttons {
 	.next {
 		font-size: 11px;
 	}
+
+
+	#sign-in {
+		width: 100vw;
+	}
+
 }
 
 @media only screen and (max-width: 300px) {
@@ -1878,4 +1882,13 @@ div.buttons {
 	.next {
 		font-size: 11px;
 	}
+
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }
+
