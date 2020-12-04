@@ -255,7 +255,48 @@ hr {
 .fight-search {
 	position: relative;
 	z-index: 2;
+	margin: auto;
+	width: 80%;
+	/* padding: 100px; */
+	background-color: rgba(0, 0, 0, .8);
+	/* background-color: #a708f1; 
+	background-image: linear-gradient(
+		to right,
+		#000000,
+		#5c21a5,
+		#000000,
+		#8c269c,
+		#000000
+	);  */
+	/* background: url('../img/fightingTV.png') no-repeat center center/cover; */
+	/* background: url('../img/fightingTV.png'); */
+	box-shadow: 5px 10px 8px #131313;
 }
+
+/* .fight-search .column{
+	background: url('../img/fightingTV.png') no-repeat center center/cover;
+
+} */
+
+.fight-search .column p.movie-search-title {
+	margin-top: 40px;
+	margin-bottom: 40px;
+ font-size: 1.5rem;
+ text-align: center;
+ color: #ffffff;
+}
+
+.fight-search .column p span{
+	/* background-color: rgb(140, 38, 156); */
+	padding: 0.8rem 1.4rem;
+	border-radius: 50%;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+/* .fight-search .column div{
+	margin-top: 50px;
+} */
 
 .showcase-content p#small-txt {
 	font-size: 1.2rem;

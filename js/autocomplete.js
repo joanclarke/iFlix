@@ -1,13 +1,22 @@
 const createAutoComplete = ({ root, renderOption, onOptionSelect, inputValue, fetchData }) => {
+	// root.innerHTML = `
+  //   <label for="search" ><b>Search</b></label>
+  //   <input class="input" id="reset-input"/>
+  //   <div class="dropdown">
+  //     <div class="dropdown-menu">
+  //       <div class="dropdown-content results"></div>
+  //     </div>
+  //   </div>
+	// `;
+	
 	root.innerHTML = `
-    <label for="search" ><b>Search</b></label>
-    <input class="input" id="reset-input"/>
-    <div class="dropdown">
-      <div class="dropdown-menu">
-        <div class="dropdown-content results"></div>
-      </div>
-    </div>
-  `;
+	<input class="input" id="reset-input"/>
+	<div class="dropdown">
+		<div class="dropdown-menu">
+			<div class="dropdown-content results"></div>
+		</div>
+	</div>
+`;
 
 	const input = root.querySelector('input');
 	const dropdown = root.querySelector('.dropdown');
