@@ -212,25 +212,35 @@ function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
 }
 
+let topSearch = 	document.getElementById('top-search-content');
+let resetInput = document.getElementById('reset-input');
+let summary = document.getElementById('top-summary');
+
+let closeTopSearch = document.getElementById('close-top-search');
+closeTopSearch.addEventListener('click', function() {
+	closeSearch(topSearch);
+	resetInputFunc(resetInput);
+	clearSummary(summary);
+});
+
+
 // Hide input field
-function closeSearch() {
-	document.getElementById('top-search-content').style.display = 'none';
-	resetInputFunc();
-	clearSummary();
+function closeSearch(x) {
+	x.style.display = 'none';
 }
 
 // Empty out input field
-function resetInputFunc() {
-	let resetInput = document.getElementById('reset-input');
-	let emptyInput = (resetInput.value = '');
-	if (resetInput) {
+function resetInputFunc(x) {
+	// let resetInput = document.getElementById('reset-input');
+	let emptyInput = (x.value = '');
+	if (x) {
 		emptyInput;
 	}
 }
 
 // Empty out div content without destroying it
-function clearSummary() {
-	document.getElementById('top-summary').innerHTML = '';
+function clearSummary(x) {
+	x.innerHTML = '';
 }
 
 // info-tab-content

@@ -410,13 +410,18 @@ p.small-txt {
 /* Styles for top search section */
 
 #top-search-content {
+	position: relative;
+	z-index: 5;
 	background: #000000;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
 #top-search-content .column .close {
+	position: relative;
+	z-index: 7;
 	text-align: right;
+	/* text-align: left; */
 	cursor: pointer;
 	margin-bottom: -1.5rem;
 }
