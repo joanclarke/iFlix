@@ -417,18 +417,40 @@ p.small-txt {
 	padding-bottom: 2rem;
 }
 
-#top-search-content .column .close {
+#top-search-content .column .close, #search-close-btn.close {
 	position: relative;
 	z-index: 7;
-	text-align: right;
-	/* text-align: left; */
+	/* text-align: right; */
+	text-align: left;
 	cursor: pointer;
-	margin-bottom: -1.5rem;
+	/* margin-top: 1rem; */
+	margin-left: -0.5rem;
+	margin-bottom: -1.6rem;
+	color: rgb(133, 128, 128);
+
 }
 
-#top-search-content .column .close:hover {
+/* #top-search-content .column .close i{
+border: 1px solid #ffffff;
+border-radius: 50%;
+} */
+
+#search-close-btn.close {
+	width: 80%;
+	margin: auto;
+	margin-bottom: -1.5rem;
+	border-radius: 50%;
+}
+
+#top-search-content .column .close:hover{
+	color: rgb(87, 84, 84);
+}
+
+#search-close-btn.close:hover {
 	color: #ccc;
 }
+
+
 
 /* .top-search-content #top-autocomplete input[type="text"] {
 	padding: 20px 10px;
@@ -1029,7 +1051,7 @@ i.fa-grip-lines-vertical {
 
 #movie-section {
 	margin-top: -0.5rem;
-	padding-top: 10rem;
+	/* padding-top: 10rem; */
 }
 
 #movie-premiere {
@@ -1776,6 +1798,10 @@ MEDIA QUERIES
 	.showcase a.iflix-sign-in img, 	.showcase a.iflix-fight img  {
 		left: 60%;
 	}
+
+	/* #movie-section {
+		padding-top: 10rem;
+	} */
 	
 }
 
@@ -1799,6 +1825,9 @@ MEDIA QUERIES
 		width: 80vw;
 	}
 
+	#movie-section {
+		padding-top: 10rem;
+	}
 	
 	.celebs {
 		height: 30vh;
