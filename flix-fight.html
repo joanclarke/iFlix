@@ -27,7 +27,7 @@
         <!-- <a href="index.html" class="iflix-fight"> <img src="../img/iFlix.png" alt="logo" /></a> -->
  
         <div class="buttons">
-          <a href="#top-autocomplete" class="search btn btn-rounded grad1" onclick="showSearch()">Search </i><i class="fas fa-search"></i></a>
+          <a href="#top-autocomplete" class="search btn btn-rounded grad1" onclick="showSearch()"><span class="is-hidden-mobile">Search</span> </i><i class="fas fa-search"></i></a>
           <!-- <a href="#top-autocomplete" class="sign-in btn btn-rounded grad1" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i><i class="fas fa-search"></i></a> -->
           <a href="index.html" class="btn btn-rounded grad1">Sign Out</a>
        
@@ -55,14 +55,15 @@
     <section class="iflix-movie-fight has-background-black">
       <hr class="thick-line has-background-black-ter">
       <div class="container2">
-        <div class="titles">
+        <!-- <div class="titles">
           <p class="flix-fight-search-title title is-size-2-desktop is-size-3-tablet is-size-4-mobile">Flix Fight</p>
-          <!-- <i class="fas fa-grip-lines"></i> -->
+        </div> -->
+        <!-- <div class="flix-fight-content column is-half"> -->
+        <div class="flix-fight-content">
+          <p> Search and compare <span id="two">2</span> movies <span class="is-hidden-mobile">at the same time.</span></p>
+          <p class="small-txt" >Compare awards, ratings, box office and much more. See which one wins each category!</p>
         </div>
-        <div class="flix-fight-content column is-half">
-          <p class="text-md">Search for a movie on both sides. Compare awards, ratings, box office and much more. See which one wins each category!</p>
-        </div>
-        <div class="column is-one-third notification tutorial fight-icon">
+        <div class="column notification tutorial fight-icon">
           <!-- <h1 class="title is-1 has-text-white">iFlix Movie Fight</h1>
           <h2 class="subtitle is-2 has-text-white-ter">Search for a movie on both sides to compare</h2> -->
           <!-- <p class=" reaction has-text-grey-light"><strong>Win</strong>: Gold <span class="has-text-warning" ><i class="fas fa-smile"></i></span></p>
@@ -73,12 +74,12 @@
         <div class="columns fight-search">
           <!-- <div class="close" onclick="closeSearch()" > <i class="fas fa-times-circle fa-2x"></i></div> -->
           <div class="column">
-            <p class="movie-search-title" >Movie # <span class="grad1">1</span></p>
+            <p class="movie-search-title">Movie <i class="fas fa-tv"></i><span class="grad1">1</span></p>
             <div id="left-autocomplete"></div>
             <div id="left-summary"></div>
           </div>
           <div class="column">
-            <p class="movie-search-title">Movie # <span class="grad1">2</span></p>
+            <p class="movie-search-title">Movie <i class="fas fa-tv"></i><span class="grad1">2</span></p>
             <div id="right-autocomplete"></div>
             <div id="right-summary"></div>
           </div>

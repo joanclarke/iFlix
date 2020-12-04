@@ -177,7 +177,7 @@ hr {
 }
 
 .showcase-flix-fight a.search {
-	right: 9%;
+	right: 10%;
 }
 
 .showcase-content {
@@ -218,7 +218,7 @@ hr {
 	z-index: 2;
 }
 
-.showcase-content p{
+.showcase-content p, .flix-fight-content p{
 	font-family: sans-serif;
 	/* font-weight: 400 !important; */
 	font-size: 3rem;
@@ -226,7 +226,7 @@ hr {
 
 
 .showcase-content p,
-.flix-fight-content p {
+.flix-fight-content p:nth-child(1)  {
 	/* text-transform: uppercase; */
 	color: #fff;
 	font-weight: 400;
@@ -238,19 +238,38 @@ hr {
 .showcase-content p:nth-child(2){
 	margin: 0 0  1.5rem 0;
 }
+
+.flix-fight-content p:nth-child(1) {
+	margin: -3rem 0 -0.8rem 0;
+}
+
+.flix-fight-content p:nth-child(1) span#two {
+	/* color: #a708f1;  */
+	color: #7822e2; 
+	font-family: cursive, Monotype Corsiva;
+	font-size: 6rem;
+}
+
 .flix-fight-content p {
 	position: relative;
 	z-index: 2;
+	text-align: center;
+	color: #fff;
 }
 
-.flix-fight-search-title {
+/* .flix-fight-content p:nth-child(2) {
+	margin-top: - 1rem;
+} */
+
+
+/* .flix-fight-search-title {
 	position: relative;
 	z-index: 2;
 	color: white !important;
 	text-align: center;
 	font-family: cursive, Monotype Corsiva;
 	font-size: 5rem !important;
-}
+} */
 
 .fight-search {
 	position: relative;
@@ -259,15 +278,6 @@ hr {
 	width: 80%;
 	/* padding: 100px; */
 	background-color: rgba(0, 0, 0, .8);
-	/* background-color: #a708f1; 
-	background-image: linear-gradient(
-		to right,
-		#000000,
-		#5c21a5,
-		#000000,
-		#8c269c,
-		#000000
-	);  */
 	/* background: url('../img/fightingTV.png') no-repeat center center/cover; */
 	/* background: url('../img/fightingTV.png'); */
 	box-shadow: 5px 10px 8px #131313;
@@ -286,19 +296,26 @@ hr {
  color: #ffffff;
 }
 
+.fight-search .column p i{
+	/* background-color: rgb(140, 38, 156); */
+	font-size: 2.5rem;
+
+}
+
 .fight-search .column p span{
 	/* background-color: rgb(140, 38, 156); */
 	padding: 0.8rem 1.4rem;
 	border-radius: 50%;
 	font-weight: 600;
-	font-size: 2rem;
+	font-size: 1.5rem;
+	margin-left: -30px;
 }
 
 /* .fight-search .column div{
 	margin-top: 50px;
 } */
 
-.showcase-content p#small-txt {
+p.small-txt {
 	font-size: 1.2rem;
 	margin: 0 0  1.3rem 0;
 }
@@ -543,16 +560,19 @@ figure .image img {
 } */
 
 .fight-icon {
-	background: url(../img/fightingTV.png);
+	background: url(../img/fight-group.png);
 	/* background-size: cover; */
 	background-size: contain;
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 	height: 20rem;
 	/* width: 20%; */
 	/* width: 100%; */
+	/* margin-top: -10rem; */
 	margin-top: -16rem;
+	/* margin-top: -7rem; */
 	margin-bottom: 0 !important;
-	margin-left: 65%;
+	/* font-size: 2rem; */
+	/* margin-left: 65%; */
 }
 
 .fight-icon p.reaction {
@@ -1004,6 +1024,7 @@ i.fa-grip-lines-vertical {
 
 #movie-section {
 	margin-top: -0.5rem;
+	padding-top: 10rem;
 }
 
 #movie-premiere {
@@ -1481,6 +1502,12 @@ i.icon-style {
 	margin-bottom: 1rem;
 }
 
+.text-sm {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-weight: 300;
+}
+
 .text-sm-thin {
 	font-size: 1rem;
 	margin-bottom: 1rem;
@@ -1713,16 +1740,16 @@ MEDIA QUERIES
 	} */
 
 	.showcase-flix-fight a.search {
-		right: 12%;
+		right: 15%;
 	}
 
 	.showcase img, .showcase-flix-fight img {
 		left: 16%;
 	}	
 
-	.showcase-content {
+	/* .showcase-content {
 			margin-top: 6rem;
-	}
+	} */
 
 	.showcase-content h1,
 	.flix-fight-content h1 {
@@ -1754,7 +1781,7 @@ MEDIA QUERIES
 	} */
 
 	.showcase-flix-fight a.search {
-		right: 14%;
+		right: 20%;
 	}
 	.showcase a {
 		right: -2%;
@@ -1852,7 +1879,7 @@ MEDIA QUERIES
 	} */
 
 	.showcase-flix-fight a.search {
-		right: 18%;
+		right: 24%;
 	}
 
 	.showcase img, .showcase-flix-fight img {
@@ -1883,12 +1910,24 @@ MEDIA QUERIES
 	/* .showcase-flix-fight a:nth-child(2) {
 		right: 22%;
 	} */
-div.buttons {
-	right: 20% !important;
-}
+
+	.flix-fight-content p:nth-child(1) {
+    /* text-transform: uppercase; */
+    font-weight: 600;
+		font-size: 1.4rem;
+		margin: 1rem -2rem 0rem -2rem;
+	}
+
+	.flix-fight-content p:nth-child(1) span#two {
+		font-size: 3rem;
+	}
+
+	div.buttons {
+		right: 20% !important;
+	}
 
 	.showcase-flix-fight a.search {
-		right: 14%;
+		right: 26%;
 	}
 
 	.showcase-top a  {
