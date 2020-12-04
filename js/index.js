@@ -211,13 +211,14 @@ const searchMovieTemplate = (movieDetail) => {
 function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
 }
-
+let topInput = document.getElementById('top-autocomplete').getElementsByClassName('input')[0];
+topInput.setAttribute('placeholder', 'Search Movie');
 let close = Array.from(document.getElementsByClassName('close'));
 let topSearch = 	document.getElementById('top-search-content');
 let resetInput = document.getElementById('reset-input');
 let input = Array.from(document.getElementsByClassName('input'));
 let summary = Array.from(document.getElementsByClassName('summary'));
-console.log(close);
+console.log(topInput);
 
 // let closeTopSearch = document.getElementById('close-top-search');
 close.forEach( el => {

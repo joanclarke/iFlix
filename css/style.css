@@ -420,33 +420,36 @@ p.small-txt {
 #top-search-content .column .close, #search-close-btn.close {
 	position: relative;
 	z-index: 7;
+	width: 2rem;
+	width: 3%;
+	margin: auto;
 	/* text-align: right; */
 	text-align: left;
 	cursor: pointer;
 	/* margin-top: 1rem; */
-	margin-left: -0.5rem;
-	margin-bottom: -1.6rem;
+	/* margin-left: -0.5rem;
+	margin-bottom: -1.6rem; */
 	color: rgb(133, 128, 128);
 
 }
 
-/* #top-search-content .column .close i{
-border: 1px solid #ffffff;
-border-radius: 50%;
-} */
+#top-search-content .column .close{
+	margin-bottom: -1.6rem; 
+}
 
 #search-close-btn.close {
-	width: 80%;
-	margin: auto;
+	/* width: 2rem;
+	width: 3%; */
+	/* margin: auto; */
 	margin-bottom: -1.5rem;
 	border-radius: 50%;
 }
 
-#top-search-content .column .close:hover{
+#top-search-content .column .close i:hover{
 	color: rgb(87, 84, 84);
 }
 
-#search-close-btn.close:hover {
+#search-close-btn.close i:hover {
 	color: #ccc;
 }
 
@@ -467,7 +470,7 @@ label[for=search] {
 	margin-bottom: 1rem;
 }
 
-#top-autocomplete .input {
+#top-autocomplete input.input {
 	/* background-color: white; */
 	box-shadow: none;
 	border-color: none;
@@ -475,9 +478,27 @@ label[for=search] {
 	border: none;
 	border-radius: 0.1rem;
 	/* color: #e22323; */
-	height: 5rem;
-	font-size: 2rem;
+	/* height: 5rem;
+	font-size: 2rem; */
 }
+
+
+/* input::placeholder {
+	color: red;
+	content: "blue";
+} */
+
+#top-autocomplete input::placeholder { 
+	/* color:#5c21a5; */
+	color:rgba(140, 38, 156, 0.6);
+	font-size: 1.2em; 
+	font-style: italic; 
+}
+
+/* #top-autocomplete .input::-webkit-input-placeholder::before {
+	color:#666;
+	content:"Search Movie";
+} */
 
 ul.detail {
 	margin-left: 0;
@@ -688,6 +709,10 @@ hr.thick-line {
 	/* padding: 3rem; */
 }
 
+.info-tab-1-content-inner img{
+	height:25rem;
+}
+
 table {
 	width: 100%;
 	margin-top: 2rem;
@@ -712,7 +737,7 @@ table tbody tr:nth-child(odd) {
 #info-tab-1-content,
 #info-tab-2-content,
 #info-tab-4-content {
-	max-width: 70% !important;
+	/* max-width: 70% !important; */
 	margin: auto;
 }
 
