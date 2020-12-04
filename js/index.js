@@ -212,19 +212,27 @@ function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
 }
 
+let close = Array.from(document.getElementsByClassName('close'));
 let topSearch = 	document.getElementById('top-search-content');
 let resetInput = document.getElementById('reset-input');
 let input = Array.from(document.getElementsByClassName('input'));
-let summary = document.getElementById('top-summary');
-console.log(input);
+let summary = Array.from(document.getElementsByClassName('summary'));
+console.log(close);
 
-let closeTopSearch = document.getElementById('close-top-search');
-closeTopSearch.addEventListener('click', function() {
-	closeSearch(topSearch);
-	// resetInputFunc(resetInput);
-	resetInputFunc(input);
-	clearSummary(summary);
-});
+// let closeTopSearch = document.getElementById('close-top-search');
+close.forEach( el => {
+	el.addEventListener('click', function() {
+		closeSearch(topSearch);
+		resetInputFunc(input);
+		clearSummary(summary);
+	});
+})
+
+// closeTopSearch.addEventListener('click', function() {
+// 	closeSearch(topSearch);
+// 	resetInputFunc(input);
+// 	clearSummary(summary);
+// });
 
 
 // Hide input field
@@ -234,7 +242,6 @@ function closeSearch(x) {
 
 // Empty out input field
 function resetInputFunc(el) {
-	// let resetInput = document.getElementById('reset-input');
 	input.forEach( el => {
 		let emptyInput = (el.value = '');
 		if (el) {
@@ -245,8 +252,10 @@ function resetInputFunc(el) {
 }
 
 // Empty out div content without destroying it
-function clearSummary(x) {
-	x.innerHTML = '';
+function clearSummary(el) {
+	summary.forEach( el => {
+		el.innerHTML = '';
+	})
 }
 
 // info-tab-content
