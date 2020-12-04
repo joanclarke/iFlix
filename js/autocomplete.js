@@ -10,7 +10,7 @@ const createAutoComplete = ({ root, renderOption, onOptionSelect, inputValue, fe
 	// `;
 	
 	root.innerHTML = `
-	<input class="input" id="reset-input"/>
+	<input class="input"/>
 	<div class="dropdown">
 		<div class="dropdown-menu">
 			<div class="dropdown-content results"></div>

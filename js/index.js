@@ -214,12 +214,15 @@ function showSearch() {
 
 let topSearch = 	document.getElementById('top-search-content');
 let resetInput = document.getElementById('reset-input');
+let input = Array.from(document.getElementsByClassName('input'));
 let summary = document.getElementById('top-summary');
+console.log(input);
 
 let closeTopSearch = document.getElementById('close-top-search');
 closeTopSearch.addEventListener('click', function() {
 	closeSearch(topSearch);
-	resetInputFunc(resetInput);
+	// resetInputFunc(resetInput);
+	resetInputFunc(input);
 	clearSummary(summary);
 });
 
@@ -230,12 +233,15 @@ function closeSearch(x) {
 }
 
 // Empty out input field
-function resetInputFunc(x) {
+function resetInputFunc(el) {
 	// let resetInput = document.getElementById('reset-input');
-	let emptyInput = (x.value = '');
-	if (x) {
-		emptyInput;
-	}
+	input.forEach( el => {
+		let emptyInput = (el.value = '');
+		if (el) {
+			emptyInput;
+		}
+	})
+
 }
 
 // Empty out div content without destroying it
