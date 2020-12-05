@@ -22,12 +22,12 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-      <div class="showcase-top showcase-flix-fight has-background-black">
+      <div id="showcase-top-id" class="showcase-top showcase-flix-fight has-background-black">
         <img src="../img/iFlix.png" alt="logo" />
         <!-- <a href="index.html" class="iflix-fight"> <img src="../img/iFlix.png" alt="logo" /></a> -->
  
         <div class="buttons">
-          <a href="#top-autocomplete" class="search btn btn-rounded grad1" onclick="showSearch()"><span class="is-hidden-mobile">Search</span> </i><i class="fas fa-search"></i></a>
+          <a href="#top-autocomplete" id="search-btn" class="search btn btn-rounded grad1" ><span class="is-hidden-mobile">Search</span> </i><i class="fas fa-search"></i></a>
           <!-- <a href="#top-autocomplete" class="sign-in btn btn-rounded grad1" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i><i class="fas fa-search"></i></a> -->
           <a href="index.html" class="btn btn-rounded grad1">Sign Out</a>
        
@@ -44,7 +44,7 @@
       <div class="container">
         <div class="column">
           <!-- <div id="close-top-search" class="close" onclick="closeSearch()" > <i class="fas fa-times-circle fa-2x"></i></div> -->
-          <div class="close" > <i class="fas fa-times-circle fa-2x"></i></div>     
+          <div id="close-top" class="close" > <i class="fas fa-times-circle fa-2x"></i></div>     
           <div id="top-autocomplete"></div>
           <div id="top-summary" class="summary"></div>
         </div>

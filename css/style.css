@@ -417,6 +417,23 @@ p.small-txt {
 	padding-bottom: 2rem;
 }
 
+/* .top {
+	padding-top: 4rem;
+} */
+
+#top-search-content .container{
+	width: 76%;
+	/* border: 3px solid red; */
+	border: 0.1px solid #5c21a5;
+}
+/* #5c21a5,
+#8c269c, */
+
+
+#top-search-content .container .column{
+padding-top: 30px;
+}
+
 #top-search-content .column .close, #search-close-btn.close {
 	position: relative;
 	z-index: 7;

@@ -207,10 +207,16 @@ const searchMovieTemplate = (movieDetail) => {
 	`;
 };
 
+
+
+
 // Show input field
 function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
 }
+
+let showcaseTopId = document.getElementById('howcase-top-id');
+let searchBtn = document.getElementById('search-btn');
 let topInput = document.getElementById('top-autocomplete').getElementsByClassName('input')[0];
 topInput.setAttribute('placeholder', 'Search Movie');
 let close = Array.from(document.getElementsByClassName('close'));
@@ -219,6 +225,18 @@ let resetInput = document.getElementById('reset-input');
 let input = Array.from(document.getElementsByClassName('input'));
 let summary = Array.from(document.getElementsByClassName('summary'));
 console.log(topInput);
+
+searchBtn.addEventListener('click', function() {
+	showSearch(topSearch);
+});
+
+
+// Show input field
+function showSearch(x, event)  {
+	x.style.display = 'block';
+}
+
+
 
 // let closeTopSearch = document.getElementById('close-top-search');
 close.forEach( el => {
