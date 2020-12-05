@@ -227,12 +227,13 @@ let summary = Array.from(document.getElementsByClassName('summary'));
 console.log(topInput);
 
 searchBtn.addEventListener('click', function() {
-	showSearch(topSearch);
+	showSearch(topSearch, event);
 });
 
 
 // Show input field
 function showSearch(x, event)  {
+	event.preventDefault();
 	x.style.display = 'block';
 }
 
