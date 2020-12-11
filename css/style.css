@@ -53,6 +53,9 @@ li {
 	list-style-type: none;
 }
 
+
+
+
 /* img {
 	width: 100%;
 } */
@@ -424,14 +427,15 @@ p.small-txt {
 #top-search-content .container{
 	width: 76%;
 	/* border: 3px solid red; */
-	border: 0.1px solid #5c21a5;
+	border: 0.1px solid rgb(44, 42, 42);
+	box-shadow:10px 10px 50px 5px rgb(34, 31, 31); 
 }
 /* #5c21a5,
 #8c269c, */
 
 
 #top-search-content .container .column{
-padding-top: 30px;
+padding-top: 50px;
 }
 
 #top-search-content .column .close, #search-close-btn.close {
@@ -451,7 +455,9 @@ padding-top: 30px;
 }
 
 #top-search-content .column .close{
-	margin-bottom: -1.6rem; 
+	margin-top: -3.9rem;
+	padding-bottom: 1rem;
+	/* margin-bottom: -1.6rem;  */
 }
 
 #search-close-btn.close {
@@ -461,12 +467,12 @@ padding-top: 30px;
 	margin-bottom: -1.5rem;
 	border-radius: 50%;
 }
-
+/* 
 #top-search-content .column .close i:hover{
 	color: rgb(87, 84, 84);
-}
+} */
 
-#search-close-btn.close i:hover {
+#top-search-content .column .close i:hover, #search-close-btn.close i:hover {
 	color: #ccc;
 }
 
@@ -507,7 +513,8 @@ label[for=search] {
 
 #top-autocomplete input::placeholder { 
 	/* color:#5c21a5; */
-	color:rgba(140, 38, 156, 0.6);
+	/* color:rgba(140, 38, 156, 0.6); */
+	color:rgb(140, 38, 156);
 	font-size: 1.2em; 
 	font-style: italic; 
 }
@@ -726,9 +733,56 @@ hr.thick-line {
 	/* padding: 3rem; */
 }
 
-.info-tab-1-content-inner img{
-	height:25rem;
+#info-tab-1-content .info-tab-1-content-inner .tv{
+margin-top: 10rem;
 }
+
+div.tv .la-desktop {
+	position: relative;
+	z-index: 1;
+	font-size: 30rem;
+	/* font-weight: 100; */
+	color: grey;
+	margin-top: -20rem; 
+}
+
+div.tv .tv-black {
+	position: relative;
+	z-index: 1;
+	font-size: 20rem;
+	/* font-weight: 100; */
+	color: grey;
+	margin-top: -30rem; 
+}
+
+
+/* div.tv .fa-desktop {
+	position: relative;
+	z-index: 1;
+	font-size: 25rem;
+	color: grey;
+	margin-top: -16rem; 
+	margin-left: 0.8rem ;
+} */
+
+.info-tab-1-content-inner .tv .la-tv{
+
+	/* margin-top: -200rem !important; */
+}
+
+.info-tab-1-content-inner .tv div {
+	position: relative;
+	z-index: 2;
+	margin-left: 3rem;
+}
+
+.info-tab-1-content-inner .tv div img {
+	height:16rem;
+	width: 25rem;
+	margin-bottom: -2.5rem; 
+	margin-left: -0.5rem;
+}
+
 
 table {
 	width: 100%;
@@ -1828,6 +1882,13 @@ MEDIA QUERIES
 		width: 86vw;
 	}
 
+	.info-tab-content {
+    padding: 1rem !important;
+}
+
+	#info-tab-1-content .info-tab-1-content-inner .tv {
+		margin-top: 2rem;
+	}
 
 	.celebrity-news a div p:first-child {
 		font-size: 0.8rem;
@@ -1865,6 +1926,19 @@ MEDIA QUERIES
 		/* font-weight: 600;*/
 		font-size: 2.7rem; 
 		width: 80vw;
+	}
+
+	#info-tab-1-content .info-tab-1-content-inner {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 2rem;
+		align-items: center;
+		justify-content: center;
+		/* padding: 3rem; */
+	}
+
+	#info-tab-1-content .info-tab-1-content-inner .tv {
+		margin-top: 2rem;
 	}
 
 	#movie-section {
