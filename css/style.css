@@ -213,7 +213,6 @@ hr {
 	/* color: #9400d3; */
 }
 
-
 .flix-fight-content h1 {
 	/* margin-top: 7rem; */
 	margin-top: 4rem;
@@ -671,7 +670,7 @@ hr.thick-line {
 	/* max-width: 70%; */
 	margin: auto;
 	overflow: hidden;
-	padding: 0 2rem;
+	padding: 2rem;
 }
 
 .info-tabs .container {
@@ -727,28 +726,53 @@ hr.thick-line {
 #info-tab-1-content .info-tab-1-content-inner {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	font-family: Arial, Helvetica, sans-serif;
 	grid-gap: 2rem;
 	align-items: center;
 	justify-content: center;
 	/* padding: 3rem; */
 }
 
-#info-tab-1-content .info-tab-1-content-inner .tv{
-margin-top: 10rem;
+
+.info-tab-1-content-inner div h1 {
+	font-weight: 600;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-size: 3.4rem;
+	line-height: 1.1;
+	letter-spacing: -1.3px;
+	color: #fff;
 }
 
-div.tv .la-desktop {
+.info-tab-1-content-inner div h1 span {
+font-family:  'Times New Roman', Times, serif;
+}
+
+.info-tab-1-content-inner div p {
+	font-size: 1.8rem;
+	line-height: 1.2;
+	letter-spacing: 1.3px;
+	color: #fff;
+	margin: 1rem 0;
+}
+
+
+#info-tab-1-content .info-tab-1-content-inner .tv{
+/* margin-top: 10rem; */
+margin: auto
+}
+
+/* div.tv .la-desktop {
 	position: relative;
 	z-index: 1;
 	font-size: 30rem;
-	/* font-weight: 100; */
 	color: grey;
 	margin-top: -20rem; 
-}
+} */
 
 div.tv .tv-black {
 	position: relative;
 	z-index: 1;
+	width: 30rem;
 	font-size: 20rem;
 	/* font-weight: 100; */
 	color: grey;
@@ -773,16 +797,28 @@ div.tv .tv-black {
 .info-tab-1-content-inner .tv div {
 	position: relative;
 	z-index: 2;
-	margin-left: 3rem;
+	/* margin-left: 3rem; */
+	margin: auto;
 }
 
 .info-tab-1-content-inner .tv div img {
 	height:16rem;
-	width: 25rem;
-	margin-bottom: -2.5rem; 
-	margin-left: -0.5rem;
+	width: 26rem;
+	/* margin-bottom: -2.5rem; 
+	margin-left: -0.5rem; */
 }
 
+.info-tab-1-content-inner div.fighting h1{
+	display: inline;
+	padding-right: 1rem;
+}
+
+.info-tab-1-content-inner div.fighting img#fighting-men {
+	display: inline;
+	margin-bottom: -10px;
+	height: 4rem;
+	/* width: 10rem; */
+}
 
 table {
 	width: 100%;
