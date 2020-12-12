@@ -525,6 +525,7 @@ label[for=search] {
 
 ul.detail {
 	margin-left: 0;
+	line-height: 3rem;
 }
 
 ul.detail li {
@@ -764,19 +765,20 @@ margin: auto
 /* div.tv .la-desktop {
 	position: relative;
 	z-index: 1;
-	font-size: 30rem;
+	font-size: 30rem;z
 	color: grey;
 	margin-top: -20rem; 
 } */
 
-div.tv .tv-black {
+div.tv .tv-apple {
 	position: relative;
 	z-index: 1;
-	width: 30rem;
+	width: 24rem;
+	height: 21rem;
 	font-size: 20rem;
 	/* font-weight: 100; */
 	color: grey;
-	margin-top: -30rem; 
+	margin-top: -10rem; 
 }
 
 
@@ -789,35 +791,57 @@ div.tv .tv-black {
 	margin-left: 0.8rem ;
 } */
 
-.info-tab-1-content-inner .tv .la-tv{
+.info-tab-1-content-inner .tv .la-tv {
 
 	/* margin-top: -200rem !important; */
 }
 
-.info-tab-1-content-inner .tv div {
+.info-tab-1-content-inner .tv div img.blk-panther {
 	position: relative;
 	z-index: 2;
-	/* margin-left: 3rem; */
-	margin: auto;
+	width: 22rem;
+	margin-bottom: -4rem;
+	margin-left: 1rem;
+	/* margin: auto; */
 }
 
-.info-tab-1-content-inner .tv div img {
-	height:16rem;
-	width: 26rem;
-	/* margin-bottom: -2.5rem; 
-	margin-left: -0.5rem; */
-}
+
 
 .info-tab-1-content-inner div.fighting h1{
 	display: inline;
 	padding-right: 1rem;
 }
 
-.info-tab-1-content-inner div.fighting img#fighting-men {
+.info-tab-1-content-inner div.fighting img {
 	display: inline;
 	margin-bottom: -10px;
 	height: 4rem;
 	/* width: 10rem; */
+}
+
+.info-tab-1-content-inner div.fighting img.fighting-men {
+	height: 3rem;
+	/* width: 10rem; */
+}
+
+.info-tab-1-content-inner div.download div.download-img {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 5rem;
+}
+
+.download-bdr {
+	/* background-color: grey; */
+	position: relative;
+	z-index: 2;
+	margin-top: -14rem;
+	/* margin-left: 200px; */
+	padding-bottom: 5rem;
+}
+
+img.download-arrow {
+	margin-left: 24rem;
+	height: 4rem;
 }
 
 table {
@@ -1920,7 +1944,7 @@ MEDIA QUERIES
 
 	.info-tab-content {
     padding: 1rem !important;
-}
+	}
 
 	#info-tab-1-content .info-tab-1-content-inner .tv {
 		margin-top: 2rem;
@@ -1941,6 +1965,12 @@ MEDIA QUERIES
 	/* #movie-section {
 		padding-top: 10rem;
 	} */
+
+	img.download-arrow {
+		margin-top: 2.5rem;
+		margin-left: 15rem;
+		height: 3rem;
+	}
 	
 }
 
@@ -1975,6 +2005,12 @@ MEDIA QUERIES
 
 	#info-tab-1-content .info-tab-1-content-inner .tv {
 		margin-top: 2rem;
+	}
+
+		img.download-arrow {
+		margin-top: -1.7rem;
+		margin-left: 25rem;
+		height: 4rem;
 	}
 
 	#movie-section {
@@ -2074,6 +2110,12 @@ MEDIA QUERIES
 		left: 18%;
 	}	
 
+	img.download-arrow {
+		margin-top: 0.5rem;
+		margin-left: 20rem;
+		height: 3rem;
+	}
+
 	.prev,
 	.next {
 		/* margin-top: 820px; */
@@ -2134,6 +2176,12 @@ MEDIA QUERIES
 	
 	.showcase-content p#small-txt {
 		font-size: 1rem;
+	}
+
+	img.download-arrow {
+		margin-top: 4rem;
+		margin-left: 12rem;
+		height: 2rem;
 	}
 	
 	.prev,
