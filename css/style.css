@@ -118,7 +118,6 @@ hr {
 	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
 }
 
-
 .showcase::after, .iflix-movie-fight::after,
 .celebrity-moves-content::after {
 	content: '';
@@ -228,8 +227,7 @@ hr {
 
 
 .showcase-content p,
-.flix-fight-content p:nth-child(1)  {
-	/* text-transform: uppercase; */
+.flix-fight-content p:nth-child(1) {
 	color: #fff;
 	font-weight: 400;
 	font-size: 1.7rem;
@@ -237,6 +235,7 @@ hr {
 	line-height: 1.25;
 	margin: 0 0 2rem;
 }
+
 .showcase-content p:nth-child(2){
 	margin: 0 0  1.5rem 0;
 }
@@ -408,6 +407,49 @@ p.small-txt {
 	/* text-decoration: none; */
 	letter-spacing: 0.05rem;
 }
+
+.showcase-content form input[type=email], .showcase-content form .submit-btn {
+border:none;
+/* height: 4rem; */
+/* max-width: 500px; */
+/* min-width: 21.875rem; */
+/* height: 60px !important; */
+height: 3.75rem;
+}
+
+.showcase-content form input[type=email] {
+
+	/* max-width: 500px; */
+	width: 32rem;
+	/* min-width: 21.875rem; */
+	/* height: 60px !important; */
+	/* height: 3.75rem; */
+	font-size: 1rem;
+	padding-left: 1rem;
+	/* padding-top: -36rem; */
+	}
+	
+	/* .showcase-content form input[type=submit] span {
+		margin-top:1rem;
+	} */
+
+.showcase-content form .submit-btn {
+	border:none;
+	/* max-width: 25rem; */
+	width: 16rem;
+	height: 3.95rem;
+	margin-left: -2rem;
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 1.75rem;
+	display: inline;
+	}
+
+
+	/* .showcase-content form .submit-btn i.fas.fa-chevron-right {
+			font-weight: 400;
+	} */
+
 
 /* Styles for top search section */
 
