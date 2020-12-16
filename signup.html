@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iFlix - Sign Up</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/29e915bfbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+      
+
+    <header class="showcase sign-up-page">
+      <div class="showcase-top">
+       <a href="index.html" class="iflix-sign-in"> <img src="../img/iFlix.png" alt="logo" /></a>
+        <!-- <a href="#" class="sign-in btn btn-rounded grad1">Sign Out</a> -->
+        <a href="signin.html" class="sign-in btn btn-rounded grad1">Sign In</a>
+      </div>
+    </header>
+    
+     <!-- Sign in popup -->
+
+     <section id="sign-in" class="sign-up">
+       <div class="container">
+        <!-- 450 width 660 length -->
+        <div class="sign-in-info">
+          <div class="sign-in-title">
+            <p>Sign Up</p>
+          </div>
+          <form action="flix-fight.html">
+            <div class="container">
+              <!-- Email  -->
+              <label for="uname">What is your email?</label>
+              <input type="text" placeholder="Enter your email" name="uname" required>
+              <!-- Confirm Email  -->
+              <label for="uname">Confirm your email?</label>
+              <input type="text" placeholder="Enter your email again" name="uname" required>
+              
+              <!-- Password -->
+              <label for="psw">Craete a password</label>
+              <input type="password" placeholder="Password" name="psw" required>
+          
+              <!-- Username  -->
+              <label for="uname">What should we call you?</label>
+              <input type="text" placeholder="Enter your username" name="uname" required>
+                
+              <!-- Birthday -->
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday">
+
+              <button class="grad1" type="submit">Sign Up</button>
+              <label class="remember">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              <a href="#" class="need-help">Need help? </a>
+            </div>
+            <div class="sign-up">
+              <a href="#" class="google-logo"><img src="img/google-logo.png" /> Login with Google </a>
+              <p>Already a member? <a href="signin.html">Sign in</a></p>
+            </div>
+            <div class="container cancel" >
+              <button type="button" class="cancelbtn"><a href="index.html">Cancel</a></button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            <p class="small-learn-more">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more</a></p>
+          </form>
+          
+        </div>
+       </div>
+     </section>
+
+    <!-- Info Content -->
+    <section class="info-tabs">
+      <div class="container">
+        <div id="info-tab-1" class="info-tab-item tab-border">
+          <i class="fas la-trophy fa-3x"></i>
+          <p>Awards</p>
+        </div>
+        <div id="info-tab-2" class="info-tab-item">
+          <i class="fas la-tv fa-3x"></i>
+          <p>Movies</p>
+        </div>
+        <div id="info-tab-3" class="info-tab-item">
+          <i class="fas la-users fa-3x"></i>
+          <p>Celebritiess</p>
+        </div>
+        <div id="info-tab-4" class="info-tab-item">
+          <i class="fas la-film fa-3x"></i>
+          <p>Box Office Hits</p>
+        </div>
+    </section>
+
+    
+    <script src="js/utils.js"></script>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
+
+

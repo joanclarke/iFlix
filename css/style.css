@@ -417,6 +417,8 @@ p.small-txt {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #a708f1; /* For browsers that do not support gradients */
+	background-image: linear-gradient(to right, #5c21a5, #8c269c, #5c21a5,#a708f1); /* Standard syntax (must be last) */
 }
 
 .showcase-content form input[type=email],	.showcase-content form div.submit-btn-holder, .showcase-content form div a.to-signup-page  {
@@ -425,11 +427,22 @@ p.small-txt {
 }
 
 .showcase-content form input[type=email] {
+	border: 1px solid grey;
 	width: 28rem;
 	font-size: 1rem;
 	padding-left: 1rem;
 	display: inline;
 }
+
+/* input[type="text"]{
+  border: 1px solid blue;
+  } */
+
+	.showcase-content form input[type=email]:focus {
+    border: 1px solid #5c21a5;
+    outline: none;
+}
+/* #8c269c, #a708f1 , #5c21a5*/
 
 .showcase-content form div#submit-btn-holder {
 	position: relative;
@@ -441,6 +454,7 @@ p.small-txt {
 
 .showcase-content form input[type=submit] {
 	border:none;
+	outline: none;
 	background-color: transparent;
 	/* margin-top: 2rem;
 	margin-left: -0.5rem; */
@@ -448,6 +462,29 @@ p.small-txt {
 	/* font-weight: 300; */
 	font-size: 1.7rem;
 }
+
+
+.showcase-content form:hover{
+	background-image: linear-gradient(to right, #a708f1,#a708f1, #8c269c, #5c21a5); /* Standard syntax (must be last) */
+}
+
+/* SIGN UP  */
+
+.showcase.sign-up-page::after {
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 140px 250px 250px #191111, inset -12px -200px 350px #000000;
+}
+
+.sign-up form input[type=date] {
+	border: none;
+	outline: none;
+	height: 2rem;
+	border-radius: 0.2rem;
+	/* background-color:grey; */
+	padding: 1rem;
+	background-color: rgb(133, 133, 133);
+}
+
 
 /* .showcase-content form div .to-signup-page {
 
