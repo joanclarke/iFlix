@@ -29,31 +29,16 @@
       <div class="showcase-content">
         <h1>The best place to compare movies and TV Shows</h1>
         <p>Search movies. Compare stats </p>
-        <p class="small-txt">plus get the latest info on your favorite celebrities</p>
-        <!-- <a id="search-top" href="#top-autocomplete" class="btn btn-xl grad1 searching" onclick="showSearch()">Search Movie <i class="fas fa-film btn-icon fa-spin"></i></a> -->
-        <!-- <form action="/action_page.php"> -->
-        <form action="#">
-          <!-- <label for="email">Enter your email:</label> -->
+        <p class="small-txt">Sign up to get started with your membership</p>
+
+        <form action="signin.html" class="grad5">
           <input type="email" id="email" name="email" placeholder="Email address" required>
-          <button type="submit" class="btn btn-primary grad1 submit-btn"> Get started <i class="fas fa-chevron-right"></i></button>
-          <!-- <span> -->
-            <!-- <input type="submit" value="Get started " class="grad1"> 
-            <i class="fas fa-chevron-right"></i> -->
-          <!-- </span> -->
+          <div id="submit-btn-holder">
+            <input type="submit" value="Get started &nbsp &#8250;" class=""> 
+          </div>
         </form>
       </div>
     </header>
-
-    <!-- Search Content -->
-   <section id="top-search-content" >
-      <div class="container">
-        <div class="column">
-          <div class="close" onclick="closeSearch()" > <i class="fas fa-times-circle fa-2x"></i></div>
-          <div id="top-autocomplete"></div>
-          <div id="top-summary"></div>
-        </div>
-      </div>
-    </section>
     
     <hr class="thick-line has-background-black-ter">
     <section class="info-tab-content has-background-black">
@@ -86,7 +71,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -110,7 +94,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -120,9 +103,6 @@
 
         <!-- Info Tab 1 Content -->
         <div id="info-tab-1-content" class="info-tab-content-item show">
-        
-
-          <!-- ======= TV ======= -->
           <div class="info-tab-1-content-inner">
             <div>
               <h1>Download results<span>.</span></h1>
@@ -142,274 +122,6 @@
 
       </div>
     </section>
-
-    <!-- <section class="info-tab-content has-background-black">
-      <hr class="thick-line has-background-black-ter">
-      <div class="container">
-
-        <div id="info-tab-1-content" class="info-tab-content-item show">
-      
-          <div class="info-tab-1-content-inner">
-            <div>
-              <p class="text-md"> How many nominations and Oscar wins and the Black Panther movie rack up?
-              </p>
-              
-              <a href="signin.html" class="btn btn-lg grad1">Find out</a>
-            </div>
-            <div class="tv">
-              <div>
-                <img src="img/black-panther.gif" alt="">
-              </div>
-              <i class="las la-desktop"></i>          
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-
-
-    <!-- Info Content -->
-    <section class="info-tabs">
-      
-      <div class="container">
-        <div id="info-tab-1" class="info-tab-item tab-border">
-          <i class="fas la-trophy fa-3x"></i>
-          <p>Awards</p>
-        </div>
-        <div id="info-tab-2" class="info-tab-item">
-          <i class="fas la-tv fa-3x"></i>
-          <p>Movies</p>
-        </div>
-        <div id="info-tab-3" class="info-tab-item">
-          <i class="fas la-users fa-3x"></i>
-          <p>Celebritiess</p>
-        </div>
-        <div id="info-tab-4" class="info-tab-item">
-          <i class="fas la-film fa-3x"></i>
-          <p>Box Office Hits</p>
-        </div>
-    </section>
-
-    <section class="info-tab-content has-background-black">
-      <div class="container">
-
-        <!-- Info Tab 1 Content -->
-        <div id="info-tab-1-content" class="info-tab-content-item show">
-          <!-- ======= TV ======= -->
-          <div class="info-tab-1-content-inner">
-            <div>
-              <p class="text-md"> How many nominations and Oscar wins and the Black Panther movie rack up?
-              </p>
-              
-              <a href="signin.html" class="btn btn-lg grad1">Find out</a>
-            </div>
-            <div class="tv">
-              <div>
-                <img src="img/black-panther.gif" alt="">
-              </div>
-              <i class="las la-desktop"></i>     
-            </div>
-          </div>
-        </div>
-
-        <!-- Info Tab 2 Content -->
-        <div id="info-tab-2-content" class="info-tab-content-item">
-            <div class="text-center">
-              <p class="text-md">We have a ton of information about your favorite movie</p>
-              <a href="#" class="btn btn-lg grad1">Compare Movie Stats</a>
-            </div>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Search for information about any movie.</td>
-                  <td><i class="las la-check-circle la-2x"></i></td>
-                </tr>
-                <tr>
-                  <td>Get info on the movie nominations, awards, ratings.</td>
-                  <td><i class="las la-check-circle la-2x"></i></td>
-                </tr>
-                <tr>
-                  <td>Find out who are the writers and directors of your favorite movie.</td>
-                  <td><i class="las la-check-circle la-2x"></i></td>
-                </tr>
-                <tr>
-                  <td>Use Flix Fight to search and compare multiple movies..</td>
-                  <td><i class="las la-check-circle la-2x"></i></td>
-                </tr>
-                <tr>
-                  <td>Get information on IMDb's top rated shows.</td>
-                  <td><i class="las la-check-circle la-2x"></i></td>
-                </tr>
-                <tr>
-                  <td>Find out which movies flopped and which topped the ratings scale.</td>
-                  <td><i class="las la-check-circle la-2x"></i></td>
-                </tr>
-                <tr>
-                  <td>Find out the box office earning of your favotite movie.</td>
-                  <td><i class="las la-check-circle la-2x"></i></td>
-                </tr>
-              </tbody>
-            </table>
-        </div> 
-        
-        <!-- Info Tab 3 Content -->
-        <div id="info-tab-3-content" class="info-tab-content-item">
-          <div class="container">
-            <div class="info-tab-3-content-inner">
-              <div class="numbers"><p>1</p></div>
-              <div class="tab-3-inner-tab">
-                <img class="celeb-1-img" src="img/magazines3.png" alt="Picture of magazines on a stand" />
-                <p>Celebrity News</p>
-              </div>
-            </div>
-            <div class="info-tab-3-content-inner">
-              <div class="numbers"><p>2</p></div>
-              <div class="tab-3-inner-tab">
-                <img class="celeb-2-img" src="img/joker2.png" alt="Picture of the joker sitting down" />
-                <p>Famous People lists their Favorite Movies</p>
-              </div>
-            </div>
-            <div class="info-tab-3-content-inner">
-              <div class="numbers"><p>3</p></div>
-              <div class="tab-3-inner-tab">
-              <img class="celeb-3-img" src="img/selena2.png" alt="Picture of woman singing" />
-              <p>Top Movies based on Famous People</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Info Tab 4 Content -->
-        <div id="info-tab-4-content" class="info-tab-content-item">
-          <div class="text-center">
-            <p class="text-md">OMDb's Top Box Office Hits</p>
-            <p>Top five movies featured here. See full listing on OMDb</p>
-            <a href="https://www.imdb.com/search/title/?groups=top_250&sort=boxoffice_gross_us,desc" target="_blank" class="btn btn-lg grad1">View list</a>
-          </div>
-
-          <div class="box-office-featured">
-            
-            <!-- slide # 1 -->
-            <div class="featured-movie mySlides fade">
-              <div>
-                <a href="https://www.imdb.com/title/tt4154796/?ref_=adv_li_tt" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="Avengers: Endgame poster" /></a>
-                <a href="https://www.imdb.com/title/tt4154796/?ref_=adv_li_tt" target="_blank">More detail on IMDb</a>
-              </div>
-              <div class="feature-movie-detail">
-                <img src="img/icons8-1st-90.png"/>
-                <div>
-                  <p class="text-xl">Avengers: Endgame</p>
-                  <p class="text-sm-thin">2019</p>
-                  <p>Staring: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth</p>
-                  <p class="grad2">Gross: $858.37M</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- slide # 2 -->
-            <div class="featured-movie mySlides fade">
-              <div>
-                <a href="https://www.imdb.com/title/tt4154756/?ref_=adv_li_tt" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SX300.jpg" alt="Avengers: Infinity War poster" /></a>
-                <a href="https://www.imdb.com/title/tt4154756/?ref_=adv_li_tt" target="_blank">More detail on IMDb</a>
-              </div>
-              <div class="feature-movie-detail">
-                <img src="img/icons8-circled-2-90.png"/>
-                <div>
-                  <p class="text-xl">Avengers: Infinity War</p>
-                  <p class="text-sm-thin">2018</p>
-                  <p>Staring: Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans</p>
-                  <p class="grad2">Gross: $678.82M</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- slide # 3 -->
-            <div class="featured-movie mySlides fade">
-              <div>
-                <a href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="The Dark Knight poster" /></a>
-                <a href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt" target="_blank">More detail on IMDb</a>
-              </div>
-              <div class="feature-movie-detail">
-                <img src="img/icons8-circled-3-c-90.png"/>
-                <div>
-                  <p class="text-xl">The Dark Knight</p>
-                  <p class="text-sm-thin">2008</p>
-                  <p>Staring:  Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine</p>
-                  <p class="grad2">Gross: $534.86M</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- slide # 4 -->
-            <div class="featured-movie mySlides fade">
-              <div>
-                <a href="https://www.imdb.com/title/tt1345836/?ref_=adv_li_tt" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg" alt="The Dark Knight Rises poster" /></a>
-                <a href="https://www.imdb.com/title/tt1345836/?ref_=adv_li_tt" target="_blank">More detail on IMDb</a>
-              </div>
-              <div class="feature-movie-detail">
-                <img src="img/icons8-circled-4-c-90.png"/>
-                <div>
-                  <p class="text-xl">The Dark Knight Rises</p>
-                  <p class="text-sm-thin">2012</p>
-                  <p>Staring: Christian Bale, Tom Hardy, Anne Hathaway, Gary Oldman</p>
-                  <p class="grad2">Gross: $448.14M</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- slide # 5 -->
-            <div class="featured-movie mySlides fade">
-              <div>
-                <a href="https://www.imdb.com/title/tt0110357/?ref_=adv_li_tt" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg" alt="The Lion King poster" /></a>
-                <a href="https://www.imdb.com/title/tt0110357/?ref_=adv_li_tt" target="_blank">More detail on IMDb</a>
-              </div>
-              <div class="feature-movie-detail">
-                <img src="img/icons8-circled-5-90.png"/>
-                <div>
-                  <p class="text-xl">The Lion King</p>
-                  <p class="text-sm-thin">1994</p>
-                  <p>Staring: Matthew Broderick, Jeremy Irons, James Earl Jones, Whoopi Goldberg</p>
-                  <p class="grad2">Gross: $422.78M</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- previous & next links -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          <!-- dot -->    
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-          </div>
-
-
-            <!-- <div class="featured-movie">
-              <div>
-                <a href="https://www.imdb.com/title/tt4154796/?ref_=adv_li_tt" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" alt="" /></a>
-                <a href="https://www.imdb.com/title/tt4154796/?ref_=adv_li_tt" target="_blank">More detail on IMDb</a>
-              </div>
-              <div class="feature-movie-detail">
-                <img src="img/icons8-1st-90.png"/>
-                <div>
-                  <p class="text-xl">Avengers: Endgame</p>
-                  <p>Staring: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth</p>
-                  <p class="grad2">Gross: $858.37M</p>
-                </div>
-              </div>
-            </div> -->
-
-          </div>
-        </div>
-      </div>
-    </section>
-
 
     <!-- Flick Fight Content -->
     <section class="iflix-movie-fight has-background-black searching">

@@ -370,6 +370,11 @@ p.small-txt {
 	background-image: linear-gradient(to bottom, #38393a, #1c1c1d);
 }
 
+.grad5 {
+	background-color: #a708f1; /* For browsers that do not support gradients */
+	background-image: linear-gradient(to right, #5c21a5, #8c269c, #5c21a5,#a708f1); /* Standard syntax (must be last) */
+}
+
 .grad4:hover {
 	background-image: linear-gradient(to bottom, #3f4041, #2b2b2c);
 }
@@ -408,47 +413,55 @@ p.small-txt {
 	letter-spacing: 0.05rem;
 }
 
-.showcase-content form input[type=email], .showcase-content form .submit-btn {
-border:none;
-/* height: 4rem; */
-/* max-width: 500px; */
-/* min-width: 21.875rem; */
-/* height: 60px !important; */
-height: 3.75rem;
+.showcase-content form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.showcase-content form input[type=email],	.showcase-content form div.submit-btn-holder, .showcase-content form div a.to-signup-page  {
+	border:none;
+	height: 3.75rem;
 }
 
 .showcase-content form input[type=email] {
-
-	/* max-width: 500px; */
-	width: 32rem;
-	/* min-width: 21.875rem; */
-	/* height: 60px !important; */
-	/* height: 3.75rem; */
+	width: 28rem;
 	font-size: 1rem;
 	padding-left: 1rem;
-	/* padding-top: -36rem; */
-	}
-	
-	/* .showcase-content form input[type=submit] span {
-		margin-top:1rem;
-	} */
-
-.showcase-content form .submit-btn {
-	border:none;
-	/* max-width: 25rem; */
-	width: 16rem;
-	height: 3.95rem;
-	margin-left: -2rem;
-	color: #ffffff;
-	font-weight: 300;
-	font-size: 1.75rem;
 	display: inline;
-	}
+}
+
+.showcase-content form div#submit-btn-holder {
+	position: relative;
+	z-index: 2;
+	display: inline;
+	width: 13rem;
+	margin: auto;
+}
+
+.showcase-content form input[type=submit] {
+	border:none;
+	background-color: transparent;
+	/* margin-top: 2rem;
+	margin-left: -0.5rem; */
+	color: #ffffff;
+	/* font-weight: 300; */
+	font-size: 1.7rem;
+}
+
+/* .showcase-content form div .to-signup-page {
+
+} */
 
 
-	/* .showcase-content form .submit-btn i.fas.fa-chevron-right {
-			font-weight: 400;
-	} */
+	/* .showcase-content form i.fas.fa-chevron-right { */
+		/* position: relative;
+		z-index: 2; */
+			/* font-weight: 400; */
+		/* color: #ffffff; */
+		/* margin-left: -2rem; */
+
+	/* } */
 
 
 /* Styles for top search section */
@@ -1957,12 +1970,33 @@ MEDIA QUERIES
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 900px) {
-	/* .celebrity-news a {
-		display: inline-flex;
-	} */
-	/* .showcase-flix-fight a:nth-child(2) {
-		right: 12%;
-	} */
+
+	.showcase-content form input[type=email],	.showcase-content form div.submit-btn-holder {
+		height: 3rem;
+	}
+
+	.showcase-content form input[type=email] {
+		width: 20rem;
+		display: block;
+	}
+	
+	.showcase-content form div#submit-btn-holder {
+		margin-top: 2rem;
+		display: block;
+		width: 10rem;
+		margin: auto;
+	}
+
+	.showcase-content form input[type=submit] {
+		border:none;
+		background-color: transparent;
+		/* margin-top: 2rem;
+		margin-left: -0.5rem; */
+		color: #ffffff;
+		/* font-weight: 300; */
+		font-size: 1.2rem;
+	}
+	
 
 	.showcase-flix-fight a.search {
 		right: 15%;
@@ -1971,10 +2005,6 @@ MEDIA QUERIES
 	.showcase img, .showcase-flix-fight img {
 		left: 16%;
 	}	
-
-	/* .showcase-content {
-			margin-top: 6rem;
-	} */
 
 	.showcase-content h1,
 	.flix-fight-content h1 {
@@ -2034,6 +2064,19 @@ MEDIA QUERIES
 		/* font-weight: 600;*/
 		font-size: 2.7rem; 
 		width: 80vw;
+	}
+
+	.showcase-content form input[type=email],	.showcase-content form div.submit-btn-holder {
+		height: 3rem;
+	}
+
+	.showcase-content form input[type=email] {
+		width: 20rem;
+	}
+	
+	.showcase-content form div#submit-btn-holder {
+		padding: 0.3rem 0;
+		width: 10rem;
 	}
 
 	#info-tab-1-content .info-tab-1-content-inner {
@@ -2141,6 +2184,23 @@ MEDIA QUERIES
 	/* .showcase-flix-fight a:nth-child(2) {
 		right: 18%;
 	} */
+
+.showcase-content form {
+		display: block
+	}
+
+	.showcase-content form input[type=email],	.showcase-content form div.submit-btn-holder {
+		height: 2.5rem;
+	}
+
+	.showcase-content form input[type=email] {
+		width: 16rem;
+	}
+	
+	.showcase-content form div#submit-btn-holder {
+		padding: 0;
+		width: 10rem;
+	}
 
 	.showcase-flix-fight a.search {
 		right: 24%;
