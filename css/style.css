@@ -114,6 +114,10 @@ hr {
 	height: 140vh;
 }
 
+.sign-up-page {
+	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
+	height: 160vh;
+}
 .iflix-movie-fight  {
 	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
 }
@@ -475,14 +479,14 @@ p.small-txt {
 	box-shadow: inset 140px 250px 250px #191111, inset -12px -200px 350px #000000;
 }
 
-.sign-up form input[type=date] {
+#sign-up form input[type=date] {
 	border: none;
 	outline: none;
 	height: 2rem;
 	border-radius: 0.2rem;
 	/* background-color:grey; */
 	padding: 1rem;
-	background-color: rgb(133, 133, 133);
+	background-color: #858585;
 }
 
 
@@ -1839,7 +1843,7 @@ i.icon-style {
 SIGN IN PAGE
 ========================= */
 
-#sign-in {
+#sign-in, #sign-up {
 	position: absolute;
 	z-index: 5;
 	/* top: -800px; */
@@ -1853,21 +1857,47 @@ SIGN IN PAGE
 	margin: auto;
 
 	margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 /* text-align: center */
 }
 
-#sign-in , input[type=text], input[type=password] {
+#sign-up {
+	background-color: #505050;
+	background-color: #5c21a5; /* For browsers that do not support gradients */
+	background-image: linear-gradient(to bottom, #5c21a5, #5c21a5,#8c269c, #a708f1);
+
+	/* color: black; */
+}
+
+#sign-up.sign-form {
+	width: 850px;
+	width:50rem;
+}
+
+#sign-up input[type=text], #sign-up input[type=password] {
+background-color: #ffffff;
+}
+
+#sign-in, #sign-up , input[type=text], input[type=password] {
  border-radius: 4px;
 }
 
-.sign-in-info {
+#sign-up form button {
+background-color:rgb(53, 49, 49);
+}
+
+.sign-in-info, .sign-up-info {
 	padding: 50px 60px;
 }
 
-.sign-in-title p {
+
+.sign-up-info {
+	padding: 60px 100px;
+}
+
+.sign-in-title p, .signing-title p {
 	font-weight: 500;
 	font-size: 2rem;
 }
@@ -1937,7 +1967,7 @@ input[type="checkbox"] {
 	margin-left: 152px;
 }
 
-.sign-up {
+.sign-up-or-sign-in {
 	margin-top: 40px;
 }
 
@@ -1948,7 +1978,7 @@ input[type="checkbox"] {
 	/* background-color: #ffffff; */
 }
 
-.sign-up p{
+.sign-up-or-sign-in p{
 	font-weight: 400;
 	font-size: 1rem;
 }
