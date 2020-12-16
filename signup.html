@@ -44,11 +44,11 @@
           <form action="signin.html">
             <div class="container">
               <!-- Email  -->
-              <label for="uname">What is your email?</label>
-              <input type="text" placeholder="Enter your email" name="uname" required>
+              <label for="email">What is your email?</label>
+              <input type="email" placeholder="Enter your email" name="uname" required>
               <!-- Confirm Email  -->
-              <label for="uname">Confirm your email?</label>
-              <input type="text" placeholder="Enter your email again" name="uname" required>
+              <label for="email">Confirm your email?</label>
+              <input type="email" placeholder="Enter your email again" name="uname" required>
               
               <!-- Password -->
               <label for="psw">Craete a password</label>
@@ -61,6 +61,27 @@
               <!-- Birthday -->
               <label for="birthday">Birthday:</label>
               <input type="date" id="birthday" name="birthday">
+              
+              <!-- Gender -->
+              <!-- <label class="gender">
+                <input type="radio" checked="checked" name="select"> Female
+              </label>
+               -->
+               <div>
+               <label for="gender">What's your gender</label>
+               </div>
+               <div>
+              <input type="radio" id="femalee" name="drone" value="huey" checked>
+              <label for="huey">Female</label>
+
+            <input type="radio" id="male" name="drone" value="dewey">
+            <label for="dewey">Male</label>
+
+
+
+            <input type="radio" id="non-binary" name="drone" value="dewey">
+            <label for="dewey">Non-binary</label>
+          </div>
 
               <button type="submit">Sign Up</button>
               <label class="remember">
@@ -69,7 +90,7 @@
               <a href="#" class="need-help">Need help? </a>
             </div>
             <div class="sign-up-or-sign-in">
-              <a href="#" class="google-logo"><img src="img/google-logo.png" /> Login with Google </a>
+              <a href="#" class="google-logo"><img src="img/google-logo.png" /> Signup with Google </a>
               <p>Already a member? <a href="signin.html">Sign in</a></p>
             </div>
             <div class="container cancel" >

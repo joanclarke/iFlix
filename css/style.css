@@ -486,7 +486,13 @@ p.small-txt {
 	border-radius: 0.2rem;
 	/* background-color:grey; */
 	padding: 1rem;
-	background-color: #858585;
+	background-color: #ffffff;
+}
+
+#sign-up form input[type=text]:focus  ,#sign-up form input[type=text]:focus, #sign-up form input[type=password]:focus, #sign-up form input[type=date]:focus {
+	border: 1px solid #5c21a5;
+	outline: none;
+	background-color: #ffffff;
 }
 
 
@@ -1876,11 +1882,11 @@ SIGN IN PAGE
 	width:50rem;
 }
 
-#sign-up input[type=text], #sign-up input[type=password] {
+#sign-up input[type=email], #sign-up input[type=text], #sign-up input[type=password] {
 background-color: #ffffff;
 }
 
-#sign-in, #sign-up , input[type=text], input[type=password] {
+#sign-in, #sign-up , input[type=text],input[type=email], input[type=password] {
  border-radius: 4px;
 }
 
@@ -1910,7 +1916,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type=email], input[type=text], input[type=password] {
   width: 100%;
   padding: 16px 20px;
   margin: 8px 0;
@@ -1923,7 +1929,7 @@ input[type=text], input[type=password] {
 	color: #b9b7b7;
 }
 
-input[type=text]:hover, input[type=password]:hover {
+iinput[type=email]:hover, nput[type=text]:hover, input[type=password]:hover {
 	background-color: #292a33;
 }
 
