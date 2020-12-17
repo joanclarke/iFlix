@@ -97,14 +97,14 @@ const runComparison = () => {
 			leftStat.classList.remove('winning-stat');
 			leftStat.classList.add('losing-stat');
 			console.log(rightSideValue, leftSideValue);
-			leftStat.style.backgroundColor = 'red';
-			rightStat.style.backgroundColor = 'green';
+			// leftStat.style.backgroundColor = 'red';
+			// rightStat.style.backgroundColor = 'green';
 		} else {
 			rightStat.classList.remove('winning-stat');
 			rightStat.classList.add('losing-stat');
 			console.log(leftSideValue, rightSideValue);
-			leftStat.style.backgroundColor = 'green';
-			rightStat.style.backgroundColor = 'red';
+			// leftStat.style.backgroundColor = 'green';
+			// rightStat.style.backgroundColor = 'red';
 		}
 
 		// if (rightSideValue > leftSideValue) {
@@ -156,23 +156,23 @@ const movieTemplate = (movieDetail) => {
 			</div>
 		</article>
 
-		<article data-value=${awards} class="notification losing-stat winning-stat">
+		<article data-value=${awards} class="notification winning-stat">
 			<p class="title">${movieDetail.Awards}</p>
 			<p class="subtitle">Awards</p>
 		</article>
-		<article data-value=${dollars} class="notification losing-stat winning-stat">
+		<article data-value=${dollars} class="notification winning-stat">
 			<p class="title">${movieDetail.BoxOffice}</p>
 			<p class="subtitle">Box Office</p>
 		</article>
-		<article data-value=${metascore} class="notification losing-stat winning-stat">
+		<article data-value=${metascore} class="notification winning-stat">
 			<p class="title">${movieDetail.Metascore}</p>
 			<p class="subtitle">Metascore</p>
 		</article>
-		<article data-value=${imdbRating} class="notification losing-stat winning-stat">
+		<article data-value=${imdbRating} class="notification winning-stat">
 			<p class="title">${movieDetail.imdbRating}</p>
 			<p class="subtitle">IMDB Rating</p>
 		</article>
-		<article data-value=${imdbVotes} class="notification losing-stat winning-stat">
+		<article data-value=${imdbVotes} class="notification winning-stat">
 			<p class="title">${movieDetail.imdbVotes}</p>
 			<p class="subtitle">IMDB Votes</p>
 		</article>

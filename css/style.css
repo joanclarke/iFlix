@@ -709,11 +709,11 @@ p.plot {
 }
 
 .winning-stat {
-	background-color: green ;
+	background-color: green !important;
 }
 
 .losing-stat {
-	background-color: red;
+	background-color: red !important;
 }
 /* .has-text-grey-dark {
 	color: #4a4a4a !important;
