@@ -37,7 +37,7 @@
      <section id="sign-up" class="sign-form">
        <div class="container">
         <!-- 450 width 660 length -->
-        <div class="sign-in-info, sign-up-info">
+        <div class="sign-in-info, sign-up-info grad3">
           <div class="signing-title">
             <p>Sign Up</p>
           </div>
@@ -45,49 +45,49 @@
             <div class="container">
               <!-- Email  -->
               <label for="email">What is your email?</label>
-              <input type="email" placeholder="Enter your email" name="uname" required>
+              <input type="email" placeholder="Enter your email" name="email" required>
               <!-- Confirm Email  -->
               <label for="email">Confirm your email?</label>
-              <input type="email" placeholder="Enter your email again" name="uname" required>
+              <input type="email" placeholder="Enter your email again" name="email" required>
               
               <!-- Password -->
-              <label for="psw">Craete a password</label>
+              <label for="psw">Create a password</label>
               <input type="password" placeholder="Password" name="psw" required>
           
               <!-- Username  -->
               <label for="uname">What should we call you?</label>
-              <input type="text" placeholder="Enter your username" name="uname" required>
+              <input type="text" id="username" placeholder="Enter your username" name="uname" required>
                 
               <!-- Birthday -->
               <label for="birthday">Birthday:</label>
               <input type="date" id="birthday" name="birthday">
               
               <!-- Gender -->
-              <!-- <label class="gender">
-                <input type="radio" checked="checked" name="select"> Female
+
+              <p>What's your gender?</p>
+              <div>
+                <input type="radio" id="female"
+                name="gender" value="female">
+                <label for="female">Female</label>
+            
+                <input type="radio" id="male"
+                name="gender" value="male">
+                <label for="male">Male</label>
+            
+                <input type="radio" id="non-binary"
+                name="gender" value="non-binary">
+                <label for="non-binary">Non-binary</label>
+              </div>
+
+              <label class="checkboxes">
+                <input type="checkbox" checked="checked" name="checkboxes" value="checkbox"> Share my registration data with iFlix's content providers for marketing purposes.
               </label>
-               -->
-               <div>
-               <label for="gender">What's your gender</label>
-               </div>
-               <div>
-              <input type="radio" id="femalee" name="drone" value="huey" checked>
-              <label for="huey">Female</label>
-
-            <input type="radio" id="male" name="drone" value="dewey">
-            <label for="dewey">Male</label>
-
-
-
-            <input type="radio" id="non-binary" name="drone" value="dewey">
-            <label for="dewey">Non-binary</label>
-          </div>
 
               <button type="submit">Sign Up</button>
-              <label class="remember">
+              <!-- <label class="remember">
                 <input type="checkbox" checked="checked" name="remember"> Remember me
               </label>
-              <a href="#" class="need-help">Need help? </a>
+              <a href="#" class="need-help">Need help? </a> -->
             </div>
             <div class="sign-up-or-sign-in">
               <a href="#" class="google-logo"><img src="img/google-logo.png" /> Signup with Google </a>

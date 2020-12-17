@@ -116,7 +116,7 @@ hr {
 
 .sign-up-page {
 	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
-	height: 160vh;
+	height: 200vh;
 }
 .iflix-movie-fight  {
 	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
@@ -487,6 +487,7 @@ p.small-txt {
 	/* background-color:grey; */
 	padding: 1rem;
 	background-color: #ffffff;
+	margin-bottom: 0.7rem;
 }
 
 #sign-up form input[type=text]:focus  ,#sign-up form input[type=text]:focus, #sign-up form input[type=password]:focus, #sign-up form input[type=date]:focus {
@@ -1845,9 +1846,10 @@ i.icon-style {
 }
 
 /* 
-=========================
-SIGN IN PAGE
-========================= */
+============================
+SIGN IN PAGE & SIGN UP PAGE
+============================ 
+*/
 
 #sign-in, #sign-up {
 	position: absolute;
@@ -1879,22 +1881,57 @@ SIGN IN PAGE
 
 #sign-up.sign-form {
 	width: 850px;
-	width:50rem;
+	width: 50rem;
 }
 
-#sign-up input[type=email], #sign-up input[type=text], #sign-up input[type=password] {
-background-color: #ffffff;
+label {
+	font-weight: 400;
+  margin-right: 15px;
+  line-height: 34px;
 }
 
-#sign-in, #sign-up , input[type=text],input[type=email], input[type=password] {
+/* Full-width inputs */
+#sign-up input[type=email], input[type=text], input[type=password] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  display: inline-block;
+	/* border: 1px solid #8c269c; */
+	border: none;
+	box-sizing: border-box;
+	font-size: 1rem;
+	background-color: #2d2e30;
+	color: #b9b7b7;
+	outline: none;
+}
+
+#sign-up input[type=email]:focus, input[type=text]:focus,  input[type=password]:focus {
+	border: 1px solid #a708f1;
+}
+
+#sign-up input, #sign-up input[type=email]{	
+/* #sign-up input[type=email], #sign-up input[type=text], #sign-up input[type=password] { */
+
+	background-color: #ffffff;
+}
+/* 
+#sign-up input:focus, #sign-up input[type=email]:focus{	
+	border: 1px solid #a708f1;
+	} */
+
+#sign-in input[type=text],#sign-up input[type=email], input[type=password] {
  border-radius: 4px;
 }
 
-#sign-up form button {
-background-color:rgb(53, 49, 49);
-}
+#sign-up input[type=text]:focus,#sign-up input[type=email]:focus, #sign-up input[type=password]:focus {
+	border: 1px solid #a708f1;
+ }
 
-.sign-in-info, .sign-up-info {
+/* #sign-up form button {
+background-color:rgb(53, 49, 49);
+} */
+
+.sign-in-info {
 	padding: 50px 60px;
 }
 
@@ -1908,6 +1945,10 @@ background-color:rgb(53, 49, 49);
 	font-size: 2rem;
 }
 
+input#username {
+	margin-bottom: 1.5rem;
+}
+
 /* Sign In Form  */
 
 /* Bordered form */
@@ -1915,23 +1956,12 @@ form {
   /* border: 3px solid #f1f1f1; */
 }
 
-/* Full-width inputs */
-input[type=email], input[type=text], input[type=password] {
-  width: 100%;
-  padding: 16px 20px;
-  margin: 8px 0;
-  display: inline-block;
-	/* border: 1px solid #ccc; */
-	border: none;
-	box-sizing: border-box;
-	font-size: 1rem;
-	background-color: #2d2e30;
-	color: #b9b7b7;
-}
 
-iinput[type=email]:hover, nput[type=text]:hover, input[type=password]:hover {
+
+input[type=text]:hover, input[type=password]:hover {
 	background-color: #292a33;
 }
+
 
 /* Set a style for all buttons */
 button {
@@ -1963,7 +1993,7 @@ input[type="checkbox"] {
 	-webkit-filter: grayscale(100%); filter: grayscale(100%);
 		} 
 
-.remember, .need-help, .google-logo {
+.checkboxes, .need-help, .google-logo {
 	font-weight: 400;
 	font-size: 0.8rem;
 	color: #ccc;
@@ -2069,7 +2099,16 @@ MEDIA QUERIES
 		/* font-weight: 300; */
 		font-size: 1.2rem;
 	}
-	
+
+
+	.sign-up-page {
+		height: 380vh;
+}
+
+#sign-up.sign-form {
+	margin-top: 5rem;
+	width: 40rem;
+}
 
 	.showcase-flix-fight a.search {
 		right: 15%;
@@ -2151,6 +2190,17 @@ MEDIA QUERIES
 		padding: 0.3rem 0;
 		width: 10rem;
 	}
+
+
+.sign-up-page {
+	/* height: 130vh; */
+	/* width: 125; */
+}
+
+#sign-up {
+	/* height: 102vh; */
+	width: 100%;
+}
 
 	#info-tab-1-content .info-tab-1-content-inner {
 		display: grid;
@@ -2243,6 +2293,15 @@ MEDIA QUERIES
 }
 
 @media only screen and (max-width: 680px) {
+	#sign-up.sign-form {
+    /* margin-top: 5rem; */
+    width: 34rem;
+}
+
+.sign-up-info {
+	padding: 40px 60px;
+}
+	
 	.celebrity-news a {
 		display: inline-block;
 	}
@@ -2274,6 +2333,15 @@ MEDIA QUERIES
 		padding: 0;
 		width: 10rem;
 	}
+
+	.sign-up-page {
+    height: 245vw;
+}
+
+	#sign-up.sign-form {
+    /* margin-top: 5rem; */
+    width: 30rem;
+}
 
 	.showcase-flix-fight a.search {
 		right: 24%;
@@ -2313,6 +2381,23 @@ MEDIA QUERIES
 	/* .showcase-flix-fight a:nth-child(2) {
 		right: 22%;
 	} */
+
+	.sign-up-page {
+    height: 350vw;
+	}
+
+		#sign-up.sign-form {
+			width: 20rem;
+	}
+
+	.sign-up-info {
+		padding: 20px;
+	}
+
+	form .container.cancel {
+    margin-left: -40px;
+    margin-right: -40px;
+}
 
 	.flix-fight-content p:nth-child(1) {
     /* text-transform: uppercase; */
