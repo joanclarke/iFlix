@@ -613,12 +613,12 @@ label[for=search] {
 	content: "blue";
 } */
 
-#top-autocomplete input::placeholder { 
+#top-autocomplete input::placeholder, #left-autocomplete input::placeholder, #right-autocomplete input::placeholder { 
 	/* color:#5c21a5; */
 	/* color:rgba(140, 38, 156, 0.6); */
-	color:rgb(140, 38, 156);
-	font-size: 1.2em; 
-	font-style: italic; 
+	/* color:rgb(140, 38, 156);
+	font-size: 1.2em; */
+font-style: italic; 
 }
 
 /* #top-autocomplete .input::-webkit-input-placeholder::before {
@@ -676,6 +676,48 @@ p.plot {
 	font-size: 1.1rem;
 	color: #fff;
 }
+
+#left-summary article.notification p.title, #right-summary article.notification p.title {
+	font-size: 1.1rem;
+}
+
+#left-summary article.notification p.subtitle, #right-summary article.notification p.subtitle {
+	font-size: 0.9rem;
+}
+
+#left-summary article.notification, #right-summary article.notification {
+	background-color: whitesmoke;
+	/* border-radius: 4px; */
+	/* padding: 1.25rem 2.5rem 1.25rem 1.5rem; */
+	padding: 0.5rem;
+	position: relative;
+	/* background-color: red; */
+}
+
+.notification {
+	background-color: whitesmoke;
+	/* border-radius: 4px; */
+	/* padding: 1.25rem 2.5rem 1.25rem 1.5rem; */
+	padding: 0.5rem;
+	position: relative;
+	/* background-color: red; */
+}
+
+#left-summary article.notification p, #right-summary article.notification p{
+	margin: 0.2rem;
+
+}
+
+.winning-stat {
+	background-color: green ;
+}
+
+.losing-stat {
+	background-color: red;
+}
+/* .has-text-grey-dark {
+	color: #4a4a4a !important;
+} */
 /* Styles for flick-fight section */
 
 .tutorial {
@@ -1891,7 +1933,7 @@ label {
 }
 
 /* Full-width inputs */
-#sign-up input[type=email], input[type=text], input[type=password] {
+#sign-up input[type=email], #sign-in input[type=email], input[type=text], input[type=password] {
   width: 100%;
   padding: 16px 20px;
   margin: 8px 0;
@@ -1911,21 +1953,30 @@ label {
 
 #sign-up input, #sign-up input[type=email]{	
 /* #sign-up input[type=email], #sign-up input[type=text], #sign-up input[type=password] { */
-
 	background-color: #ffffff;
 }
+
+/* #sign-up input:focus, #sign-up input[type=email]:focus{	
+		border: 1px solid #a708f1 !important;
+	} */
 /* 
 #sign-up input:focus, #sign-up input[type=email]:focus{	
 	border: 1px solid #a708f1;
 	} */
 
-#sign-in input[type=text],#sign-up input[type=email], input[type=password] {
+#sign-in input[type=text], #sign-in input[type=password], #sign-in input[type=email], 
+#sign-up input[type=text],#sign-up input[type=email], #sign-up input[type=password] {
  border-radius: 4px;
 }
 
-#sign-up input[type=text]:focus,#sign-up input[type=email]:focus, #sign-up input[type=password]:focus {
+input:focus, #sign-in input:focus, #sign-up input:focus, #sign-in input[type=text]:focus, #sign-in input[type=password]:focus, #sign-in input[type=email]:focus, 
+#sign-up input[type=text]:focus, #sign-up input[type=email]:focus, #sign-up input[type=password]:focus {
+	border: 1px solid #a708f1 !important;
+}
+
+/* #sign-up input[type=text]:focus,#sign-up input[type=email]:focus, #sign-up input[type=password]:focus {
 	border: 1px solid #a708f1;
- }
+ } */
 
 /* #sign-up form button {
 background-color:rgb(53, 49, 49);

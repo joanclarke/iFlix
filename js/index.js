@@ -65,7 +65,7 @@ const onMovieSelect = async (movie, summaryElement, side) => {
 			i: movie.imdbID
 		}
 	});
-
+// CHECKKKKK!!!!
 	if (side === 'top') {
 		summaryElement.innerHTML = searchMovieTemplate(response.data);
 		searchMovie = response.data;
@@ -94,12 +94,26 @@ const runComparison = () => {
 		const rightSideValue = parseInt(rightStat.dataset.value);
 
 		if (rightSideValue > leftSideValue) {
-			leftStat.classList.remove('has-background-warning');
-			leftStat.classList.add('has-background-grey-light');
+			leftStat.classList.remove('winning-stat');
+			leftStat.classList.add('losing-stat');
+			console.log(rightSideValue, leftSideValue);
+			leftStat.style.backgroundColor = 'red';
+			rightStat.style.backgroundColor = 'green';
 		} else {
-			rightStat.classList.remove('has-background-warning');
-			rightStat.classList.add('has-background-grey-light');
+			rightStat.classList.remove('winning-stat');
+			rightStat.classList.add('losing-stat');
+			console.log(leftSideValue, rightSideValue);
+			leftStat.style.backgroundColor = 'green';
+			rightStat.style.backgroundColor = 'red';
 		}
+
+		// if (rightSideValue > leftSideValue) {
+		// 	leftStat.classList.remove('has-background-warning');
+		// 	leftStat.classList.add('has-background-grey-light');
+		// } else {
+		// 	rightStat.classList.remove('has-background-warning');
+		// 	rightStat.classList.add('has-background-grey-light');
+		// }
 	});
 	// let leftSideCount;
 	// let rightSideCount;
@@ -142,23 +156,23 @@ const movieTemplate = (movieDetail) => {
 			</div>
 		</article>
 
-		<article data-value=${awards} class="notification has-text-grey-dark has-background-warning">
+		<article data-value=${awards} class="notification losing-stat winning-stat">
 			<p class="title">${movieDetail.Awards}</p>
 			<p class="subtitle">Awards</p>
 		</article>
-		<article data-value=${dollars} class="notification has-text-grey-dark has-background-warning">
+		<article data-value=${dollars} class="notification losing-stat winning-stat">
 			<p class="title">${movieDetail.BoxOffice}</p>
 			<p class="subtitle">Box Office</p>
 		</article>
-		<article data-value=${metascore} class="notification has-text-grey-dark has-background-warning">
+		<article data-value=${metascore} class="notification losing-stat winning-stat">
 			<p class="title">${movieDetail.Metascore}</p>
 			<p class="subtitle">Metascore</p>
 		</article>
-		<article data-value=${imdbRating} class="notification has-text-grey-dark has-background-warning">
+		<article data-value=${imdbRating} class="notification losing-stat winning-stat">
 			<p class="title">${movieDetail.imdbRating}</p>
 			<p class="subtitle">IMDB Rating</p>
 		</article>
-		<article data-value=${imdbVotes} class="notification has-text-grey-dark has-background-warning">
+		<article data-value=${imdbVotes} class="notification losing-stat winning-stat">
 			<p class="title">${movieDetail.imdbVotes}</p>
 			<p class="subtitle">IMDB Votes</p>
 		</article>
@@ -207,24 +221,31 @@ const searchMovieTemplate = (movieDetail) => {
 	`;
 };
 
-
-
-
 // Show input field
 function showSearch() {
 	document.getElementById('top-search-content').style.display = 'block';
 }
 
-let showcaseTopId = document.getElementById('howcase-top-id');
+let showcaseTopId = document.getElementById('showcase-top-id');
 let searchBtn = document.getElementById('search-btn');
 let topInput = document.getElementById('top-autocomplete').getElementsByClassName('input')[0];
 topInput.setAttribute('placeholder', 'Search Movie');
+let leftInput = document.getElementById('left-autocomplete').getElementsByClassName('input')[0];
+leftInput.setAttribute('placeholder', 'Search Movie # 1');
+let rightInput = document.getElementById('right-autocomplete').getElementsByClassName('input')[0];
+rightInput.setAttribute('placeholder', 'Search Movie # 2');
 let close = Array.from(document.getElementsByClassName('close'));
-let topSearch = 	document.getElementById('top-search-content');
+let topSearch = document.getElementById('top-search-content');
 let resetInput = document.getElementById('reset-input');
 let input = Array.from(document.getElementsByClassName('input'));
 let summary = Array.from(document.getElementsByClassName('summary'));
-console.log(topInput);
+
+
+// document.addEventListener('click', function(root){
+// 	console.log(root);
+// })
+
+
 
 searchBtn.addEventListener('click', function() {
 	showSearch(topSearch, event);
