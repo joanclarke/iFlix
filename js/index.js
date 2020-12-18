@@ -86,35 +86,70 @@ const onMovieSelect = async (movie, summaryElement, side) => {
 const runComparison = () => {
 	const leftSideStats = document.querySelectorAll('#left-summary .notification');
 	const rightSideStats = document.querySelectorAll('#right-summary .notification');
+	// console.log(leftSideStats, rightSideStats);
+
 
 	leftSideStats.forEach((leftStat, index) => {
 		const rightStat = rightSideStats[index];
 
 		const leftSideValue = parseInt(leftStat.dataset.value);
 		const rightSideValue = parseInt(rightStat.dataset.value);
+		const article = Array.from(document.getElementsByTagName("article"));
+		const leftArticles = Array.from(leftSideStats);
+
+		let star = document.createElement("span");
+		star.innerHTML = '<i class="fas fa-star" aria-hidden="true"></i>';	
+		star.setAttribute('class', 'winning-star');
+
+		// console.log(article);
+		console.log(leftArticles);
 
 		if (rightSideValue > leftSideValue) {
 			leftStat.classList.remove('winning-stat');
+			rightStat.classList.add('winning-stat');
+			rightStat.append(star);
 			leftStat.classList.add('losing-stat');
-			console.log(rightSideValue, leftSideValue);
+			// console.log(rightSideValue, leftSideValue);
 			// leftStat.style.backgroundColor = 'red';
 			// rightStat.style.backgroundColor = 'green';
+			// checkRating(rightSideStats);
 		} else {
 			rightStat.classList.remove('winning-stat');
 			rightStat.classList.add('losing-stat');
-			console.log(leftSideValue, rightSideValue);
+			leftStat.classList.add('winning-stat');
+			leftStat.append(star);
+			// checkRating(leftArticles);
+			// console.log(leftSideValue, rightSideValue);
 			// leftStat.style.backgroundColor = 'green';
 			// rightStat.style.backgroundColor = 'red';
 		}
 
-		// if (rightSideValue > leftSideValue) {
-		// 	leftStat.classList.remove('has-background-warning');
-		// 	leftStat.classList.add('has-background-grey-light');
-		// } else {
-		// 	rightStat.classList.remove('has-background-warning');
-		// 	rightStat.classList.add('has-background-grey-light');
-		// }
 	});
+	// notification winning-stat
+
+	// function checkRating(x){
+
+	// 			for(let i = 0; i < x.length; i++){
+	// 				// let arr = [];
+	
+	// 				if(x[i].classList.contains('winning-stat')) {
+	// 					let item = x[i].getElementsByClassName('title');
+	// 					let star = document.createElement("span");
+	// 					star.innerHTML = '<i class="fas fa-star" aria-hidden="true"></i>';	
+	// 					star.setAttribute('class', 'winning-star');
+	// 					for(let el of item) {
+
+	// 						el.append(star);
+	// 						if(el.contains(star)) {
+	// 						// arr.push(el.contains(star));
+	// 						}							
+	// 					}
+	// 				}
+
+	// 			}
+
+	// }
+
 	// let leftSideCount;
 	// let rightSideCount;
 	// 	for(let i=0; i <=5; i++) {
@@ -156,23 +191,23 @@ const movieTemplate = (movieDetail) => {
 			</div>
 		</article>
 
-		<article data-value=${awards} class="notification winning-stat">
+		<article data-value=${awards} class="notification ">
 			<p class="title">${movieDetail.Awards}</p>
 			<p class="subtitle">Awards</p>
 		</article>
-		<article data-value=${dollars} class="notification winning-stat">
+		<article data-value=${dollars} class="notification ">
 			<p class="title">${movieDetail.BoxOffice}</p>
 			<p class="subtitle">Box Office</p>
 		</article>
-		<article data-value=${metascore} class="notification winning-stat">
+		<article data-value=${metascore} class="notification ">
 			<p class="title">${movieDetail.Metascore}</p>
 			<p class="subtitle">Metascore</p>
 		</article>
-		<article data-value=${imdbRating} class="notification winning-stat">
+		<article data-value=${imdbRating} class="notification ">
 			<p class="title">${movieDetail.imdbRating}</p>
 			<p class="subtitle">IMDB Rating</p>
 		</article>
-		<article data-value=${imdbVotes} class="notification winning-stat">
+		<article data-value=${imdbVotes} class="notification ">
 			<p class="title">${movieDetail.imdbVotes}</p>
 			<p class="subtitle">IMDB Votes</p>
 		</article>

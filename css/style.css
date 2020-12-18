@@ -664,8 +664,33 @@ p.plot {
 	color: rgb(175, 173, 173);
 }
 
+.winning-stat {
+	position: relative;
+	z-index: 5;
+	/* padding-left: 9rem !important; */
+	/* margin-top: 10rem; */
+}
+
+.winning-stat .fa-star {
+	/* color: red; */
+	font-size: 1rem !important;
+	margin-top: -5rem !important;
+
+	padding-top: 5rem;
+
+}
+
 .media-content .content hr.line {
 	background-color: #8c269c;
+}
+
+#left-summary .media .media-content .content h1, #right-summary .media .media-content .content h1  {
+	font-weight: 400;
+	color:#ece9e9;
+}
+
+#left-summary .media .media-content .content h4, #right-summary .media .media-content .content h4  {
+	color:#c2bfbf;
 }
 
 .media-content .content p.media-content-p strong {
@@ -677,6 +702,15 @@ p.plot {
 	color: #fff;
 }
 
+#left-summary .media, #right-summary .media {
+	margin-bottom: 1rem;
+}
+
+#left-summary .media-content .content p, #right-summary .media-content .content p{
+	/* font-weight: 300; */
+	font-size: 0.9rem;
+}
+
 #left-summary article.notification p.title, #right-summary article.notification p.title {
 	font-size: 1.1rem;
 }
@@ -686,22 +720,22 @@ p.plot {
 }
 
 #left-summary article.notification, #right-summary article.notification {
-	background-color: whitesmoke;
+	/* background-color: whitesmoke; */
+	background-color: #2d2e30;
+  color: #b9b7b7;
 	/* border-radius: 4px; */
 	/* padding: 1.25rem 2.5rem 1.25rem 1.5rem; */
 	padding: 0.5rem;
 	position: relative;
 	/* background-color: red; */
 }
-
+/* 
 .notification {
-	background-color: whitesmoke;
-	/* border-radius: 4px; */
-	/* padding: 1.25rem 2.5rem 1.25rem 1.5rem; */
+	background-color: #2d2e30;
+  color: #b9b7b7;
 	padding: 0.5rem;
 	position: relative;
-	/* background-color: red; */
-}
+} */
 
 #left-summary article.notification p, #right-summary article.notification p{
 	margin: 0.2rem;
@@ -710,10 +744,14 @@ p.plot {
 
 .winning-stat {
 	background-color: green !important;
+	color: #000000 !important;
+	color: #ffffff !important;
 }
 
 .losing-stat {
 	background-color: red !important;
+	color: #000000!important;
+	color: #ffffff !important;
 }
 /* .has-text-grey-dark {
 	color: #4a4a4a !important;
