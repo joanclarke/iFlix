@@ -270,6 +270,7 @@ leftInput.setAttribute('placeholder', 'Search Movie # 1');
 let rightInput = document.getElementById('right-autocomplete').getElementsByClassName('input')[0];
 rightInput.setAttribute('placeholder', 'Search Movie # 2');
 let close = Array.from(document.getElementsByClassName('close'));
+// let refreshSearch = document.getElementById('refresh-search');
 let topSearch = document.getElementById('top-search-content');
 let resetInput = document.getElementById('reset-input');
 let input = Array.from(document.getElementsByClassName('input'));
@@ -293,7 +294,13 @@ function showSearch(x, event)  {
 	x.style.display = 'block';
 }
 
+// refreshSearch.addEventListener('onmouseover', function(){
+// 	spin();
+// })
 
+// function spin(){
+// 	refreshSearch.classList.add('fa-spin');
+// }
 
 // let closeTopSearch = document.getElementById('close-top-search');
 close.forEach( el => {

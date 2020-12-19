@@ -569,6 +569,43 @@ padding-top: 50px;
 	margin-bottom: -1.5rem;
 	border-radius: 50%;
 }
+
+#search-close-btn.close :hover{
+	background-color:	#ffffff;
+}
+
+#refresh-search {
+	/* background-color: #0CB1C4; */
+	background-color: rgb(133, 128, 128);;
+	padding: 0.4rem;
+	border-radius: 50%;
+	/* font-weight: 900; */
+	font-size: 1.4rem;
+	color: #000000;
+}
+
+#refresh-search:hover {
+	color: #000000 !important;
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+	from {
+			transform:rotate(0deg);
+	}
+	to {
+			transform:rotate(360deg);
+	}
+}
+
+/* #refresh-search:hover {
+	transform-origin: left;
+	transform: translate(50%, 50%) rotate(90deg) ;
+} */
+
 /* 
 #top-search-content .column .close i:hover{
 	color: rgb(87, 84, 84);
