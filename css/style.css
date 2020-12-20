@@ -601,6 +601,23 @@ padding-top: 50px;
 	}
 }
 
+.refresh-warning {
+	margin-bottom: -2.8rem;
+	position: relative;
+	z-index: 5;
+	padding-top: 1.3rem;
+}
+
+.refresh-warning p{
+	font-size: 0.5rem;
+	color: #ffffff;
+	color: rgb(216, 211, 211);
+	font-style: italic;
+	text-align: center;
+}
+
+
+
 /* #refresh-search:hover {
 	transform-origin: left;
 	transform: translate(50%, 50%) rotate(90deg) ;
