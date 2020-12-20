@@ -94,25 +94,24 @@ const runComparison = () => {
 
 		const leftSideValue = parseInt(leftStat.dataset.value);
 		const rightSideValue = parseInt(rightStat.dataset.value);
-		const article = Array.from(document.getElementsByTagName("article"));
+		// const article = Array.from(document.getElementsByTagName("article"));
 		const leftArticles = Array.from(leftSideStats);
 
 	
-		let star = document.createElement("span");
+		let star = document.createElement("div");
 		const starImg = document.createElement('img'); 
-		starImg.src = "img/gold-star2.png";
-		// star.innerHTML = starImg;
-		// star.innerHTML = '<i class="fas fa-star" aria-hidden="true"></i>';	
 		star.setAttribute('class', 'winning-star');
+		starImg.src = "img/gold-star2.png";
+		star.appendChild(starImg);	
 
-		// console.log(article);
-		console.log(leftArticles);
+		// console.log(leftArticles);
 
 		if (rightSideValue > leftSideValue) {
 			leftStat.classList.remove('winning-stat');
 			rightStat.classList.add('winning-stat');
-			// rightStat.append(star);
-			rightStat.appendChild(starImg);
+			rightStat.appendChild(star);
+			// rightStat.prepend(star);
+			// rightStat.appendChild(starImg);
 			leftStat.classList.add('losing-stat');
 			// console.log(rightSideValue, leftSideValue);
 			// leftStat.style.backgroundColor = 'red';
@@ -122,45 +121,15 @@ const runComparison = () => {
 			rightStat.classList.remove('winning-stat');
 			rightStat.classList.add('losing-stat');
 			leftStat.classList.add('winning-stat');
-			// leftStat.append(star);
-			leftStat.appendChild(starImg);
+			leftStat.appendChild(star);
+			// leftStat.prepend(star);
+			// leftStat.appendChild(starImg);
 			// checkRating(leftArticles);
 			// console.log(leftSideValue, rightSideValue);
 			// leftStat.style.backgroundColor = 'green';
 			// rightStat.style.backgroundColor = 'red';
 		}
-
 	});
-	// notification winning-stat
-
-	// function checkRating(x){
-
-	// 			for(let i = 0; i < x.length; i++){
-	// 				// let arr = [];
-	
-	// 				if(x[i].classList.contains('winning-stat')) {
-	// 					let item = x[i].getElementsByClassName('title');
-	// 					let star = document.createElement("span");
-	// 					star.innerHTML = '<i class="fas fa-star" aria-hidden="true"></i>';	
-	// 					star.setAttribute('class', 'winning-star');
-	// 					for(let el of item) {
-
-	// 						el.append(star);
-	// 						if(el.contains(star)) {
-	// 						// arr.push(el.contains(star));
-	// 						}							
-	// 					}
-	// 				}
-
-	// 			}
-
-	// }
-
-	// let leftSideCount;
-	// let rightSideCount;
-	// 	for(let i=0; i <=5; i++) {
-
-	// 	}
 };
 
 const movieTemplate = (movieDetail) => {
