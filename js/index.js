@@ -97,8 +97,12 @@ const runComparison = () => {
 		const article = Array.from(document.getElementsByTagName("article"));
 		const leftArticles = Array.from(leftSideStats);
 
+	
 		let star = document.createElement("span");
-		star.innerHTML = '<i class="fas fa-star" aria-hidden="true"></i>';	
+		const starImg = document.createElement('img'); 
+		starImg.src = "img/gold-star2.png";
+		// star.innerHTML = starImg;
+		// star.innerHTML = '<i class="fas fa-star" aria-hidden="true"></i>';	
 		star.setAttribute('class', 'winning-star');
 
 		// console.log(article);
@@ -107,7 +111,8 @@ const runComparison = () => {
 		if (rightSideValue > leftSideValue) {
 			leftStat.classList.remove('winning-stat');
 			rightStat.classList.add('winning-stat');
-			rightStat.append(star);
+			// rightStat.append(star);
+			rightStat.appendChild(starImg);
 			leftStat.classList.add('losing-stat');
 			// console.log(rightSideValue, leftSideValue);
 			// leftStat.style.backgroundColor = 'red';
@@ -117,7 +122,8 @@ const runComparison = () => {
 			rightStat.classList.remove('winning-stat');
 			rightStat.classList.add('losing-stat');
 			leftStat.classList.add('winning-stat');
-			leftStat.append(star);
+			// leftStat.append(star);
+			leftStat.appendChild(starImg);
 			// checkRating(leftArticles);
 			// console.log(leftSideValue, rightSideValue);
 			// leftStat.style.backgroundColor = 'green';
