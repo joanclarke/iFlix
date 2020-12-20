@@ -766,6 +766,7 @@ p.plot {
 	padding: 0.5rem;
 	position: relative;
 	/* background-color: red; */
+	border:1px solid #4a4b4d;
 }
 /* 
 .notification {
@@ -783,25 +784,30 @@ p.plot {
 .winning-stat {
 	position: relative;
 	z-index: 5;
-	background-color: green !important;
+	/* background-color: green !important; */
+	background-color: #303133 !important;
 	color: #000000 !important;
 	color: #ffffff !important;
+	color: gold !important;
+	border: 0.5px solid gold !important
 }
+
+/* .winning-stat-text-color {
+	color: #ffff00 !important;
+} */
 
 .losing-stat {
-	background-color: red !important;
+	/* background-color: red !important; */
 	color: #000000!important;
 	color: #ffffff !important;
+	border:1px solid #4a4b4d !important;
 }
 
-.winning-stat .fa-star {
-	/* color: red; */
+/* .winning-stat .fa-star {
 	font-size: 1rem !important;
 	margin-top: -5rem !important;
-
 	padding-top: 5rem;
-
-}
+} */
 
 .winning-star {
 	position: relative;

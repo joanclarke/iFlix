@@ -110,6 +110,7 @@ const runComparison = () => {
 			leftStat.classList.remove('winning-stat');
 			rightStat.classList.add('winning-stat');
 			rightStat.appendChild(star);
+			rightStat.style.color = 'yellow';
 			// rightStat.prepend(star);
 			// rightStat.appendChild(starImg);
 			leftStat.classList.add('losing-stat');
