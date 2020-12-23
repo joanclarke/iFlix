@@ -32,7 +32,6 @@ createAutoComplete({
 	...autoCompleteConfig,
 	root: document.querySelector('#top-autocomplete'),
 	onOptionSelect(movie) {
-		// document.querySelector('.tutorial').classList.add('is-hidden');
 		onMovieSelect(movie, document.querySelector('#top-summary'), 'top');
 	}
 });
@@ -86,8 +85,18 @@ const onMovieSelect = async (movie, summaryElement, side) => {
 const runComparison = () => {
 	const leftSideStats = document.querySelectorAll('#left-summary .notification');
 	const rightSideStats = document.querySelectorAll('#right-summary .notification');
+	// const article =  document.querySelector('#right-summary .notification');;
+	// const article = Array.from(document.getElementsByTagName("article"));
+	// const leftArticle = leftSideStats.querySelector(".title") != null;
+	// const rightArticle = rightSideStats.querySelector(".title") != null;
+	// const hasChild = parentDiv.querySelector("#child2") != null;
 	// console.log(leftSideStats, rightSideStats);
+	// console.log(leftArticle, rightArticle);
 
+	// const leftBoxOffive = leftSideStats;
+	// const rightBoxOffive = rightSideStats[1];
+	// console.log(leftBoxOffive);
+	// console.log(rightBoxOffive);
 
 	leftSideStats.forEach((leftStat, index) => {
 		const rightStat = rightSideStats[index];
@@ -95,7 +104,7 @@ const runComparison = () => {
 		const leftSideValue = parseInt(leftStat.dataset.value);
 		const rightSideValue = parseInt(rightStat.dataset.value);
 		// const article = Array.from(document.getElementsByTagName("article"));
-		const leftArticles = Array.from(leftSideStats);
+		// const leftArticles = Array.from(leftSideStats);
 
 	
 		let star = document.createElement("div");
@@ -104,32 +113,73 @@ const runComparison = () => {
 		starImg.src = "img/gold-star2.png";
 		star.appendChild(starImg);	
 
-		// console.log(leftArticles);
-
+		// console.log(rightStat.dataset.value);
+		// if (rightSideValue > leftSideValue && Number.isNaN(rightStat.dataset.value) != true) {
 		if (rightSideValue > leftSideValue) {
 			leftStat.classList.remove('winning-stat');
-			rightStat.classList.add('winning-stat');
-			rightStat.appendChild(star);
-			rightStat.style.color = 'yellow';
+			leftStat.classList.add('losing-stat');
+			if(rightStat.querySelector(".title").innerHTML !== "N/A") {
+				rightStat.classList.add('winning-stat');
+				rightStat.appendChild(star);
+			} else {
+				rightStat.classList.add('losing-stat');
+			}
+
+			console.log(rightStat.querySelector(".title").innerHTML !== "N/A", rightStat.querySelector(".title").innerHTML );
+			// console.log(rightStat);
 			// rightStat.prepend(star);
 			// rightStat.appendChild(starImg);
-			leftStat.classList.add('losing-stat');
-			// console.log(rightSideValue, leftSideValue);
+			// if(isNaN(rightSideValue)) ;
+
 			// leftStat.style.backgroundColor = 'red';
 			// rightStat.style.backgroundColor = 'green';
 			// checkRating(rightSideStats);
+
+		// } else if (leftSideValue > rightSideValue && Number.isNaN(leftStat.dataset.value) != true) {	
 		} else {
 			rightStat.classList.remove('winning-stat');
 			rightStat.classList.add('losing-stat');
-			leftStat.classList.add('winning-stat');
-			leftStat.appendChild(star);
+			if(leftStat.querySelector(".title").innerHTML !== "N/A") {
+				leftStat.classList.add('winning-stat');
+				leftStat.appendChild(star);
+			} else {
+				leftStat.classList.add('losing-stat');
+			}
+			// leftStat.classList.add('winning-stat');
+			// leftStat.appendChild(star);
+
 			// leftStat.prepend(star);
 			// leftStat.appendChild(starImg);
-			// checkRating(leftArticles);
-			// console.log(leftSideValue, rightSideValue);
 			// leftStat.style.backgroundColor = 'green';
-			// rightStat.style.backgroundColor = 'red';
+			// rightStat.style.backgrou ndColor = 'red';
 		}
+
+		// if(rightStat.querySelector(".title").innerHTML == "N/A") {
+		// 	rightStat.classList.remove('winning-stat');
+		// 	rightStat.classList.add('losing-stat');
+		// } 
+
+		// if(leftStat.querySelector(".title").innerHTML == "N/A") {
+		// 	leftStat.classList.remove('winning-stat');
+		// 	leftStat.classList.add('losing-stat');
+		// } 
+
+
+		// if(rightStat.dataset.value == "NaN") {
+		// 	rightStat.classList.remove('winning-stat');
+		// 	rightStat.classList.add('losing-stat');
+		// }
+
+	// 	if(leftStat.dataset.value == "NaN"){
+	// 		leftStat.dataset.value;
+	// 		console.log("It's NaN ==> " + leftStat.dataset.value);
+	// 		leftStat.classList.remove('winning-stat');
+	// 		leftStat.classList.add('losing-stat');
+	// }
+
+	// const notAppl = rightStat.querySelector(".title").innerHTML == "N/A";
+	// 	console.log(notAppl, rightStat.querySelector(".title").innerHTML);
+ 
 	});
 };
 
@@ -149,7 +199,6 @@ const movieTemplate = (movieDetail) => {
 			return prev + value;
 		}
 	}, 0);
-	// console.log(awards);
 
 	return `
 		<article class="media">
@@ -270,15 +319,10 @@ function showSearch(x, event)  {
 	x.style.display = 'block';
 }
 
-// refreshSearch.addEventListener('onmouseover', function(){
-// 	spin();
-// })
-
 // function spin(){
 // 	refreshSearch.classList.add('fa-spin');
 // }
 
-// let closeTopSearch = document.getElementById('close-top-search');
 close.forEach( el => {
 	el.addEventListener('click', function() {
 		closeSearch(topSearch);
@@ -286,13 +330,6 @@ close.forEach( el => {
 		clearSummary(summary);
 	});
 })
-
-// closeTopSearch.addEventListener('click', function() {
-// 	closeSearch(topSearch);
-// 	resetInputFunc(input);
-// 	clearSummary(summary);
-// });
-
 
 // Hide input field
 function closeSearch(x) {
@@ -355,7 +392,6 @@ infoTabItems.forEach((item) => {
 });
 
 // slideshow
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
