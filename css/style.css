@@ -540,12 +540,23 @@ p.small-txt {
 padding-top: 50px;
 }
 
+.button-holder {
+	position: relative;
+	z-index: 7;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	margin-left: 7.6rem;
+	margin-right: 8rem;
+	margin-bottom: -1.5rem;
+}
+
 #top-search-content .column .close, #search-close-btn.close {
 	position: relative;
 	z-index: 7;
 	width: 2rem;
 	width: 3%;
-	margin: auto;
+	/* margin: auto; */
 	/* text-align: right; */
 	text-align: left;
 	cursor: pointer;
@@ -570,13 +581,9 @@ padding-top: 50px;
 	border-radius: 50%;
 }
 
-#search-close-btn.close :hover{
-	background-color:	#ffffff;
-}
-
-#refresh-search {
+#refresh-search, #close-search {
 	/* background-color: #0CB1C4; */
-	background-color: rgb(133, 128, 128);;
+	background-color: rgb(133, 128, 128);
 	padding: 0.4rem;
 	border-radius: 50%;
 	/* font-weight: 900; */
@@ -584,12 +591,44 @@ padding-top: 50px;
 	color: #000000;
 }
 
+
+#search-refresh-btn:hover{
+	border-radius: 50%;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+#close-search {
+	/* background-color: #0CB1C4; */
+	background-color: transparent;
+	font-size: 2.3rem;
+	color: rgb(133, 128, 128);
+	margin-top: -0.3rem;
+}
+
+
+
+
 #refresh-search:hover {
-	color: #000000 !important;
+	/* color: #000000 !important; */
   animation-name: spin;
   animation-duration: 1500ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
+}
+#close-search:hover {
+	background-color: transparent;
+}
+#refresh-search:hover, #search-refresh-btn:hover {
+	background-color:	#ffffff !important;
+	color: #000000 !important;
+	/* color: #ffffff !important; */
+
+}
+
+#search-close-btn.close :hover{
+	background-color:	transparent;
+	color: #ffffff !important;
 }
 
 @keyframes spin {
