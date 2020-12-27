@@ -114,6 +114,10 @@ hr {
 	height: 140vh;
 }
 
+.bottom-space {
+	height: 20rem;
+}
+
 .sign-up-page {
 	background: url('../img/iflix-bg2.jpg') no-repeat center center/cover;
 	height: 200vh;
