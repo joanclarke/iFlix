@@ -90,96 +90,118 @@ const runComparison = () => {
 	// const leftArticle = leftSideStats.querySelector(".title") != null;
 	// const rightArticle = rightSideStats.querySelector(".title") != null;
 	// const hasChild = parentDiv.querySelector("#child2") != null;
-	// console.log(leftSideStats, rightSideStats);
-	// console.log(leftArticle, rightArticle);
-
-	// const leftBoxOffive = leftSideStats;
-	// const rightBoxOffive = rightSideStats[1];
-	// console.log(leftBoxOffive);
-	// console.log(rightBoxOffive);
 
 	leftSideStats.forEach((leftStat, index) => {
+		// console.log(leftStat, leftSideStats[index])
+		// const leftStat = leftSideStats[index];
 		const rightStat = rightSideStats[index];
-
 		const leftSideValue = parseInt(leftStat.dataset.value);
 		const rightSideValue = parseInt(rightStat.dataset.value);
-		// const article = Array.from(document.getElementsByTagName("article"));
-		// const leftArticles = Array.from(leftSideStats);
-
 	
+		// console.log(leftSideValue, rightSideValue);
+		
+		// if(rightStat.dataset.value == "NaN" || leftStat.dataset.value == "NaN"){
+		// 	rightStat.dataset.value = 0;
+		// 	leftStat.dataset.value = 0;
+		// 	console.log("LEFTSIDE IS => " + leftSideValue, "** RIGHTSIDE IS => " + rightSideValue);
+		// } else if(leftStat.dataset.value == "NaN") {
+
+		// 	console.log("RIGHTSIDE IS => " + leftSideValue);
+		// } else {
+		// 	console.log("NOT NaN")
+		// }
+
 		let star = document.createElement("div");
 		const starImg = document.createElement('img'); 
 		star.setAttribute('class', 'winning-star');
 		starImg.src = "img/gold-star2.png";
 		star.appendChild(starImg);	
 
-		// console.log(rightStat.dataset.value);
 		// if (rightSideValue > leftSideValue && Number.isNaN(rightStat.dataset.value) != true) {
-		if (rightSideValue > leftSideValue) {
-			leftStat.classList.remove('winning-stat');
+		
+		if(rightSideValue == leftSideValue){
 			leftStat.classList.add('losing-stat');
-			if(rightStat.querySelector(".title").innerHTML !== "N/A") {
+			rightStat.classList.add('losing-stat');
+			// rightStat.removeChild(star);
+			// leftStat.removeChild(star);
+			if(leftStat.classList.contains('winning-stat')) {
+				leftStat.classList.remove('winning-stat');
+			} else if(rightStat.classList.contains('winning-stat')){
+				rightStat.classList.remove('winning-stat');
+			}
+			// leftStat.classList.remove('winning-stat');
+			// rightStat.classList.remove('winning-stat');
+		} else if(leftSideValue === NaN || leftStat.querySelector(".title").innerHTML == "N/A"){
+			leftStat.classList.add('losing-stat');
+			
+			if(rightSideValue != NaN || rightStat.querySelector(".title").innerHTML != "N/A"){
+				rightStat.classList.remove('losing-stat');
 				rightStat.classList.add('winning-stat');
 				rightStat.appendChild(star);
-			} else {
-				rightStat.classList.add('losing-stat');
 			}
+			
+			// if(rightStat.classList.contains('losing-stat')) {
+			// 	rightStat.classList.remove('losing-stat');
+			// 	rightStat.classList.add('winning-stat');
+			// }
+			
+			console.log("LEFTSIDE IS => " + leftSideValue);
+		
+		} else if(rightSideValue === NaN || rightStat.querySelector(".title").innerHTML == "N/A"){
+			rightStat.classList.add('losing-stat');
+			// if(leftStat.classList.contains('losing-stat')) {
+			// 	leftStat.classList.remove('losing-stat');
+			// 	leftStat.classList.add('winning-stat');
+			// }
 
-			console.log(rightStat.querySelector(".title").innerHTML !== "N/A", rightStat.querySelector(".title").innerHTML );
-			// console.log(rightStat);
-			// rightStat.prepend(star);
-			// rightStat.appendChild(starImg);
-			// if(isNaN(rightSideValue)) ;
+			console.log("RIGHTSIDE IS => " + rightSideValue);
+		
+		} else if (rightSideValue > leftSideValue) {
+			leftStat.classList.remove('winning-stat');
+			leftStat.classList.add('losing-stat');
+			rightStat.classList.add('winning-stat');
+			rightStat.appendChild(star);
+			
+			if(rightStat.classList.contains('losing-stat') || rightStat.querySelector(".title").innerHTML != "N/A") {
+				rightStat.classList.remove('losing-stat');
+			} 
 
-			// leftStat.style.backgroundColor = 'red';
-			// rightStat.style.backgroundColor = 'green';
-			// checkRating(rightSideStats);
 
+			// if(rightStat.querySelector(".title").innerHTML !== "N/A") {
+			// 	rightStat.classList.add('winning-stat');
+			// 	rightStat.appendChild(star);
+			// } else {
+			// 	rightStat.classList.add('losing-stat');
+			// }
+
+			// console.log(rightStat.querySelector(".title").innerHTML !== "N/A", rightStat.querySelector(".title").innerHTML );
 		// } else if (leftSideValue > rightSideValue && Number.isNaN(leftStat.dataset.value) != true) {	
 		} else {
 			rightStat.classList.remove('winning-stat');
 			rightStat.classList.add('losing-stat');
-			if(leftStat.querySelector(".title").innerHTML !== "N/A") {
+			// leftStat.appendChild(star);
+
+			if(leftStat.classList.contains('losing-stat') || leftStat.querySelector(".title").innerHTML != "N/A") {
+				leftStat.classList.remove('losing-stat');
 				leftStat.classList.add('winning-stat');
 				leftStat.appendChild(star);
 			} else {
+				leftStat.classList.remove('winning-stat');
 				leftStat.classList.add('losing-stat');
+				// leftStat.removeChild(star);
 			}
-			// leftStat.classList.add('winning-stat');
-			// leftStat.appendChild(star);
 
-			// leftStat.prepend(star);
-			// leftStat.appendChild(starImg);
-			// leftStat.style.backgroundColor = 'green';
-			// rightStat.style.backgrou ndColor = 'red';
+			// if(leftStat.querySelector(".title").innerHTML !== "N/A") {
+			// 	leftStat.classList.add('winning-stat');
+			// }
+
+			// if(leftStat.querySelector(".title").innerHTML !== "N/A") {
+			// 	leftStat.classList.add('winning-stat');
+			// 	leftStat.appendChild(star);
+			// } else {
+			// 	leftStat.classList.add('losing-stat');
+			// }
 		}
-
-		// if(rightStat.querySelector(".title").innerHTML == "N/A") {
-		// 	rightStat.classList.remove('winning-stat');
-		// 	rightStat.classList.add('losing-stat');
-		// } 
-
-		// if(leftStat.querySelector(".title").innerHTML == "N/A") {
-		// 	leftStat.classList.remove('winning-stat');
-		// 	leftStat.classList.add('losing-stat');
-		// } 
-
-
-		// if(rightStat.dataset.value == "NaN") {
-		// 	rightStat.classList.remove('winning-stat');
-		// 	rightStat.classList.add('losing-stat');
-		// }
-
-	// 	if(leftStat.dataset.value == "NaN"){
-	// 		leftStat.dataset.value;
-	// 		console.log("It's NaN ==> " + leftStat.dataset.value);
-	// 		leftStat.classList.remove('winning-stat');
-	// 		leftStat.classList.add('losing-stat');
-	// }
-
-	// const notAppl = rightStat.querySelector(".title").innerHTML == "N/A";
-	// 	console.log(notAppl, rightStat.querySelector(".title").innerHTML);
- 
 	});
 };
 
@@ -215,7 +237,6 @@ const movieTemplate = (movieDetail) => {
 				</div>
 			</div>
 		</article>
-
 		<article data-value=${awards} class="notification ">
 			<p class="title">${movieDetail.Awards}</p>
 			<p class="subtitle">Awards</p>
@@ -248,7 +269,6 @@ const searchMovieTemplate = (movieDetail) => {
 				</div>
 			</div>
 		</article>
-
 		<article class="media">
 			<figure class="media-left">
 				<p class="image">
@@ -265,7 +285,6 @@ const searchMovieTemplate = (movieDetail) => {
 				</div>
 			</div>
 		</article>
-
 		<article class="results-summary">
 			<div class="media-content">
 				<div class="content">
