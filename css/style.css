@@ -2106,6 +2106,10 @@ label {
 	outline: none;
 }
 
+#sign-up input[type=email], #sign-up input[type=text], #sign-up input[type=password] {
+	color: #3f3e3e;
+}
+
 #sign-up input[type=email]:focus, input[type=text]:focus,  input[type=password]:focus {
 	border: 1px solid #a708f1;
 }
