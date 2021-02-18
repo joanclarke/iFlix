@@ -20,14 +20,33 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 
 ## How it works
 
-### Movie Search
+### Step 1 - Sign Up
 
-- Click search button and type in movie title to get brief description of Movies and TV Shows. 
+Fill in Sign up detail
+
+<img src="img/signup.gif" width="600" height="250" alt="Sign up gif"/>
+
+
+### Step 2 - Sign In
+
+Sign in to get access to Flix Fight page
+
+<img src="img/signin.gif" width="600" height="250" alt="Sign In gif"/>
+
+
+### Step 3 - Movie Search
+
+  * The user can search for movie info (using the search button located at the top of the page) or do a flix fight search to compare movie statistics.
+
+- To search - Click search button and type in movie title to get brief description of Movies and TV Shows. 
 
 ![Search for movie information](img/iflix-top-search-gif.gif)
 
-### Flix Fight Search
+### Step 4 - Flix Fight Search
 ##### Search and compare 2 movies
+
+  * The user can search for movie info (using the search button located at the top of the page) or do a flix fight search to compare movie statistics.
+
 - The Flix Fight page allows users to for two movies and compare them simultaneously. 
 - A gold star indicates that the movie ranked higher in that specific category. 
 
@@ -36,21 +55,16 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 
 <!-- <img src="https://i.imgur.com/uw113BL.gif" width="200" height="200" /> -->
 
-### Page View
+## Page View
 
 Home Page
 <!-- 
 ![Home page view using gif](img/iflix-gif-1.gif) -->
 <img src="img/iflix-gif-1.gif" width="600" height="250"  alt="Home page image"/>
 
-Sign Up Page
+<!-- Sign In Page
 
-<img src="img/signup.gif" width="600" height="250" alt="Sign up gif"/>
-
-
-Sign In Page
-
-<img src="img/signin.png" width="250" height="300" alt="sign in page"/>
+<img src="img/signin.png" width="250" height="300" alt="sign in page"/> -->
 
 Flix Fight full page view
 
