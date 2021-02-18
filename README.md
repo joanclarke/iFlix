@@ -26,7 +26,8 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 
 ![Search for movie information](img/iflix-top-search-gif.gif)
 
-### Flix Fight
+### Flix Fight 
+##### Search and compare 2 movies
 - The Flix Fight page allows users to for two movies and compare them simultaneously. 
 - A gold star indicates that the movie ranked higher in that specific category. 
 
@@ -34,3 +35,16 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 <!-- ![Dual search](https://i.imgur.com/c8Q2WlU.gif) -->
 
 <!-- <img src="https://i.imgur.com/uw113BL.gif" width="200" height="200" /> -->
+
+### Views
+
+Home Page
+
+![Home page view using gif](img/iflix-gif-1.gif)
+
+Sign Up Page
+<img src="img/signup.png" width="300" height="300" />
+
+
+Sign In Page
+<img src="img/signin.png" width="300" height="300" />
