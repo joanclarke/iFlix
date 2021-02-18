@@ -1481,7 +1481,7 @@ i.fa-grip-lines-vertical {
 }
 
 .celebrity-news a:hover {
-	padding: 0.5rem;
+	/* padding: 0.5rem; */
 	background: rgba(39, 39, 39, 0.7);
 }
 
