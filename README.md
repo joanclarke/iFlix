@@ -16,3 +16,10 @@ Categories are:
  Box office hits
 
 iFlix also features up and coming movies and tv shows as well as the latest celebrity news.
+
+
+## How it works
+
+### Movie Search
+
+![Alt Text](iflix-top-search-gif.gif)

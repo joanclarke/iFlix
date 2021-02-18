@@ -240,15 +240,16 @@ let leftInput = document.getElementById('left-autocomplete').getElementsByClassN
 leftInput.setAttribute('placeholder', 'Search Movie # 1');
 let rightInput = document.getElementById('right-autocomplete').getElementsByClassName('input')[0];
 rightInput.setAttribute('placeholder', 'Search Movie # 2');
-let refreshPage = document.getElementById('refresh-page')
+let refreshPage = Array.from(document.getElementsByClassName('refresh-page'));
+let refreshWarning = Array.from(document.getElementsByClassName('refresh-warning')); // Close Flix-Fight 
 let searchRefresh = document.getElementById('search-refresh-btn');
 let close = Array.from(document.getElementsByClassName('close'));
-// let refreshSearch = document.getElementById('refresh-search');
+let refreshSearch = document.getElementById('refresh-search'); // Close Flix-Fight 
 let topSearch = document.getElementById('top-search-content');
 let resetInput = document.getElementById('reset-input');
 let input = Array.from(document.getElementsByClassName('input'));
 let summary = Array.from(document.getElementsByClassName('summary'));
-
+// let fightSearch = Array.from(document.getElementsByClassName('fight-search'));// Close Flix-Fight 
 
 // document.addEventListener('click', function(root){
 // 	console.log(root);
@@ -285,6 +286,7 @@ searchRefresh.addEventListener('click', function() {
 close.forEach( el => {
 	el.addEventListener('click', function() {
 		closeSearch(topSearch);
+		// closeFight(fightSearch, refreshWarning, refreshSearch); // Close Flix-Fight 
 		resetInputFunc(input);
 		clearSummary(summary);
 	});
@@ -294,6 +296,16 @@ close.forEach( el => {
 function closeSearch(x) {
 	x.style.display = 'none';
 }
+
+// Close Flix-Fight 
+// ++++++++++++++++++++++ 
+// function closeFight(x, y, z) {
+// 	for(let i = 0; i < x.length; i++) {
+// 		x[i].style.display = 'none';
+// 		y[i].style.display = 'none';
+// 	}
+// 	z.style.display = 'none';
+// }
 
 // Empty out input field
 function resetInputFunc(el) {
