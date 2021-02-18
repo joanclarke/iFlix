@@ -49,20 +49,11 @@ Sign in to get access to Flix Fight page
 - A gold star indicates that the movie ranked higher in that specific category. 
 
 ![Searching for two movies simultaneously gif](img/flix-fight2.gif)
-<!-- ![Dual search](https://i.imgur.com/c8Q2WlU.gif) -->
 
-<!-- <img src="https://i.imgur.com/uw113BL.gif" width="200" height="200" /> -->
-
-## Page View
+## Full Page Views
 
 Home Page
-<!-- 
-![Home page view using gif](img/iflix-gif-1.gif) -->
 <img src="img/iflix-gif-1.gif" width="600" height="250"  alt="Home page image"/>
-
-<!-- Sign In Page
-
-<img src="img/signin.png" width="250" height="300" alt="sign in page"/> -->
 
 Flix Fight full page view
 
