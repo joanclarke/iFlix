@@ -41,7 +41,7 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 Home Page
 <!-- 
 ![Home page view using gif](img/iflix-gif-1.gif) -->
-<img src="img/iflix-gif-1.gif" width="600" height="400"  alt="Home page image"/>
+<img src="img/iflix-gif-1.gif" width="600" height="250"  alt="Home page image"/>
 
 Sign Up Page
 
