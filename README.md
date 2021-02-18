@@ -41,7 +41,8 @@ Sign in to get access to Flix Fight page
 
 ![Search for movie information](img/iflix-top-search-gif.gif)
 
-### Step 4 - Flix Fight Search  -->  ##### Search and compare 2 movies
+### Step 4 - Flix Fight Search  
+##### Search and compare 2 movies
 ###### The user can search for movie info (using the search button located at the top of the page) or do a flix fight search to compare movie statistics.
 
 - The Flix Fight page allows users to for two movies and compare them simultaneously. 
