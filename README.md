@@ -29,4 +29,4 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 ### Flix Fight
 - The Flix Fight page allows users to search and compare 2 movies at the same time 
 - Gold stars indicate the winning movie in each category.   
-![Alt Text]([img]https://i.imgur.com/HzoHkgQ.gif[/img])
+![Alt Text](https://i.imgur.com/HzoHkgQ.gif)
