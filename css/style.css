@@ -1281,8 +1281,8 @@ table tbody tr:nth-child(odd) {
 	width: auto;
 	padding: 16px;
 	margin-top: -22px;
-	margin-left: -100px;
-	margin-right: -100px;
+	/* margin-left: -100px;
+	margin-right: -100px; */
 	/* margin-top: 620px;
 	margin-left: -17%; */
 	color: white;
@@ -2587,8 +2587,8 @@ MEDIA QUERIES
 	.prev,
 	.next {
 		/* margin-top: 820px; */
-		margin-left: -50px;
-		margin-right: -50px;
+		/* margin-left: -50px;
+		margin-right: -50px; */
 		padding: 10px;
 		font-size: 14px;
 	}
