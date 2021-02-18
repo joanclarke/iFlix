@@ -26,7 +26,7 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 
 ![Search for movie information](img/iflix-top-search-gif.gif)
 
-### Flix Fight 
+### Flix Fight Search
 ##### Search and compare 2 movies
 - The Flix Fight page allows users to for two movies and compare them simultaneously. 
 - A gold star indicates that the movie ranked higher in that specific category. 
