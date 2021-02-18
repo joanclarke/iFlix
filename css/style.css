@@ -967,7 +967,7 @@ hr.thick-line {
 
 .info-tabs {
 	background: var(--dark-color);
-	padding-top: 1rem;
+	padding-top: 5rem;
 	border-bottom: 3px solid #3d3d3d;
 }
 
@@ -1009,6 +1009,7 @@ hr.thick-line {
 
 .info-tab-content {
 	padding: 3rem !important;
+	padding-bottom: 5rem !important;
 	color: #fff;
 }
 
@@ -1196,6 +1197,11 @@ table tbody tr:nth-child(odd) {
 	font-size: 15rem;
 	font-weight: 700;
 	color: rgba(153, 153, 153, 0.5);
+}
+
+
+#divider {
+	height: 2rem;
 }
 
 .info-tab-3-content-inner .numbers p {
@@ -1478,6 +1484,7 @@ i.fa-grip-lines-vertical {
 
 .celebrity-news a {
 	display: inline-flex;
+	text-align: center;
 }
 
 .celebrity-news a:hover {
@@ -2427,6 +2434,10 @@ MEDIA QUERIES
 
 	#info-tab-1-content .info-tab-1-content-inner .tv {
 		margin-top: 2rem;
+	}
+
+	.info-tab-3-content-inner .tab-3-inner-tab p {
+		font-size: 0.8rem;
 	}
 
 		img.download-arrow {
