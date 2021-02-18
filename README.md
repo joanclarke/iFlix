@@ -36,7 +36,7 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 
 <!-- <img src="https://i.imgur.com/uw113BL.gif" width="200" height="200" /> -->
 
-### Views
+### Page View
 
 Home Page
 <!-- 
@@ -51,3 +51,7 @@ Sign Up Page
 Sign In Page
 
 <img src="img/signin.png" width="250" height="300" alt="sign in page"/>
+
+Flix Fight full page view
+
+<img src="img/flix-fight-full-page.gif" width="600" height="250" alt="Flix Fight full page view"/>
