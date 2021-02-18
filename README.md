@@ -43,8 +43,10 @@ Home Page
 ![Home page view using gif](img/iflix-gif-1.gif)
 
 Sign Up Page
-<img src="img/signup.png" width="300" height="300" />
+
+<img src="img/signup.png" width="250" height="300" />
 
 
 Sign In Page
-<img src="img/signin.png" width="300" height="300" />
+
+<img src="img/signin.png" width="250" height="300" />
