@@ -23,3 +23,5 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 ### Movie Search
 
 ![Alt Text](iflix-top-search-gif.gif)
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/img/iiflix-top-search-gif.gif.png "Movie Info Search"
