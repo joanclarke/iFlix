@@ -45,7 +45,7 @@ Home Page
 
 Sign Up Page
 
-<img src="img/signup.png" width="250" height="300" alt="sign up page"/>
+<img src="img/signup.gif" width="600" height="250" alt="Sign up gif"/>
 
 
 Sign In Page
