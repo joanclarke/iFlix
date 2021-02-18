@@ -22,7 +22,11 @@ iFlix also features up and coming movies and tv shows as well as the latest cele
 
 ### Movie Search
 
+- Click search button and type in movie title to get brief description of Movies and TV Shows. 
+
 ![Alt Text](https://i.imgur.com/uw113BL.gif)
 
-<!-- ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/img/iiflix-top-search-gif.gif.png "Movie Info Search" -->
-
+### Flix Fight
+- The Flix Fight page allows users to search and compare 2 movies at the same time 
+- Gold stars indicate the winning movie in each category.   
+![Alt Text](https://i.imgur.com/HzoHkgQ.gif)
