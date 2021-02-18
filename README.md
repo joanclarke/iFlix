@@ -53,6 +53,7 @@ Sign in to get access to Flix Fight page
 ## Full Page Views
 
 Home Page
+
 <img src="img/iflix-gif-1.gif" width="600" height="250"  alt="Home page image"/>
 
 Flix Fight full page view
