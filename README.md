@@ -66,7 +66,7 @@ I used the meta tag below to prevent the 'Mixed Block Content' error
 
 ### Meta tag
 
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 
 ### Error
 
