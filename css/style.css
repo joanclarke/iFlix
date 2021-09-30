@@ -191,10 +191,14 @@ hr {
 	/* margin-bottom: 20px; */
 }
 
-.logo-fight-page div.flix-fight-top.showcase-top{
-	position: relative;
+.logo-fight-page div.flix-fight-top.showcase-top img {
+	/* position: relative; */
+	position: absolute;
 	z-index: 15;
-	width: 20rem;
+	/* width: 20rem; */
+	width: 18.75rem;
+	top: 110%;
+	left: 12%;
 }
 
 .showcase-flix-fight a.search {
