@@ -197,7 +197,7 @@ hr {
 	z-index: 15;
 	/* width: 20rem; */
 	width: 18.75rem;
-	top: 10%;
+	top: 1%;
 	left: 12%;
 }
 
@@ -2350,7 +2350,7 @@ MEDIA QUERIES
 		right: 15%;
 	}
 
-	.showcase img, .showcase-flix-fight img {
+	.showcase img, .showcase-flix-fight img, .logo-fight-page div.flix-fight-top.showcase-top img {
 		left: 16%;
 	}	
 
@@ -2593,6 +2593,10 @@ MEDIA QUERIES
 		left: 18%;
 	}	
 
+	.logo-fight-page div.flix-fight-top.showcase-top img {
+		left: 18%;
+	}
+
 	img.download-arrow {
 		margin-top: 0.5rem;
 		margin-left: 20rem;
@@ -2615,7 +2619,7 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 375px) {
 
-	.showcase img, .showcase-flix-fight img {
+	.showcase img, .showcase-flix-fight img, .logo-fight-page div.flix-fight-top.showcase-top img {
 		left: 20%;
 	}	
 	/* .showcase-flix-fight a:nth-child(2) {
