@@ -59,3 +59,19 @@ Home Page
 Flix Fight full page view
 
 <img src="img/flix-fight-full-page.gif" width="600" height="250" alt="Flix Fight full page view"/>
+
+## Note
+
+I used the meta tag below to prevent the 'Mixed Block Content' error
+
+### Meta tag
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+### Error
+
+Mixed Content: The page at 'https://pagename.com' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://XX.XXX.XX.XXX/vicidial/non_agent_api.php?queries=query=data'. This request has been blocked; the content must be served over HTTPS.
+
+###### Solution from: https://stackoverflow.com/questions/33507566/mixed-content-blocked-when-running-an-http-ajax-operation-in-an-https-page
+
+
