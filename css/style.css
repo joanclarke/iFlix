@@ -188,16 +188,16 @@ hr {
 
 .logo-fight-page.showcase {
 	/* margin-top: -140px; */
-	margin-bottom: 0px;
+	height: 8vh;
 }
 
 .logo-fight-page div.flix-fight-top.showcase-top img {
-	/* position: relative; */
-	position: absolute;
+	position: relative;
+	/* position: absolute; */
 	z-index: 15;
 	/* width: 20rem; */
 	width: 18.75rem;
-	top: 110%;
+	top: 20%;
 	left: 12%;
 }
 
