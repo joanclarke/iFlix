@@ -187,14 +187,14 @@ hr {
 }
 
 .logo-fight-page {
-	margin-top: -140px;
+	/* margin-top: -140px; */
 	/* margin-bottom: 20px; */
 }
 
 .logo-fight-page div.flix-fight-top.showcase-top{
 	position: relative;
 	z-index: 15;
-	width: 37rem;
+	/* width: 37rem; */
 }
 
 .showcase-flix-fight a.search {
