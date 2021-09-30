@@ -186,9 +186,9 @@ hr {
 	transform: translate(-50%, -50%);
 }
 
-.logo-fight-page {
+.logo-fight-page.showcase {
 	/* margin-top: -140px; */
-	/* margin-bottom: 20px; */
+	margin-bottom: 0px;
 }
 
 .logo-fight-page div.flix-fight-top.showcase-top img {
